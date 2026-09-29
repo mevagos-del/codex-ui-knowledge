@@ -16,16 +16,21 @@ normalized, documented, and adapted before they are added here.
 
 ## Knowledge sources
 
-| Source | Primary use | Import approach |
-| --- | --- | --- |
-| [Uiverse Galaxy](https://github.com/uiverse-io/galaxy) | Components and visual effects | Curated selections only |
-| [Open Props](https://github.com/argyleink/open-props) | Design tokens and CSS primitives | Referenced and selectively adapted |
-| [Hover.css](https://github.com/IanLunn/Hover) | Hover effects and microinteractions | Curated, simplified, and normalized |
-| [Animate.css](https://github.com/animate-css/animate.css) | Entrance, exit, and attention animations | Curated selections only |
-| [Pattern Craft](https://github.com/megh-bari/pattern-craft) | Backgrounds, gradients, and decorative surfaces | Ideas and selectively adapted patterns |
+`source-registry.json` is the machine-readable authority for upstream identity,
+repository ownership, license verification, provenance URL rules, revision
+pinning, and import status. `catalog.json` references these definitions by stable
+source ID. See [SOURCES.md](SOURCES.md) for the human-readable overview.
 
-Before importing code, verify the upstream license and record the exact source in
-the pattern documentation. See [SOURCES.md](SOURCES.md).
+| Source ID | Source | Status | Primary use |
+| --- | --- | --- | --- |
+| `uiverse-galaxy` | [Uiverse Galaxy](https://github.com/uiverse-io/galaxy) | Active | Components and visual effects |
+| `open-props` | [Open Props](https://github.com/argyleink/open-props) | Planned | Design tokens and CSS primitives |
+| `hover-css` | [Hover.css](https://github.com/IanLunn/Hover) | Planned | Hover effects and microinteractions |
+| `animate-css` | [Animate.css](https://github.com/animate-css/animate.css) | Planned | Entrance, exit, and attention animations |
+| `pattern-craft` | [Pattern Craft](https://github.com/megh-bari/pattern-craft) | Planned | Backgrounds and decorative surfaces |
+
+Planned sources are approved for future investigation but cannot supply catalog
+patterns until their license is verified and their registry status becomes active.
 
 ## Repository structure
 
@@ -35,6 +40,10 @@ codex-ui-knowledge/
 ├── README.md
 ├── SOURCES.md
 ├── catalog.json
+├── catalog.schema.json
+├── source-registry.json
+├── source-registry.schema.json
+├── licenses/
 ├── components/
 ├── effects/
 ├── animations/
@@ -55,6 +64,20 @@ codex-ui-knowledge/
 | `layouts/` | Responsive page and component layout patterns |
 | `recipes/` | Composed solutions that combine several patterns |
 | `guidelines/` | Selection, accessibility, performance, and architecture rules |
+| `licenses/` | Verified upstream license texts and notices |
+
+## Source and catalog model
+
+Each catalog pattern records a stable source ID, an exact upstream URL, the
+revision represented by that URL, and whether the implementation was copied,
+adapted, or reimplemented. The validator resolves the source ID through the
+registry and applies the registry's URL pattern, revision policy, and license
+record. New sources therefore require data and license verification rather than
+new source-specific validator code.
+
+Follow [the import protocol](guidelines/import-protocol.md) to register a source,
+verify its license, activate it, define a curation scope, record provenance, and
+submit a validated import pull request.
 
 ## How Codex should use this repository
 
@@ -71,7 +94,8 @@ knowledge base.
 
 ## Current status
 
-The first controlled curation batch contains 50 framework-neutral patterns from Uiverse Galaxy: 10 buttons, 10 cards, 10 inputs, 10 loaders, and 10 hover or interaction effects. Each package includes an attributed README, standalone demo, and scoped stylesheet.
+The repository contains 50 framework-neutral patterns from the completed Uiverse
+Galaxy pilot. No patterns from the planned sources have been imported.
 
 ## Validation
 
@@ -82,9 +106,10 @@ npm ci
 npm test
 ```
 
-The validator uses Ajv and `ajv-formats` for the catalog schema, `css-tree` for
-CSS parsing and property checks, and `parse5` for HTML parsing. It checks all 50
-packages for required files, pinned provenance, unique catalog records, scoped
-selectors and keyframes, valid native functions and references, responsive demo
-shells, reduced motion support, labels, keyboard focus styles, landmarks, and
-loader announcements.
+The validator uses Ajv and `ajv-formats` for the registry and catalog schemas,
+`css-tree` for CSS parsing and property checks, and `parse5` for HTML parsing.
+It validates registry-driven provenance and licensing, duplicate identities and
+upstream files, required package files, scoped selectors and keyframes, native
+functions and references, responsive demo shells, reduced motion, labels,
+keyboard focus styles, landmarks, and loader announcements. Successful output
+reports dynamic totals by source and category.
