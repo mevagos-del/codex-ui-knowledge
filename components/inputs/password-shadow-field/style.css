@@ -1,0 +1,33 @@
+/* Adapted from Uiverse Galaxy by andrew-demchenk0. MIT; see README.md. */
+.uk-password-shadow-field{box-sizing:border-box;max-inline-size:100%;--ui-accent:#2d8cf0;--ui-duration:180ms}
+.uk-password-shadow-field .input{
+  --input-focus: var(--ui-accent);
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 5px 10px;
+  outline: none;
+}
+.uk-password-shadow-field .input::placeholder{
+  color: var(--font-color-sub);
+  opacity: 0.8;
+}
+.uk-password-shadow-field .input:focus{
+  border: 2px solid var(--input-focus);
+}
+
+.uk-password-shadow-field :is(button,input,a,textarea,select):focus-visible,.uk-password-shadow-field:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-password-shadow-field .ui-field-label,.uk-password-shadow-field .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-password-shadow-field .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-password-shadow-field *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-password-shadow-field *,.uk-password-shadow-field *::before,.uk-password-shadow-field *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

@@ -1,0 +1,37 @@
+/* Adapted from Uiverse Galaxy by Bodyhc. MIT; see README.md. */
+.uk-search-action-field{box-sizing:border-box;max-inline-size:100%;--ui-accent:#4e99e9;--ui-duration:180ms}
+.uk-search-action-field .search{
+  display: inline-block;
+  position: relative;
+}
+.uk-search-action-field .search input[type="text"]{
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.uk-search-action-field .search button[type="submit"]{
+  background-color: var(--ui-accent);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .9s ease;
+}
+.uk-search-action-field .search button[type="submit"]:hover{
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: blue;
+}
+
+.uk-search-action-field :is(button,input,a,textarea,select):focus-visible,.uk-search-action-field:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-search-action-field .ui-field-label,.uk-search-action-field .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-search-action-field .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-search-action-field *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-search-action-field *,.uk-search-action-field *::before,.uk-search-action-field *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

@@ -1,0 +1,40 @@
+/* Adapted from Uiverse Galaxy by SanthoshSJ-Dev. MIT; see README.md. */
+.uk-underline-focus-field{box-sizing:border-box;max-inline-size:100%;--ui-accent:#08AEEA;--ui-duration:180ms}
+.uk-underline-focus-field .input-wrapper{
+  position: relative;
+  width: 200px;
+  margin: 50px auto;
+}
+.uk-underline-focus-field .input-box{
+  font-size: 16px;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: var(--ui-accent);
+  width: 100%;
+  background-color: transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+.uk-underline-focus-field .underline{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--ui-accent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.uk-underline-focus-field .input-box:focus{
+  border-color: var(--ui-accent);
+  outline: none;
+}
+.uk-underline-focus-field .input-box:focus + .underline{
+  transform: scaleX(1);
+}
+
+.uk-underline-focus-field :is(button,input,a,textarea,select):focus-visible,.uk-underline-focus-field:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-underline-focus-field .ui-field-label,.uk-underline-focus-field .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-underline-focus-field .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-underline-focus-field *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-underline-focus-field *,.uk-underline-focus-field *::before,.uk-underline-focus-field *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

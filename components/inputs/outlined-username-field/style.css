@@ -1,0 +1,33 @@
+/* Adapted from Uiverse Galaxy by vinodjangid07. MIT; see README.md. */
+.uk-outlined-username-field{box-sizing:border-box;max-inline-size:100%;--ui-accent:#292929;--ui-duration:180ms}
+.uk-outlined-username-field .usernamelabel{
+  display: block;
+  color: white;
+  font-size: 14px;
+  padding: 5px 5px;
+}
+.uk-outlined-username-field #usernameField{
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: var(--ui-accent);
+  border-radius: 30px;
+  border: 2px solid var(--ui-accent);
+  padding: 0px 12px;
+  outline: none;
+  caret-color: rgb(152, 88, 255);
+  color: rgb(212, 212, 212);
+  font-size: 12px;
+  transition-duration: .2s;
+}
+.uk-outlined-username-field #usernameField:focus,
+.uk-outlined-username-field #usernameField:valid{
+  border: 2px solid rgb(152, 88, 255);
+  transition-duration: .2s;
+}
+
+.uk-outlined-username-field :is(button,input,a,textarea,select):focus-visible,.uk-outlined-username-field:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-outlined-username-field .ui-field-label,.uk-outlined-username-field .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-outlined-username-field .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-outlined-username-field *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-outlined-username-field *,.uk-outlined-username-field *::before,.uk-outlined-username-field *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
