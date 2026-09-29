@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by JaydipPrajapati1910. MIT; see README.md. */
-.uk-location-pin-loader{box-sizing:border-box;max-inline-size:100%;--ui-accent:#ff4747;--ui-duration:180ms}
+.uk-location-pin-loader{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#ff4747;--ui-duration:180ms}
 .uk-location-pin-loader .loader{
   width: 44.8px;
   height: 44.8px;

@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Shakil-Babu. MIT; see README.md. */
-.uk-shadow-lift-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#00BFA6;--ui-duration:180ms}
+.uk-shadow-lift-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#00BFA6;--ui-duration:180ms}
 .uk-shadow-lift-button .btn{
  background-color: var(--ui-accent);
  padding: 14px 40px;

@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by EmmaxPlay. MIT; see README.md. */
-.uk-window-chrome-card{box-sizing:border-box;max-inline-size:100%;--ui-accent:#011522;--ui-duration:180ms}
+.uk-window-chrome-card{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#011522;--ui-duration:180ms}
 .uk-window-chrome-card .card{
  width: 190px;
  height: 254px;

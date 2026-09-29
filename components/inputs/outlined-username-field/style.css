@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by vinodjangid07. MIT; see README.md. */
-.uk-outlined-username-field{box-sizing:border-box;max-inline-size:100%;--ui-accent:#292929;--ui-duration:180ms}
+.uk-outlined-username-field{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#292929;--ui-duration:180ms}
 .uk-outlined-username-field .usernamelabel{
   display: block;
   color: white;

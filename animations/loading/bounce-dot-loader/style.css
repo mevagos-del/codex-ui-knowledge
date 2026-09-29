@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Rodrypaladin. MIT; see README.md. */
-.uk-bounce-dot-loader{box-sizing:border-box;max-inline-size:100%;--ui-accent:#ff6600;--ui-duration:180ms}
+.uk-bounce-dot-loader{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#ff6600;--ui-duration:180ms}
 .uk-bounce-dot-loader .loader{
   width: 100px;
   height: 100px;
@@ -7,15 +7,15 @@
   border-radius: 50%;
   box-shadow: -15px -15px 15px var(--ui-accent), 15px -15px 15px #ff9100, 15px 15px 15px #ff5500, -15px 15px 15px #ffa600, -15px 0 15px var(--ui-accent), 15px 0 15px #ffcc00;
   animation: uk-bounce-dot-loader-rotate 1s infinite;
-  transform: uk-bounce-dot-loader-rotate(0) scale(0.8);
+  transform: rotate(0deg) scale(0.8);
 }
 @keyframes uk-bounce-dot-loader-rotate{
   0% {
-    transform: uk-bounce-dot-loader-rotate(360deg) scale(0.8);
+    transform: rotate(360deg) scale(0.8);
   }
 
   50% {
-    transform: uk-bounce-dot-loader-rotate(0) scale(1.2);
+    transform: rotate(0deg) scale(1.2);
   }
 }
 

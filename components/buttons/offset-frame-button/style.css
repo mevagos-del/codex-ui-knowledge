@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by adamgiebl. MIT; see README.md. */
-.uk-offset-frame-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#2ecc71;--ui-duration:180ms}
+.uk-offset-frame-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#2ecc71;--ui-duration:180ms}
 .uk-offset-frame-button button{
  position: relative;
  padding: 10px 40px;

@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Bodyhc. MIT; see README.md. */
-.uk-press-depth-hover{box-sizing:border-box;max-inline-size:100%;--ui-accent:#560bad;--ui-duration:180ms}
+.uk-press-depth-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#560bad;--ui-duration:180ms}
 .uk-press-depth-hover button{
   --color: var(--ui-accent);
   background-color: #fff;

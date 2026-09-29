@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Niranjan360. MIT; see README.md. */
-.uk-raised-outline-hover{box-sizing:border-box;max-inline-size:100%;--ui-duration:180ms}
+.uk-raised-outline-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-duration:180ms}
 .uk-raised-outline-hover .button{
   cursor: pointer;
   background-color: black;

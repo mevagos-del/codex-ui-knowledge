@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Praashoo7. MIT; see README.md. */
-.uk-soft-neumorphic-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#171717;--ui-duration:180ms}
+.uk-soft-neumorphic-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#171717;--ui-duration:180ms}
 .uk-soft-neumorphic-button button{
   padding: 1em;
   padding-left: 2em;

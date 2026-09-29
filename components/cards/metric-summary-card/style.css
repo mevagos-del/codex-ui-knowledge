@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by shadowmurphy. MIT; see README.md. */
-.uk-metric-summary-card{box-sizing:border-box;max-inline-size:100%;--ui-accent:#262626;--ui-duration:180ms}
+.uk-metric-summary-card{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#262626;--ui-duration:180ms}
 .uk-metric-summary-card .card{
   width: 350px;
   height: 150px;
@@ -7,12 +7,9 @@
   border-radius: 10px;
   border: 1px solid #3F3F40;
 }
-.uk-metric-summary-card a{
-  text-decoration: none;
-}
 .uk-metric-summary-card header,
 .uk-metric-summary-card footer,
-.uk-metric-summary-card main{
+.uk-metric-summary-card .metric{
   display: flex;
   align-items: center;
 }
@@ -21,20 +18,19 @@
   margin: 20px;
   color: #BDBFB7;
 }
-.uk-metric-summary-card header a{
+.uk-metric-summary-card header .detail{
   font-size: 15px;
-  cursor: pointer;
   color: #BDBFB7
 }
-.uk-metric-summary-card main{
+.uk-metric-summary-card .metric{
   justify-content: flex-start;
   margin: 20px;
 }
-.uk-metric-summary-card main p{
+.uk-metric-summary-card .metric p{
   color: white;
   font-weight: 600;
 }
-.uk-metric-summary-card main a{
+.uk-metric-summary-card .metric .unit{
   color: #BDBFB7;
   font-weight: 100;
 }
@@ -43,7 +39,7 @@
   font-size: 15px;
   gap: 5px;
 }
-.uk-metric-summary-card footer a{
+.uk-metric-summary-card footer .comparison{
   color: #2CAD3D;
   font-weight: 600;
 }

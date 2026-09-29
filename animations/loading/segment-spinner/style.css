@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by d4niz. MIT; see README.md. */
-.uk-segment-spinner{box-sizing:border-box;max-inline-size:100%;--ui-accent:#008cff;--ui-duration:180ms}
+.uk-segment-spinner{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#008cff;--ui-duration:180ms}
 .uk-segment-spinner .loader{
   width: 56px;
   height: 56px;

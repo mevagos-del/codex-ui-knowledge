@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Dashrath-Sharma. MIT; see README.md. */
-.uk-sliding-surface-hover{box-sizing:border-box;max-inline-size:100%;--ui-accent:#14213d;--ui-duration:180ms}
+.uk-sliding-surface-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#14213d;--ui-duration:180ms}
 .uk-sliding-surface-hover button{
   border: none;
   outline: none;

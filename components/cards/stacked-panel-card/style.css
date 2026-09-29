@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Spacious74. MIT; see README.md. */
-.uk-stacked-panel-card{box-sizing:border-box;max-inline-size:100%;--ui-accent:#bebebe;--ui-duration:180ms}
+.uk-stacked-panel-card{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#bebebe;--ui-duration:180ms}
 .uk-stacked-panel-card .container{
   position: relative;
   margin-top: -100px;

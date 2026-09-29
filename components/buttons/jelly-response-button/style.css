@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Shoh2008. MIT; see README.md. */
-.uk-jelly-response-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#1e1e1e;--ui-duration:180ms}
+.uk-jelly-response-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#1e1e1e;--ui-duration:180ms}
 .uk-jelly-response-button button{
   padding: 15px 30px;
   font-size: 18px;

@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by shadowmurphy. MIT; see README.md. */
-.uk-inset-search-field{box-sizing:border-box;max-inline-size:100%;--ui-accent:#303030;--ui-duration:180ms}
+.uk-inset-search-field{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#303030;--ui-duration:180ms}
 .uk-inset-search-field .search-bar{
   width: 200px;
   height: 35px;

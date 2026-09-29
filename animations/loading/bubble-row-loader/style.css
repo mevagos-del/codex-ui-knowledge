@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by LeonKohli. MIT; see README.md. */
-.uk-bubble-row-loader{box-sizing:border-box;max-inline-size:100%;--ui-accent:#ff6b81;--ui-duration:180ms}
+.uk-bubble-row-loader{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#ff6b81;--ui-duration:180ms}
 .uk-bubble-row-loader .loader{
   display: flex;
   justify-content: center;

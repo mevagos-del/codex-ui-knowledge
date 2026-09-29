@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by hakemdamer222. MIT; see README.md. */
-.uk-purple-focus-button{box-sizing:border-box;max-inline-size:100%;--ui-duration:180ms}
+.uk-purple-focus-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-duration:180ms}
 .uk-purple-focus-button button,
 .uk-purple-focus-button button:focus{
   font-size: 17px;

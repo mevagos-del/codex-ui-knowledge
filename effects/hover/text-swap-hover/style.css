@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Gaurav-WebDev. MIT; see README.md. */
-.uk-text-swap-hover{box-sizing:border-box;max-inline-size:100%;--ui-accent:#252525;--ui-duration:180ms}
+.uk-text-swap-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#f8fafc;--ui-duration:180ms}
 .uk-text-swap-hover .button{
   height: 50px;
   width: 200px;
@@ -9,7 +9,7 @@
   border: 2px solid var(--ui-accent);
   overflow: hidden;
   border-radius: 30px;
-  color: #333;
+  color: var(--ui-accent);
   transition: all 0.5s ease-in-out;
 }
 .uk-text-swap-hover .btn-txt{

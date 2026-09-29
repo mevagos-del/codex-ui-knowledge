@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Shoh2008. MIT; see README.md. */
-.uk-loading-text-indicator{box-sizing:border-box;max-inline-size:100%;--ui-accent:#263238;--ui-duration:180ms}
+.uk-loading-text-indicator{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#263238;--ui-duration:180ms}
 .uk-loading-text-indicator .loader{
   font-size: 48px;
   display: inline-block;

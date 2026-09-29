@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by javierBarroso. MIT; see README.md. */
-.uk-perspective-shadow-card{box-sizing:border-box;max-inline-size:100%;--ui-duration:180ms}
+.uk-perspective-shadow-card{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-duration:180ms}
 .uk-perspective-shadow-card .card{
   width: 150px;
   height: 200px;

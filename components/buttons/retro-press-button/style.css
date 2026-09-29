@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by barisdogansutcu. MIT; see README.md. */
-.uk-retro-press-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#292929;--ui-duration:180ms}
+.uk-retro-press-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#292929;--ui-duration:180ms}
 .uk-retro-press-button button{
   font-family: inherit;
   border: none;

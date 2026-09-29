@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by alexruix. MIT; see README.md. */
-.uk-email-subscribe-field{box-sizing:border-box;max-inline-size:100%;--ui-accent:#5e4dcd;--ui-duration:180ms}
+.uk-email-subscribe-field{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#5e4dcd;--ui-duration:180ms}
 .uk-email-subscribe-field .input-group{
   display: flex;
   align-items: center;

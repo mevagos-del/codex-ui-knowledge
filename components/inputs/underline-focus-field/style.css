@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by SanthoshSJ-Dev. MIT; see README.md. */
-.uk-underline-focus-field{box-sizing:border-box;max-inline-size:100%;--ui-accent:#08AEEA;--ui-duration:180ms}
+.uk-underline-focus-field{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#08AEEA;--ui-duration:180ms}
 .uk-underline-focus-field .input-wrapper{
   position: relative;
   width: 200px;

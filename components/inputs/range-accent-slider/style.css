@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by PriyanshuGupta28. MIT; see README.md. */
-.uk-range-accent-slider{box-sizing:border-box;max-inline-size:100%;--ui-accent:#4158D0;--ui-duration:180ms}
+.uk-range-accent-slider{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#4158D0;--ui-duration:180ms}
 .uk-range-accent-slider .slider{
   -webkit-appearance: none;
   width: 100%;

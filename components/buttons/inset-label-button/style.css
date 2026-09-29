@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Codecite. MIT; see README.md. */
-.uk-inset-label-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#1e293b;--ui-duration:180ms}
+.uk-inset-label-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#1e293b;--ui-duration:180ms}
 .uk-inset-label-button .btn{
   border: 0 solid;
   cursor: pointer;

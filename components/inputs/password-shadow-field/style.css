@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by andrew-demchenk0. MIT; see README.md. */
-.uk-password-shadow-field{box-sizing:border-box;max-inline-size:100%;--ui-accent:#2d8cf0;--ui-duration:180ms}
+.uk-password-shadow-field{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#2d8cf0;--ui-duration:180ms}
 .uk-password-shadow-field .input{
   --input-focus: var(--ui-accent);
   --font-color: #323232;

@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by mrhyddenn. MIT; see README.md. */
-.uk-gradient-halo-hover{box-sizing:border-box;max-inline-size:100%;--ui-accent:#e5e5e5;--ui-duration:180ms}
+.uk-gradient-halo-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#e5e5e5;--ui-duration:180ms}
 .uk-gradient-halo-hover button{
   display: flex;
   align-items: center;

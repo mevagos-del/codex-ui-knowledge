@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Salahkarrar. MIT; see README.md. */
-.uk-wave-fill-hover{box-sizing:border-box;max-inline-size:100%;--ui-accent:#eaf2f8;--ui-duration:180ms}
+.uk-wave-fill-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#eaf2f8;--ui-duration:180ms}
 .uk-wave-fill-hover .wave-button{
   background-color: var(--ui-accent);
   border: 2px solid #ddd;

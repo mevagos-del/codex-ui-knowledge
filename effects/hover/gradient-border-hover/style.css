@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Spacious74. MIT; see README.md. */
-.uk-gradient-border-hover{box-sizing:border-box;max-inline-size:100%;--ui-accent:#03a9f4;--ui-duration:180ms}
+.uk-gradient-border-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#03a9f4;--ui-duration:180ms}
 .uk-gradient-border-hover button{
   font-size: 1.4em;
   padding: 0.6em 0.8em;

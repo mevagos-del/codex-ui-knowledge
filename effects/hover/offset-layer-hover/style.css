@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Voxybuns. MIT; see README.md. */
-.uk-offset-layer-hover{box-sizing:border-box;max-inline-size:100%;--ui-accent:#e8e8e8;--ui-duration:180ms}
+.uk-offset-layer-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#e8e8e8;--ui-duration:180ms}
 .uk-offset-layer-hover button{
 
   --button_radius: 0.75em;

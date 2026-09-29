@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by deepak16375. MIT; see README.md. */
-.uk-gradient-sweep-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#1877f2;--ui-duration:180ms}
+.uk-gradient-sweep-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#1877f2;--ui-duration:180ms}
 .uk-gradient-sweep-button .button{
   font-size: 17px;
   font-weight: bold;

@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by imPradhyumn. MIT; see README.md. */
-.uk-sliding-details-card{box-sizing:border-box;max-inline-size:100%;--ui-duration:180ms}
+.uk-sliding-details-card{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-duration:180ms}
 .uk-sliding-details-card .card{
   width: 190px;
   height: 254px;
@@ -10,7 +10,7 @@
   text-align: center;
   width: 100%;
   position: absolute;
-  color: black;
+  color: #f8fafc;
   top: 85px;
   font-weight: bold;
 }

@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by BHARGAVPATEL1244. MIT; see README.md. */
-.uk-inset-depth-hover{box-sizing:border-box;max-inline-size:100%;--ui-accent:#66ff66;--ui-duration:180ms}
+.uk-inset-depth-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#66ff66;--ui-duration:180ms}
 .uk-inset-depth-hover button{
  outline: none;
  cursor: pointer;

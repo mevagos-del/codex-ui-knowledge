@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by JaydipPrajapati1910. MIT; see README.md. */
-.uk-contrast-content-card{box-sizing:border-box;max-inline-size:100%;--ui-accent:#272727;--ui-duration:180ms}
+.uk-contrast-content-card{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#272727;--ui-duration:180ms}
 .uk-contrast-content-card .card{
   width: 190px;
   height: 254px;

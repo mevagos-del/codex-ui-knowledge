@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by gharsh11032000. MIT; see README.md. */
-.uk-gradient-orbit-loader{box-sizing:border-box;max-inline-size:100%;--ui-accent:#fc00ff;--ui-duration:180ms}
+.uk-gradient-orbit-loader{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#fc00ff;--ui-duration:180ms}
 .uk-gradient-orbit-loader .loader{
   width: 5em;
   height: 5em;

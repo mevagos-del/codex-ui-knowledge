@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Bodyhc. MIT; see README.md. */
-.uk-search-action-field{box-sizing:border-box;max-inline-size:100%;--ui-accent:#4e99e9;--ui-duration:180ms}
+.uk-search-action-field{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#4e99e9;--ui-duration:180ms}
 .uk-search-action-field .search{
   display: inline-block;
   position: relative;

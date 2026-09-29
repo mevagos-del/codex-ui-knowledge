@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Progee45. MIT; see README.md. */
-.uk-orange-emphasis-hover{box-sizing:border-box;max-inline-size:100%;--ui-accent:#ff8c00;--ui-duration:180ms}
+.uk-orange-emphasis-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#ff8c00;--ui-duration:180ms}
 .uk-orange-emphasis-hover .custom-button{
   position: relative;
   display: inline-block;

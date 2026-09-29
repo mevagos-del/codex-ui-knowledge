@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by Cornerstone-04. MIT; see README.md. */
-.uk-layered-border-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#121212;--ui-duration:180ms}
+.uk-layered-border-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#121212;--ui-duration:180ms}
 .uk-layered-border-button button{
   position: relative;
   background: none;

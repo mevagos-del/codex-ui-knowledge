@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by alexruix. MIT; see README.md. */
-.uk-floating-label-field{box-sizing:border-box;max-inline-size:100%;--ui-accent:#9e9e9e;--ui-duration:180ms}
+.uk-floating-label-field{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#9e9e9e;--ui-duration:180ms}
 .uk-floating-label-field .input-group{
  position: relative;
 }

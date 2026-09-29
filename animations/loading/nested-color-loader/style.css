@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by benjimich. MIT; see README.md. */
-.uk-nested-color-loader{box-sizing:border-box;max-inline-size:100%;--ui-accent:#004643;--ui-duration:180ms}
+.uk-nested-color-loader{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#004643;--ui-duration:180ms}
 .uk-nested-color-loader .loader{
   width: 200px;
   height: 10px;

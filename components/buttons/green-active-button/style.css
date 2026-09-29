@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by cssbuttons-io. MIT; see README.md. */
-.uk-green-active-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#23c483;--ui-duration:180ms}
+.uk-green-active-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#23c483;--ui-duration:180ms}
 .uk-green-active-button button{
   padding: 1.3em 3em;
   font-size: 12px;

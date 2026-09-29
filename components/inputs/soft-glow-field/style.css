@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by elijahgummer. MIT; see README.md. */
-.uk-soft-glow-field{box-sizing:border-box;max-inline-size:100%;--ui-accent:#3498db;--ui-duration:180ms}
+.uk-soft-glow-field{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#3498db;--ui-duration:180ms}
 .uk-soft-glow-field .input{
   width: 200px;
   padding: 12px;

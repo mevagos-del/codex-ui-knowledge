@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by JkHuger. MIT; see README.md. */
-.uk-moon-phase-loader{box-sizing:border-box;max-inline-size:100%;--ui-accent:#212121;--ui-duration:180ms}
+.uk-moon-phase-loader{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#212121;--ui-duration:180ms}
 .uk-moon-phase-loader .moon,
 .uk-moon-phase-loader .shadow{
   margin: auto;

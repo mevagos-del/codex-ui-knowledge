@@ -1,5 +1,5 @@
 /* Adapted from Uiverse Galaxy by barisdogansutcu. MIT; see README.md. */
-.uk-one-time-code-field{box-sizing:border-box;max-inline-size:100%;--ui-duration:180ms}
+.uk-one-time-code-field{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-duration:180ms}
 .uk-one-time-code-field .password{
   display: flex;
   align-items: center;

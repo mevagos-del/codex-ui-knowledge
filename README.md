@@ -72,3 +72,19 @@ knowledge base.
 ## Current status
 
 The first controlled curation batch contains 50 framework-neutral patterns from Uiverse Galaxy: 10 buttons, 10 cards, 10 inputs, 10 loaders, and 10 hover or interaction effects. Each package includes an attributed README, standalone demo, and scoped stylesheet.
+
+## Validation
+
+Install the locked development dependencies and validate the complete catalog:
+
+```sh
+npm ci
+npm test
+```
+
+The validator uses Ajv and `ajv-formats` for the catalog schema, `css-tree` for
+CSS parsing and property checks, and `parse5` for HTML parsing. It checks all 50
+packages for required files, pinned provenance, unique catalog records, scoped
+selectors and keyframes, valid native functions and references, responsive demo
+shells, reduced motion support, labels, keyboard focus styles, landmarks, and
+loader announcements.
