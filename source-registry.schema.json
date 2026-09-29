@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mevagos-del/codex-ui-knowledge/source-registry.schema.json",
+  "title": "Codex UI Knowledge source registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "sources"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "integer", "minimum": 1 },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/source" }
+    }
+  },
+  "$defs": {
+    "nullableUri": {
+      "anyOf": [
+        { "type": "string", "format": "uri" },
+        { "type": "null" }
+      ]
+    },
+    "nullableString": {
+      "type": ["string", "null"]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "repository", "ownerRepository", "license", "provenance", "status", "notes"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "repository": { "type": "string", "format": "uri", "pattern": "^https://github\\.com/" },
+        "ownerRepository": { "type": "string", "pattern": "^[^/]+/[^/]+$" },
+        "license": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "name", "url", "localFile"],
+          "properties": {
+            "status": { "enum": ["verified", "unverified"] },
+            "name": { "$ref": "#/$defs/nullableString" },
+            "url": { "$ref": "#/$defs/nullableUri" },
+            "localFile": { "$ref": "#/$defs/nullableString" }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "sourceUrlPattern", "revisionRequired"],
+          "properties": {
+            "strategy": { "type": "string", "minLength": 1 },
+            "sourceUrlPattern": { "type": "string", "minLength": 1 },
+            "revisionRequired": { "type": "boolean" }
+          }
+        },
+        "status": { "enum": ["active", "planned", "retired"] },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

@@ -32,6 +32,9 @@ and design tokens always override this generic library.
 - Do not add near-duplicates. Extend or document an existing pattern instead.
 - Preserve upstream attribution and comply with the applicable license.
 - Do not import code until its license and exact source URL have been verified.
+- Follow [guidelines/import-protocol.md](guidelines/import-protocol.md) for every
+  new source or curation batch. A source must be active with a verified license
+  in `source-registry.json` before its patterns can enter the catalog.
 
 ## Pattern package requirements
 

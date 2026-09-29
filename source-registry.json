@@ -1,0 +1,101 @@
+{
+  "$schema": "./source-registry.schema.json",
+  "version": 1,
+  "sources": [
+    {
+      "id": "uiverse-galaxy",
+      "name": "Uiverse Galaxy",
+      "repository": "https://github.com/uiverse-io/galaxy",
+      "ownerRepository": "uiverse-io/galaxy",
+      "license": {
+        "status": "verified",
+        "name": "MIT",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/LICENSE",
+        "localFile": "licenses/uiverse-galaxy-MIT.md"
+      },
+      "provenance": {
+        "strategy": "github-blob",
+        "sourceUrlPattern": "^https://github\\.com/uiverse-io/galaxy/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
+        "revisionRequired": true
+      },
+      "status": "active",
+      "notes": "Verified for the 50-pattern pilot at an immutable commit."
+    },
+    {
+      "id": "open-props",
+      "name": "Open Props",
+      "repository": "https://github.com/argyleink/open-props",
+      "ownerRepository": "argyleink/open-props",
+      "license": {
+        "status": "unverified",
+        "name": null,
+        "url": null,
+        "localFile": null
+      },
+      "provenance": {
+        "strategy": "github-blob",
+        "sourceUrlPattern": "^https://github\\.com/argyleink/open-props/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
+        "revisionRequired": true
+      },
+      "status": "planned",
+      "notes": "Approved for a future curated phase; license verification is still required before import."
+    },
+    {
+      "id": "hover-css",
+      "name": "Hover.css",
+      "repository": "https://github.com/IanLunn/Hover",
+      "ownerRepository": "IanLunn/Hover",
+      "license": {
+        "status": "unverified",
+        "name": null,
+        "url": null,
+        "localFile": null
+      },
+      "provenance": {
+        "strategy": "github-blob",
+        "sourceUrlPattern": "^https://github\\.com/IanLunn/Hover/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
+        "revisionRequired": true
+      },
+      "status": "planned",
+      "notes": "Approved for a future curated phase; license verification is still required before import."
+    },
+    {
+      "id": "animate-css",
+      "name": "Animate.css",
+      "repository": "https://github.com/animate-css/animate.css",
+      "ownerRepository": "animate-css/animate.css",
+      "license": {
+        "status": "unverified",
+        "name": null,
+        "url": null,
+        "localFile": null
+      },
+      "provenance": {
+        "strategy": "github-blob",
+        "sourceUrlPattern": "^https://github\\.com/animate-css/animate.css/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
+        "revisionRequired": true
+      },
+      "status": "planned",
+      "notes": "Approved for a future curated phase; license verification is still required before import."
+    },
+    {
+      "id": "pattern-craft",
+      "name": "Pattern Craft",
+      "repository": "https://github.com/megh-bari/pattern-craft",
+      "ownerRepository": "megh-bari/pattern-craft",
+      "license": {
+        "status": "unverified",
+        "name": null,
+        "url": null,
+        "localFile": null
+      },
+      "provenance": {
+        "strategy": "github-blob",
+        "sourceUrlPattern": "^https://github\\.com/megh-bari/pattern-craft/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
+        "revisionRequired": true
+      },
+      "status": "planned",
+      "notes": "Approved for a future curated phase; license verification is still required before import."
+    }
+  ]
+}

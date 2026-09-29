@@ -4,37 +4,33 @@ import Ajv from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import * as csstree from "css-tree";
 import { parse as parseHtml } from "parse5";
+import {
+  findCatalogDuplicates,
+  findCatalogWarnings,
+  findCorruptNativeFunction,
+  isBrokenLocalReference,
+  parseCssSource,
+  sourceDefinitions,
+  validatePatternProvenance,
+} from "./validation-core.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const read = (file) => fs.readFileSync(file, "utf8");
 const catalog = JSON.parse(read(path.join(root, "catalog.json")));
 const schema = JSON.parse(read(path.join(root, "catalog.schema.json")));
-const expectedCounts = { buttons: 10, cards: 10, inputs: 10, loaders: 10, hover: 10 };
-const categoryRoots = {
-  buttons: "components/buttons", cards: "components/cards", inputs: "components/inputs",
-  loaders: "animations/loading", hover: "effects/hover",
-};
+const registry = JSON.parse(read(path.join(root, "source-registry.json")));
+const registrySchema = JSON.parse(read(path.join(root, "source-registry.schema.json")));
+const definitions = sourceDefinitions(registry);
 const requiredFiles = ["README.md", "demo.html", "style.css"];
 const requiredHeadings = [
   "## Category", "## Source", "## License", "## Purpose", "## Recommended use",
   "## Avoid / use with caution", "## Techniques", "## Performance", "## Mobile",
   "## Accessibility", "## Reduced motion", "## Customization", "## Notes",
 ];
-const nativeFunctions = [
-  "rotate", "translate", "translateX", "translateY", "translate3d", "scale", "scaleX",
-  "scaleY", "skew", "calc", "min", "max", "clamp", "var", "rgb", "rgba", "hsl",
-  "hsla", "linear-gradient", "radial-gradient", "cubic-bezier",
-];
-const corruptNativeFunction = new RegExp(
-  `\\buk-[a-z0-9-]+-(?:${nativeFunctions.join("|")})\\s*\\(`, "i",
-);
-const upstream =
-  "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/";
 const errors = [];
-const counts = Object.fromEntries(Object.keys(expectedCounts).map((key) => [key, 0]));
-const ids = new Set();
-const paths = new Set();
-const sources = new Set();
+const warnings = [];
+const sourceCounts = new Map();
+const categoryCounts = new Map();
 
 function fail(file, message, location) {
   const suffix = location?.line ? `:${location.line}:${location.column ?? 1}` : "";
@@ -158,11 +154,8 @@ function validateHtml(file, item) {
         if (!documentIds.has(reference.slice(1))) {
           fail(file, `fragment references missing id ${reference}`, node.sourceCodeLocation?.startTag);
         }
-      } else if (!/^(?:https?:|mailto:|tel:|data:)/.test(reference)) {
-        const localPath = path.resolve(path.dirname(file), reference.split(/[?#]/)[0]);
-        if (!fs.existsSync(localPath)) {
-          fail(file, `broken local ${key}: ${reference}`, node.sourceCodeLocation?.startTag);
-        }
+      } else if (isBrokenLocalReference(path.dirname(file), reference)) {
+        fail(file, `broken local ${key}: ${reference}`, node.sourceCodeLocation?.startTag);
       }
     }
   }
@@ -191,19 +184,15 @@ function validateHtml(file, item) {
 
 function validateStylesheet(file, item) {
   const source = read(file);
-  let ast;
-  try {
-    ast = csstree.parse(source, {
-      positions: true,
-      onParseError: (error) => fail(file, `CSS parse error: ${error.message}`, error.loc?.start),
-    });
-  } catch (error) {
+  const parsed = parseCssSource(source);
+  for (const error of parsed.errors) {
     fail(file, `CSS parse error: ${error.message}`, error.loc?.start);
-    return;
   }
+  const ast = parsed.ast;
+  if (!ast) return;
 
-  const corrupt = source.match(corruptNativeFunction);
-  if (corrupt) fail(file, `native CSS function was accidentally scoped: ${corrupt[0]}`);
+  const corrupt = findCorruptNativeFunction(source);
+  if (corrupt) fail(file, `native CSS function was accidentally scoped: ${corrupt}`);
   const customProperties = new Set();
   const customPropertyReferences = [];
   const keyframes = new Set();
@@ -279,8 +268,7 @@ function validateStylesheet(file, item) {
   }
   for (const match of source.matchAll(/url\((['"]?)(.*?)\1\)/gi)) {
     const reference = match[2].trim();
-    if (!/^(?:data:|https?:|#)/.test(reference) &&
-        !fs.existsSync(path.resolve(path.dirname(file), reference.split(/[?#]/)[0]))) {
+    if (isBrokenLocalReference(path.dirname(file), reference)) {
       fail(file, `broken CSS reference ${reference}`);
     }
   }
@@ -288,30 +276,71 @@ function validateStylesheet(file, item) {
 
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
-if (!ajv.validate(schema, catalog)) {
-  for (const error of ajv.errors ?? []) {
-    errors.push(`catalog.json${error.instancePath}: ${error.message}`);
+function validateSchema(data, dataSchema, label) {
+  const validate = ajv.compile(dataSchema);
+  if (!validate(data)) {
+    for (const error of validate.errors ?? []) {
+      errors.push(`${label}${error.instancePath}: ${error.message}`);
+    }
+  }
+}
+validateSchema(catalog, schema, "catalog.json");
+validateSchema(registry, registrySchema, "source-registry.json");
+
+const registryIds = new Set();
+const registryRepositories = new Set();
+for (const source of registry.sources ?? []) {
+  if (registryIds.has(source.id)) errors.push(`source-registry.json: duplicate source id ${source.id}`);
+  registryIds.add(source.id);
+  if (registryRepositories.has(source.repository)) {
+    errors.push(`source-registry.json: duplicate repository ${source.repository}`);
+  }
+  registryRepositories.add(source.repository);
+  if (source.repository !== `https://github.com/${source.ownerRepository}`) {
+    errors.push(`source-registry.json: ${source.id} repository and ownerRepository differ`);
+  }
+  try {
+    new RegExp(source.provenance.sourceUrlPattern);
+  } catch (error) {
+    errors.push(`source-registry.json: ${source.id} has invalid sourceUrlPattern: ${error.message}`);
+  }
+  if (!source.provenance.sourceUrlPattern.includes("(?<path>")) {
+    errors.push(`source-registry.json: ${source.id} sourceUrlPattern must capture path`);
+  }
+  if (source.provenance.revisionRequired &&
+      !source.provenance.sourceUrlPattern.includes("(?<revision>")) {
+    errors.push(`source-registry.json: ${source.id} sourceUrlPattern must capture revision`);
+  }
+  if (source.status === "active" && source.license.status !== "verified") {
+    errors.push(`source-registry.json: active source ${source.id} requires a verified license`);
+  }
+  if (source.license.status === "verified") {
+    if (!source.license.name) errors.push(`source-registry.json: ${source.id} license name is missing`);
+    if (!source.license.url && !source.license.localFile) {
+      errors.push(`source-registry.json: ${source.id} verified license reference is missing`);
+    }
+    if (source.license.localFile &&
+        !fs.existsSync(path.resolve(root, source.license.localFile))) {
+      errors.push(`source-registry.json: ${source.id} license file is missing`);
+    }
   }
 }
 
+for (const issue of findCatalogDuplicates(catalog.patterns ?? [], definitions)) {
+  errors.push(`catalog.json: ${issue}`);
+}
+warnings.push(...findCatalogWarnings(catalog.patterns ?? []));
+
 for (const item of catalog.patterns ?? []) {
-  if (ids.has(item.id)) errors.push(`catalog.json: duplicate id ${item.id}`);
-  ids.add(item.id);
-  if (paths.has(item.path)) errors.push(`catalog.json: duplicate path ${item.path}`);
-  paths.add(item.path);
-  if (sources.has(item.source.url)) errors.push(`catalog.json: duplicate source ${item.source.url}`);
-  sources.add(item.source.url);
-  const category = item.categories?.[1];
-  if (category in counts) counts[category] += 1;
-  else errors.push(`catalog.json: unexpected category ${category}`);
-  if (categoryRoots[category] && item.path !== `${categoryRoots[category]}/${item.id}/`) {
-    errors.push(`catalog.json: ${item.id} path/category mismatch`);
+  const source = definitions.get(item.source?.id);
+  sourceCounts.set(item.source?.id, (sourceCounts.get(item.source?.id) ?? 0) + 1);
+  const category = item.categories?.[1] ?? item.categories?.[0] ?? "uncategorized";
+  categoryCounts.set(category, (categoryCounts.get(category) ?? 0) + 1);
+  if (!item.path.endsWith(`/${item.id}/`) && item.path !== `${item.id}/`) {
+    errors.push(`catalog.json: ${item.id} path must end with its id`);
   }
-  if (!item.source.url.startsWith(upstream)) {
-    errors.push(`catalog.json: ${item.id} source is not pinned Galaxy`);
-  }
-  if (item.source.name !== "Uiverse Galaxy") errors.push(`catalog.json: ${item.id} unexpected source`);
-  if (!item.license.includes("MIT")) errors.push(`catalog.json: ${item.id} missing MIT metadata`);
+  const provenance = validatePatternProvenance(item, definitions, root);
+  for (const issue of provenance.errors) errors.push(`catalog.json: ${item.id} ${issue}`);
 
   const directory = path.join(root, item.path);
   for (const name of requiredFiles) {
@@ -324,7 +353,13 @@ for (const item of catalog.patterns ?? []) {
       if (!content.includes(heading)) fail(readme, `missing ${heading}`);
     }
     if (!content.includes(item.source.url)) fail(readme, "source differs from catalog");
-    if (!content.includes("MIT")) fail(readme, "missing MIT license");
+    if (source && !content.includes(source.name)) fail(readme, "registered source attribution is missing");
+    if (source?.license.name && !content.includes(source.license.name)) {
+      fail(readme, `missing ${source.license.name} license`);
+    }
+    if (source?.license.localFile && !content.includes(path.basename(source.license.localFile))) {
+      fail(readme, "registered local license reference is missing");
+    }
   }
   const stylesheet = path.join(directory, "style.css");
   const demo = path.join(directory, "demo.html");
@@ -332,26 +367,18 @@ for (const item of catalog.patterns ?? []) {
   if (fs.existsSync(demo)) validateHtml(demo, item);
 }
 
-if (catalog.patterns?.length !== 50) {
-  errors.push(`catalog.json: expected 50 patterns, found ${catalog.patterns?.length}`);
-}
-for (const [category, expected] of Object.entries(expectedCounts)) {
-  if (counts[category] !== expected) {
-    errors.push(`catalog.json: expected ${expected} ${category}, found ${counts[category]}`);
-  }
-  const directory = path.join(root, categoryRoots[category]);
-  const actual = fs.existsSync(directory)
-    ? fs.readdirSync(directory, { withFileTypes: true }).filter((entry) => entry.isDirectory()).length
-    : 0;
-  if (actual !== expected) {
-    errors.push(`${categoryRoots[category]}: expected ${expected} directories, found ${actual}`);
-  }
-}
-
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
-console.log(`Validated ${catalog.patterns.length} patterns: ${JSON.stringify(counts)}`);
-console.log("CSS syntax, values, selectors, keyframes, custom properties, and native functions are valid.");
-console.log("HTML parsing, landmarks, labels, focus styles, status messages, and references are valid.");
+if (warnings.length) {
+  console.warn("Warnings:");
+  for (const warning of warnings) console.warn(`  ${warning}`);
+  console.warn("");
+}
+console.log(`Validated ${catalog.patterns.length} patterns.\n`);
+console.log("Sources:");
+for (const [source, count] of [...sourceCounts].sort()) console.log(`  ${source}: ${count}`);
+console.log("\nCategories:");
+for (const [category, count] of [...categoryCounts].sort()) console.log(`  ${category}: ${count}`);
+console.log("\nValidation passed.");
