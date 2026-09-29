@@ -64,6 +64,11 @@ Every pattern `README.md` must state:
 - browser or feature support constraints;
 - expected CSS custom properties and integration notes.
 
+Token packages declare `type: tokens`, `tokens.css`, and their package-local
+scope in `catalog.json`. They contain `README.md`, `demo.html`, and `tokens.css`;
+their documentation covers token groups, adaptation guidance, accessibility,
+performance, browser support, normalization, and immutable provenance.
+
 Add or update the corresponding `catalog.json` entry in the same change.
 
 ## Pattern selection priorities

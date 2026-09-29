@@ -24,13 +24,13 @@ source ID. See [SOURCES.md](SOURCES.md) for the human-readable overview.
 | Source ID | Source | Status | Primary use |
 | --- | --- | --- | --- |
 | `uiverse-galaxy` | [Uiverse Galaxy](https://github.com/uiverse-io/galaxy) | Active | Components and visual effects |
-| `open-props` | [Open Props](https://github.com/argyleink/open-props) | Planned | Design tokens and CSS primitives |
+| `open-props` | [Open Props](https://github.com/argyleink/open-props) | Active | Design tokens and CSS primitives |
 | `hover-css` | [Hover.css](https://github.com/IanLunn/Hover) | Planned | Hover effects and microinteractions |
 | `animate-css` | [Animate.css](https://github.com/animate-css/animate.css) | Planned | Entrance, exit, and attention animations |
 | `pattern-craft` | [Pattern Craft](https://github.com/megh-bari/pattern-craft) | Planned | Backgrounds and decorative surfaces |
 
 Planned sources are approved for future investigation but cannot supply catalog
-patterns until their license is verified and their registry status becomes active.
+entries until their license is verified and their registry status becomes active.
 
 ## Repository structure
 
@@ -95,7 +95,7 @@ knowledge base.
 ## Current status
 
 The repository contains 50 framework-neutral patterns from the completed Uiverse
-Galaxy pilot. No patterns from the planned sources have been imported.
+Galaxy pilot and six curated Open Props token families.
 
 ## Validation
 

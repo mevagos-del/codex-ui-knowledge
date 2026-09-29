@@ -9,6 +9,7 @@ import {
   findCatalogWarnings,
   findCorruptNativeFunction,
   isBrokenLocalReference,
+  packageRequirements,
   parseCssSource,
   sourceDefinitions,
   validatePatternProvenance,
@@ -21,12 +22,6 @@ const schema = JSON.parse(read(path.join(root, "catalog.schema.json")));
 const registry = JSON.parse(read(path.join(root, "source-registry.json")));
 const registrySchema = JSON.parse(read(path.join(root, "source-registry.schema.json")));
 const definitions = sourceDefinitions(registry);
-const requiredFiles = ["README.md", "demo.html", "style.css"];
-const requiredHeadings = [
-  "## Category", "## Source", "## License", "## Purpose", "## Recommended use",
-  "## Avoid / use with caution", "## Techniques", "## Performance", "## Mobile",
-  "## Accessibility", "## Reduced motion", "## Customization", "## Notes",
-];
 const errors = [];
 const warnings = [];
 const sourceCounts = new Map();
@@ -69,7 +64,7 @@ function splitSelectors(source) {
   return selectors;
 }
 
-function validateHtml(file, item) {
+function validateHtml(file, item, requirements) {
   const source = read(file);
   const parseErrors = [];
   const document = parseHtml(source, {
@@ -109,8 +104,8 @@ function validateHtml(file, item) {
   const stylesheet = nodes.find(
     (node) => node.tagName === "link" && attributes(node).rel === "stylesheet",
   );
-  if (!stylesheet || attributes(stylesheet).href !== "./style.css") {
-    fail(file, "demo must reference ./style.css");
+  if (!stylesheet || attributes(stylesheet).href !== `./${requirements.stylesheet}`) {
+    fail(file, `demo must reference ./${requirements.stylesheet}`);
   }
   if (!source.includes(".stage{box-sizing:border-box;width:min(100%,680px)")) {
     fail(file, "demo stage must fit narrow viewports without horizontal overflow");
@@ -160,14 +155,18 @@ function validateHtml(file, item) {
     }
   }
 
-  const cssSource = read(path.join(path.dirname(file), "style.css"));
+  const cssSource = read(path.join(path.dirname(file), requirements.stylesheet));
+  const combinedCss = `${cssSource}\n${source}`;
   const interactive = nodes.some((node) => {
     const attrs = attributes(node);
     return ["button", "input", "select", "textarea", "a"].includes(node.tagName) ||
       attrs.tabindex === "0";
   });
-  if (interactive && !cssSource.includes(":focus-visible")) {
+  if (interactive && !combinedCss.includes(":focus-visible")) {
     fail(file, "interactive demo requires a visible keyboard focus style");
+  }
+  if (item.reducedMotion && !combinedCss.includes("@media (prefers-reduced-motion:reduce)")) {
+    fail(file, "reduced-motion package requires a prefers-reduced-motion rule");
   }
   if (item.categories[1] === "hover" && cssSource.includes(":hover") &&
       !cssSource.includes(":focus-visible")) {
@@ -182,7 +181,7 @@ function validateHtml(file, item) {
   }
 }
 
-function validateStylesheet(file, item) {
+function validateStylesheet(file, item, requirements) {
   const source = read(file);
   const parsed = parseCssSource(source);
   for (const error of parsed.errors) {
@@ -202,7 +201,8 @@ function validateStylesheet(file, item) {
       if (node.type === "Atrule" && /keyframes$/i.test(node.name)) {
         const name = csstree.generate(node.prelude).trim();
         keyframes.add(name);
-        if (!name.startsWith(`uk-${item.id}-`)) fail(file, `unscoped keyframe ${name}`, node.loc?.start);
+        const keyframePrefix = item.package.scope.replace(/^:where\(\.|^\./, "").replace(/\)$/, "");
+        if (!name.startsWith(`${keyframePrefix}-`)) fail(file, `unscoped keyframe ${name}`, node.loc?.start);
       }
       if (node.type !== "Declaration") return;
       const value = csstree.generate(node.value);
@@ -210,6 +210,9 @@ function validateStylesheet(file, item) {
         customProperties.add(node.property);
         if (!value.trim()) fail(file, `empty custom property ${node.property}`, node.loc?.start);
         return;
+      }
+      if (item.package.type === "tokens") {
+        fail(file, `token stylesheet may only declare custom properties, found ${node.property}`, node.loc?.start);
       }
       const match = csstree.lexer.matchProperty(node.property, node.value);
       if (!value.includes("var(") && !match.matched && match.error) {
@@ -239,8 +242,9 @@ function validateStylesheet(file, item) {
     }
   }
 
-  const wrapper = `.uk-${item.id}`;
-  if (!source.includes(`${wrapper}{box-sizing:border-box;max-inline-size:100%;inline-size:100%;`)) {
+  const wrapper = item.package.scope;
+  if (requirements.requireResponsiveWrapper &&
+      !source.includes(`${wrapper}{box-sizing:border-box;max-inline-size:100%;inline-size:100%;`)) {
     fail(file, "pattern wrapper must establish a responsive containing width");
   }
   csstree.walk(ast, {
@@ -255,7 +259,7 @@ function validateStylesheet(file, item) {
     },
   });
 
-  if (!source.includes("@media (prefers-reduced-motion:reduce)")) {
+  if (requirements.requireResponsiveWrapper && !source.includes("@media (prefers-reduced-motion:reduce)")) {
     fail(file, "missing reduced-motion query");
   }
   const hasMotion = /@keyframes|\banimation(?:-name)?\s*:|\btransition\s*:/.test(source);
@@ -343,13 +347,18 @@ for (const item of catalog.patterns ?? []) {
   for (const issue of provenance.errors) errors.push(`catalog.json: ${item.id} ${issue}`);
 
   const directory = path.join(root, item.path);
-  for (const name of requiredFiles) {
+  const requirements = packageRequirements(item);
+  if (!requirements) {
+    errors.push(`catalog.json: ${item.id} has no valid package requirements`);
+    continue;
+  }
+  for (const name of requirements.requiredFiles) {
     if (!fs.existsSync(path.join(directory, name))) fail(path.join(directory, name), "required file missing");
   }
   const readme = path.join(directory, "README.md");
   if (fs.existsSync(readme)) {
     const content = read(readme);
-    for (const heading of requiredHeadings) {
+    for (const heading of requirements.requiredHeadings) {
       if (!content.includes(heading)) fail(readme, `missing ${heading}`);
     }
     if (!content.includes(item.source.url)) fail(readme, "source differs from catalog");
@@ -361,10 +370,10 @@ for (const item of catalog.patterns ?? []) {
       fail(readme, "registered local license reference is missing");
     }
   }
-  const stylesheet = path.join(directory, "style.css");
+  const stylesheet = path.join(directory, requirements.stylesheet);
   const demo = path.join(directory, "demo.html");
-  if (fs.existsSync(stylesheet)) validateStylesheet(stylesheet, item);
-  if (fs.existsSync(demo)) validateHtml(demo, item);
+  if (fs.existsSync(stylesheet)) validateStylesheet(stylesheet, item, requirements);
+  if (fs.existsSync(demo)) validateHtml(demo, item, requirements);
 }
 
 if (errors.length) {

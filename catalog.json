@@ -31,7 +31,12 @@
         "focus",
         "background-color"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-purple-focus-button"
+      }
     },
     {
       "id": "gradient-sweep-button",
@@ -62,7 +67,12 @@
         "gradient",
         "keyframes"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-gradient-sweep-button"
+      }
     },
     {
       "id": "soft-neumorphic-button",
@@ -93,7 +103,12 @@
         "box-shadow",
         "border-radius"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-soft-neumorphic-button"
+      }
     },
     {
       "id": "retro-press-button",
@@ -124,7 +139,12 @@
         "transform",
         "box-shadow"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-retro-press-button"
+      }
     },
     {
       "id": "jelly-response-button",
@@ -155,7 +175,12 @@
         "transform",
         "keyframes"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-jelly-response-button"
+      }
     },
     {
       "id": "inset-label-button",
@@ -186,7 +211,12 @@
         "pseudo-elements",
         "transition"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-inset-label-button"
+      }
     },
     {
       "id": "layered-border-button",
@@ -217,7 +247,12 @@
         "pseudo-elements",
         "border"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-layered-border-button"
+      }
     },
     {
       "id": "green-active-button",
@@ -248,7 +283,12 @@
         "active",
         "box-shadow"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-green-active-button"
+      }
     },
     {
       "id": "shadow-lift-button",
@@ -279,7 +319,12 @@
         "box-shadow",
         "transition"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-shadow-lift-button"
+      }
     },
     {
       "id": "offset-frame-button",
@@ -310,7 +355,12 @@
         "pseudo-elements",
         "position"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-offset-frame-button"
+      }
     },
     {
       "id": "contrast-content-card",
@@ -341,7 +391,12 @@
         "box-shadow",
         "border"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-contrast-content-card"
+      }
     },
     {
       "id": "raised-material-card",
@@ -372,7 +427,12 @@
         "box-shadow",
         "transition"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-raised-material-card"
+      }
     },
     {
       "id": "editorial-preview-card",
@@ -403,7 +463,12 @@
         "spacing",
         "typography"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-editorial-preview-card"
+      }
     },
     {
       "id": "perspective-shadow-card",
@@ -434,7 +499,12 @@
         "transform",
         "box-shadow"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-perspective-shadow-card"
+      }
     },
     {
       "id": "metric-summary-card",
@@ -465,7 +535,12 @@
         "flex",
         "border"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-metric-summary-card"
+      }
     },
     {
       "id": "window-chrome-card",
@@ -496,7 +571,12 @@
         "border-radius",
         "flex"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-window-chrome-card"
+      }
     },
     {
       "id": "paper-sheet-card",
@@ -527,7 +607,12 @@
         "box-shadow",
         "gradient"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-paper-sheet-card"
+      }
     },
     {
       "id": "stacked-panel-card",
@@ -558,7 +643,12 @@
         "position",
         "box-shadow"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-stacked-panel-card"
+      }
     },
     {
       "id": "article-contents-card",
@@ -589,7 +679,12 @@
         "border",
         "background-color"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-article-contents-card"
+      }
     },
     {
       "id": "sliding-details-card",
@@ -620,7 +715,12 @@
         "transition",
         "overflow"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-sliding-details-card"
+      }
     },
     {
       "id": "password-shadow-field",
@@ -651,7 +751,12 @@
         "box-shadow",
         "focus"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-password-shadow-field"
+      }
     },
     {
       "id": "outlined-username-field",
@@ -682,7 +787,12 @@
         "border",
         "focus"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-outlined-username-field"
+      }
     },
     {
       "id": "inset-search-field",
@@ -713,7 +823,12 @@
         "box-shadow",
         "focus"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-inset-search-field"
+      }
     },
     {
       "id": "underline-focus-field",
@@ -744,7 +859,12 @@
         "pseudo-elements",
         "transform"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-underline-focus-field"
+      }
     },
     {
       "id": "floating-label-field",
@@ -775,7 +895,12 @@
         "focus",
         "transform"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-floating-label-field"
+      }
     },
     {
       "id": "soft-glow-field",
@@ -806,7 +931,12 @@
         "box-shadow",
         "transition"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-soft-glow-field"
+      }
     },
     {
       "id": "search-action-field",
@@ -837,7 +967,12 @@
         "flex",
         "focus"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-search-action-field"
+      }
     },
     {
       "id": "one-time-code-field",
@@ -868,7 +1003,12 @@
         "flex",
         "border"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-one-time-code-field"
+      }
     },
     {
       "id": "range-accent-slider",
@@ -899,7 +1039,12 @@
         "appearance",
         "gradient"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-range-accent-slider"
+      }
     },
     {
       "id": "email-subscribe-field",
@@ -930,7 +1075,12 @@
         "flex",
         "focus"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-email-subscribe-field"
+      }
     },
     {
       "id": "nested-color-loader",
@@ -961,7 +1111,12 @@
         "border",
         "keyframes"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-nested-color-loader"
+      }
     },
     {
       "id": "bounce-dot-loader",
@@ -992,7 +1147,12 @@
         "transform",
         "keyframes"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-bounce-dot-loader"
+      }
     },
     {
       "id": "dual-ring-loader",
@@ -1023,7 +1183,12 @@
         "border",
         "keyframes"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-dual-ring-loader"
+      }
     },
     {
       "id": "segment-spinner",
@@ -1054,7 +1219,12 @@
         "border",
         "keyframes"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-segment-spinner"
+      }
     },
     {
       "id": "progress-dots",
@@ -1085,7 +1255,12 @@
         "opacity",
         "keyframes"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-progress-dots"
+      }
     },
     {
       "id": "gradient-orbit-loader",
@@ -1116,7 +1291,12 @@
         "gradient",
         "transform"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-gradient-orbit-loader"
+      }
     },
     {
       "id": "location-pin-loader",
@@ -1147,7 +1327,12 @@
         "transform",
         "keyframes"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-location-pin-loader"
+      }
     },
     {
       "id": "moon-phase-loader",
@@ -1178,7 +1363,12 @@
         "box-shadow",
         "keyframes"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-moon-phase-loader"
+      }
     },
     {
       "id": "bubble-row-loader",
@@ -1209,7 +1399,12 @@
         "transform",
         "keyframes"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-bubble-row-loader"
+      }
     },
     {
       "id": "loading-text-indicator",
@@ -1240,7 +1435,12 @@
         "opacity",
         "keyframes"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-loading-text-indicator"
+      }
     },
     {
       "id": "gradient-halo-hover",
@@ -1271,7 +1471,12 @@
         "pseudo-elements",
         "transform"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-gradient-halo-hover"
+      }
     },
     {
       "id": "text-swap-hover",
@@ -1302,7 +1507,12 @@
         "pseudo-elements",
         "transform"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-text-swap-hover"
+      }
     },
     {
       "id": "wave-fill-hover",
@@ -1333,7 +1543,12 @@
         "pseudo-elements",
         "transform"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-wave-fill-hover"
+      }
     },
     {
       "id": "gradient-border-hover",
@@ -1364,7 +1579,12 @@
         "gradient",
         "transition"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-gradient-border-hover"
+      }
     },
     {
       "id": "offset-layer-hover",
@@ -1395,7 +1615,12 @@
         "transform",
         "box-shadow"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-offset-layer-hover"
+      }
     },
     {
       "id": "sliding-surface-hover",
@@ -1426,7 +1651,12 @@
         "pseudo-elements",
         "transform"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-sliding-surface-hover"
+      }
     },
     {
       "id": "orange-emphasis-hover",
@@ -1457,7 +1687,12 @@
         "transition",
         "background-color"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-orange-emphasis-hover"
+      }
     },
     {
       "id": "raised-outline-hover",
@@ -1488,7 +1723,12 @@
         "box-shadow",
         "transform"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-raised-outline-hover"
+      }
     },
     {
       "id": "inset-depth-hover",
@@ -1519,7 +1759,12 @@
         "box-shadow",
         "transition"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-inset-depth-hover"
+      }
     },
     {
       "id": "press-depth-hover",
@@ -1550,7 +1795,241 @@
         "transform",
         "box-shadow"
       ],
-      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with prefers-reduced-motion support.",
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-press-depth-hover"
+      }
+    },
+    {
+      "id": "easings",
+      "name": "Easings",
+      "path": "tokens/easings/",
+      "categories": [
+        "tokens",
+        "motion",
+        "easing"
+      ],
+      "tags": [
+        "timing functions",
+        "entrance",
+        "exit",
+        "spring"
+      ],
+      "package": {
+        "type": "tokens",
+        "stylesheet": "tokens.css",
+        "scope": ":where(.op-easings)"
+      },
+      "source": {
+        "id": "open-props",
+        "url": "https://github.com/argyleink/open-props/blob/530682d04327f842f56bb1ec33cf84a3cadb3876/src/props.easing.css",
+        "revision": "530682d04327f842f56bb1ec33cf84a3cadb3876",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Adam Argyle 2021)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "custom properties",
+        "cubic-bezier",
+        "linear easing"
+      ],
+      "browserNotes": "Cubic Bézier values work broadly. The `linear()` spring token requires browsers with CSS linear easing support; use a cubic Bézier fallback where older browsers matter."
+    },
+    {
+      "id": "shadows",
+      "name": "Shadows",
+      "path": "tokens/shadows/",
+      "categories": [
+        "tokens",
+        "elevation",
+        "shadows"
+      ],
+      "tags": [
+        "box shadow",
+        "elevation",
+        "inset"
+      ],
+      "package": {
+        "type": "tokens",
+        "stylesheet": "tokens.css",
+        "scope": ":where(.op-shadows)"
+      },
+      "source": {
+        "id": "open-props",
+        "url": "https://github.com/argyleink/open-props/blob/530682d04327f842f56bb1ec33cf84a3cadb3876/src/props.shadows.css",
+        "revision": "530682d04327f842f56bb1ec33cf84a3cadb3876",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Adam Argyle 2021)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "custom properties",
+        "box-shadow",
+        "hsl alpha"
+      ],
+      "browserNotes": "Uses broadly supported custom properties, `calc()`, and HSL alpha syntax. Very old browsers may need precomputed shadow values."
+    },
+    {
+      "id": "radii",
+      "name": "Radii",
+      "path": "tokens/radii/",
+      "categories": [
+        "tokens",
+        "shape",
+        "radii"
+      ],
+      "tags": [
+        "border radius",
+        "rounded",
+        "blob"
+      ],
+      "package": {
+        "type": "tokens",
+        "stylesheet": "tokens.css",
+        "scope": ":where(.op-radii)"
+      },
+      "source": {
+        "id": "open-props",
+        "url": "https://github.com/argyleink/open-props/blob/530682d04327f842f56bb1ec33cf84a3cadb3876/src/props.borders.css",
+        "revision": "530682d04327f842f56bb1ec33cf84a3cadb3876",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Adam Argyle 2021)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "custom properties",
+        "border-radius",
+        "shape scale"
+      ],
+      "browserNotes": "Conventional and percentage border-radius values are broadly supported. Irregular slash syntax is also widely supported in modern browsers."
+    },
+    {
+      "id": "sizes-spacing",
+      "name": "Sizes / Spacing",
+      "path": "tokens/sizes-spacing/",
+      "categories": [
+        "tokens",
+        "layout",
+        "spacing"
+      ],
+      "tags": [
+        "spacing scale",
+        "rem",
+        "fluid spacing"
+      ],
+      "package": {
+        "type": "tokens",
+        "stylesheet": "tokens.css",
+        "scope": ":where(.op-sizes-spacing)"
+      },
+      "source": {
+        "id": "open-props",
+        "url": "https://github.com/argyleink/open-props/blob/530682d04327f842f56bb1ec33cf84a3cadb3876/src/props.sizes.css",
+        "revision": "530682d04327f842f56bb1ec33cf84a3cadb3876",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Adam Argyle 2021)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "custom properties",
+        "rem scale",
+        "clamp"
+      ],
+      "browserNotes": "Fixed values work broadly. Fluid tokens require CSS `clamp()`, supported in current evergreen browsers."
+    },
+    {
+      "id": "typography-scale",
+      "name": "Typography Scale",
+      "path": "tokens/typography-scale/",
+      "categories": [
+        "tokens",
+        "typography",
+        "scale"
+      ],
+      "tags": [
+        "font size",
+        "line height",
+        "fluid type"
+      ],
+      "package": {
+        "type": "tokens",
+        "stylesheet": "tokens.css",
+        "scope": ":where(.op-typography-scale)"
+      },
+      "source": {
+        "id": "open-props",
+        "url": "https://github.com/argyleink/open-props/blob/530682d04327f842f56bb1ec33cf84a3cadb3876/src/props.fonts.css",
+        "revision": "530682d04327f842f56bb1ec33cf84a3cadb3876",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Adam Argyle 2021)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "custom properties",
+        "type scale",
+        "clamp"
+      ],
+      "browserNotes": "Fixed rem and unitless values work broadly. Fluid sizes require CSS `clamp()` in current evergreen browsers."
+    },
+    {
+      "id": "aspect-ratios",
+      "name": "Aspect Ratios",
+      "path": "tokens/aspect-ratios/",
+      "categories": [
+        "tokens",
+        "media",
+        "aspect ratios"
+      ],
+      "tags": [
+        "aspect-ratio",
+        "media cards",
+        "responsive media"
+      ],
+      "package": {
+        "type": "tokens",
+        "stylesheet": "tokens.css",
+        "scope": ":where(.op-aspect-ratios)"
+      },
+      "source": {
+        "id": "open-props",
+        "url": "https://github.com/argyleink/open-props/blob/530682d04327f842f56bb1ec33cf84a3cadb3876/src/props.aspects.css",
+        "revision": "530682d04327f842f56bb1ec33cf84a3cadb3876",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Adam Argyle 2021)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "custom properties",
+        "aspect-ratio",
+        "responsive media"
+      ],
+      "browserNotes": "Native `aspect-ratio` is supported in current evergreen browsers. Older browsers may need a padding-based fallback."
     }
   ]
 }

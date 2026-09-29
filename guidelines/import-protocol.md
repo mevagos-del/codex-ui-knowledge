@@ -35,8 +35,10 @@ requests. Never import a pattern from a source whose registry status is not
 1. State the import scope, categories, exclusions, and target batch size.
 2. Check the catalog for equivalent or near-duplicate patterns.
 3. Select a small reviewable set; never mirror an upstream repository.
-4. Normalize each pattern into a self-contained package with `README.md`,
-   `demo.html`, and `style.css`.
+4. Normalize each entry into a self-contained package. Pattern packages use
+   `README.md`, `demo.html`, and `style.css`; token packages use `README.md`,
+   `demo.html`, and `tokens.css`. Declare the package type, stylesheet, and CSS
+   scope in the catalog.
 5. Preserve the visual idea while removing unnecessary dependencies and assets.
 6. Record the source ID, immutable source URL, revision, adaptation type, and
    compatible license in `catalog.json`.

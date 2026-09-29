@@ -7,6 +7,7 @@ import {
   findCatalogDuplicates,
   findCorruptNativeFunction,
   isBrokenLocalReference,
+  packageRequirements,
   parseCssSource,
   sourceDefinitions,
   validatePatternProvenance,
@@ -27,6 +28,7 @@ const pattern = (overrides = {}) => ({
   name: "Example Pattern",
   path: "components/example-pattern/",
   license: "MIT",
+  package: { type: "pattern", stylesheet: "style.css", scope: ".uk-example-pattern" },
   source: {
     id: "example-source",
     url: `https://github.com/example/repo/blob/${revision}/patterns/example.css`,
@@ -49,12 +51,53 @@ test("rejects a missing source definition", () => {
   assert.match(result.errors.join("\n"), /missing source example-source/);
 });
 
-test("rejects malformed provenance and revision mismatches", () => {
+test("rejects a wrong repository URL", () => {
   const item = pattern({
     source: { ...pattern().source, url: "https://example.com/unpinned.css", revision: "b".repeat(40) },
   });
   const result = validatePatternProvenance(item, definitions, process.cwd());
   assert.match(result.errors.join("\n"), /does not match/);
+});
+
+test("rejects a provenance revision mismatch", () => {
+  const item = pattern({
+    source: { ...pattern().source, revision: "b".repeat(40) },
+  });
+  const result = validatePatternProvenance(item, definitions, process.cwd());
+  assert.match(result.errors.join("\n"), /revision does not match/);
+});
+
+test("rejects inactive or license-unverified sources", () => {
+  const inactive = { ...activeSource, status: "planned", license: { ...activeSource.license, status: "unverified" } };
+  const result = validatePatternProvenance(pattern(), sourceDefinitions({ sources: [inactive] }), process.cwd());
+  assert.match(result.errors.join("\n"), /not active/);
+  assert.match(result.errors.join("\n"), /license is not verified/);
+});
+
+test("token packages require tokens.css without requiring style.css", () => {
+  const requirements = packageRequirements({
+    package: { type: "tokens", stylesheet: "tokens.css", scope: ":where(.op-example)" },
+  });
+  assert.deepEqual(requirements.requiredFiles, ["README.md", "demo.html", "tokens.css"]);
+  assert.equal(requirements.requiredFiles.includes("style.css"), false);
+});
+
+test("existing pattern packages still require style.css", () => {
+  const requirements = packageRequirements(pattern());
+  assert.deepEqual(requirements.requiredFiles, ["README.md", "demo.html", "style.css"]);
+});
+
+test("a missing declared token file is detectable", () => {
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), "ui-knowledge-token-package-"));
+  try {
+    const requirements = packageRequirements({
+      package: { type: "tokens", stylesheet: "tokens.css", scope: ":where(.op-example)" },
+    });
+    const missing = requirements.requiredFiles.filter((name) => !fs.existsSync(path.join(directory, name)));
+    assert.ok(missing.includes("tokens.css"));
+  } finally {
+    fs.rmSync(directory, { recursive: true, force: true });
+  }
 });
 
 test("detects duplicate IDs and paths", () => {
