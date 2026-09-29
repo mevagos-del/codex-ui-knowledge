@@ -1,0 +1,32 @@
+/* Adapted from Uiverse Galaxy by deepak16375. MIT; see README.md. */
+.uk-gradient-sweep-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#1877f2;--ui-duration:180ms}
+.uk-gradient-sweep-button .button{
+  font-size: 17px;
+  font-weight: bold;
+  border: 0px;
+  color: white;
+  background-color: var(--ui-accent);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.uk-gradient-sweep-button .button:is(:hover, :focus-visible){
+  background-image: linear-gradient(90deg,
+		#B799FF 0%,
+		#ACBCFF 50%,
+		#AEE2FF 75%,
+		#E6FFFD 100%);
+  color: black;
+  animation: uk-gradient-sweep-button-slide 10s linear infinite;
+}
+@keyframes uk-gradient-sweep-button-slide{
+  100% {
+    background-position: 50rem;
+  }
+}
+
+.uk-gradient-sweep-button :is(button,input,a,textarea,select):focus-visible,.uk-gradient-sweep-button:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-gradient-sweep-button .ui-field-label,.uk-gradient-sweep-button .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-gradient-sweep-button .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-gradient-sweep-button *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-gradient-sweep-button *,.uk-gradient-sweep-button *::before,.uk-gradient-sweep-button *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

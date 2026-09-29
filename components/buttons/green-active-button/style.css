@@ -1,0 +1,32 @@
+/* Adapted from Uiverse Galaxy by cssbuttons-io. MIT; see README.md. */
+.uk-green-active-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#23c483;--ui-duration:180ms}
+.uk-green-active-button button{
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.uk-green-active-button button:is(:hover, :focus-visible){
+  background-color: var(--ui-accent);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.uk-green-active-button button:active{
+  transform: translateY(-1px);
+}
+
+.uk-green-active-button :is(button,input,a,textarea,select):focus-visible,.uk-green-active-button:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-green-active-button .ui-field-label,.uk-green-active-button .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-green-active-button .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-green-active-button *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-green-active-button *,.uk-green-active-button *::before,.uk-green-active-button *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

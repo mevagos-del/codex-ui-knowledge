@@ -1,0 +1,23 @@
+/* Adapted from Uiverse Galaxy by barisdogansutcu. MIT; see README.md. */
+.uk-retro-press-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#292929;--ui-duration:180ms}
+.uk-retro-press-button button{
+  font-family: inherit;
+  border: none;
+  outline: 1px dotted rgb(37, 37, 37);
+  outline-offset: -4px;
+  background: hsl(0deg 0% 75%);
+  box-shadow: inset -1px -1px var(--ui-accent), inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 30px;
+}
+.uk-retro-press-button button:active{
+  box-shadow: inset -1px -1px #fff, inset 1px 1px var(--ui-accent), inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+}
+
+.uk-retro-press-button :is(button,input,a,textarea,select):focus-visible,.uk-retro-press-button:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-retro-press-button .ui-field-label,.uk-retro-press-button .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-retro-press-button .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-retro-press-button *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-retro-press-button *,.uk-retro-press-button *::before,.uk-retro-press-button *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

@@ -1,0 +1,33 @@
+/* Adapted from Uiverse Galaxy by Codecite. MIT; see README.md. */
+.uk-inset-label-button{box-sizing:border-box;max-inline-size:100%;--ui-accent:#1e293b;--ui-duration:180ms}
+.uk-inset-label-button .btn{
+  border: 0 solid;
+  cursor: pointer;
+  font-family: system-ui;
+  font-size: 100%;
+  background: linear-gradient(90deg, blue, red);
+  border-radius: 999px;
+  font-weight: 900;
+  padding: 1.8rem 5rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.uk-inset-label-button .btn span{
+  background: var(--ui-accent);
+  border-radius: 999px;
+  color: #fff;
+  display: grid;
+  inset: 5px;
+  place-items: center;
+  position: absolute;
+  transition: background 0.3s;
+}
+.uk-inset-label-button .btn:is(:hover, :focus-visible) span{
+  background: none;
+}
+
+.uk-inset-label-button :is(button,input,a,textarea,select):focus-visible,.uk-inset-label-button:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-inset-label-button .ui-field-label,.uk-inset-label-button .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-inset-label-button .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-inset-label-button *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-inset-label-button *,.uk-inset-label-button *::before,.uk-inset-label-button *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
