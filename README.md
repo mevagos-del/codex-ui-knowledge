@@ -71,6 +71,4 @@ knowledge base.
 
 ## Current status
 
-The repository foundation is ready. Pattern curation and normalization will be
-performed in later, reviewable batches rather than by copying entire upstream
-repositories.
+The first controlled curation batch contains 50 framework-neutral patterns from Uiverse Galaxy: 10 buttons, 10 cards, 10 inputs, 10 loaders, and 10 hover or interaction effects. Each package includes an attributed README, standalone demo, and scoped stylesheet.
