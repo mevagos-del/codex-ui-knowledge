@@ -18,7 +18,7 @@
   height: 50px;
   position: relative;
   background: var(--ui-accent);
- 
+
   transition: all .3s ease;
   animation: uk-moon-phase-loader-move_4123 1.2s infinite alternate ease-in-out;
   transform: translate3d(8px, -8px, 0);
