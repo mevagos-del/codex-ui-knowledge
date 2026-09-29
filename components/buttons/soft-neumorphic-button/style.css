@@ -1,0 +1,32 @@
+/* Adapted from Uiverse Galaxy by Praashoo7. MIT; see README.md. */
+.uk-soft-neumorphic-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#171717;--ui-duration:180ms}
+.uk-soft-neumorphic-button button{
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: .4s ease-in-out;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.2);
+  letter-spacing: 0.2em;
+  border: none;
+}
+.uk-soft-neumorphic-button button:is(:hover, :focus-visible){
+  letter-spacing: 0.5em;
+  transform: translateY(-0.8em);
+  background: var(--ui-accent);
+  color: white;
+}
+.uk-soft-neumorphic-button button:active{
+  letter-spacing: 0.4em;
+  transition: 0.1s all;
+  transform: translateY(-0.6em);
+  background: var(--ui-accent);
+  color: white;
+}
+
+.uk-soft-neumorphic-button :is(button,input,a,textarea,select):focus-visible,.uk-soft-neumorphic-button:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-soft-neumorphic-button .ui-field-label,.uk-soft-neumorphic-button .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-soft-neumorphic-button .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-soft-neumorphic-button *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-soft-neumorphic-button *,.uk-soft-neumorphic-button *::before,.uk-soft-neumorphic-button *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

@@ -1,0 +1,38 @@
+/* Adapted from Uiverse Galaxy by Javierrocadev. MIT; see README.md. */
+.uk-article-contents-card{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#004d92;--ui-duration:180ms}
+.uk-article-contents-card .card{
+  width: 250px;
+  height: 290px;
+  border-radius: 15px;
+  background: rgb(27, 26, 26);
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: -5px 5px 1px 0px var(--ui-accent);
+}
+.uk-article-contents-card .element{
+  color: grey;
+  font-size: .8em;
+  padding: 6px 15px;
+  border-left: 2px solid grey;
+  cursor: pointer;
+}
+.uk-article-contents-card .active{
+  background-color: var(--ui-accent);
+  border-left: 2px solid #8cb4ff;
+  color: azure;
+}
+.uk-article-contents-card .element:hover:not(.active){
+  color: #3775bb;
+}
+
+.uk-article-contents-card :is(button,input,a,textarea,select):focus-visible,.uk-article-contents-card:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-article-contents-card .ui-field-label,.uk-article-contents-card .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-article-contents-card .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-article-contents-card *{box-sizing:border-box;max-inline-size:100%}
+.uk-article-contents-card .element{display:block;text-decoration:none}
+@media (prefers-reduced-motion:reduce){.uk-article-contents-card *,.uk-article-contents-card *::before,.uk-article-contents-card *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

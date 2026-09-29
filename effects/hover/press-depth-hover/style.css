@@ -1,0 +1,51 @@
+/* Adapted from Uiverse Galaxy by Bodyhc. MIT; see README.md. */
+.uk-press-depth-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#560bad;--ui-duration:180ms}
+.uk-press-depth-hover button{
+  --color: var(--ui-accent);
+  background-color: #fff;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--color);
+}
+.uk-press-depth-hover button:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50px;
+  bottom: 100%;
+  right: 100%;
+  transition: .8s ease;
+}
+.uk-press-depth-hover button:is(:hover, :focus-visible){
+  color: #fff;
+}
+.uk-press-depth-hover button:is(:hover, :focus-visible):before{
+  bottom: -30px;
+  left: -30px;
+}
+.uk-press-depth-hover button:active:before{
+  background: #3a0ca3;
+  transition: background 2s;
+}
+
+.uk-press-depth-hover :is(button,input,a,textarea,select):focus-visible,.uk-press-depth-hover:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-press-depth-hover .ui-field-label,.uk-press-depth-hover .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-press-depth-hover .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-press-depth-hover *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-press-depth-hover *,.uk-press-depth-hover *::before,.uk-press-depth-hover *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

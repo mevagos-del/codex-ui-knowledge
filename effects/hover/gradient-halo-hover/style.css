@@ -1,0 +1,45 @@
+/* Adapted from Uiverse Galaxy by mrhyddenn. MIT; see README.md. */
+.uk-gradient-halo-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#e5e5e5;--ui-duration:180ms}
+.uk-gradient-halo-hover button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  position: relative;
+  cursor: pointer;
+  height: 100px;
+  border-radius: 100px;
+  border: none;
+  background: #333;
+  color: var(--ui-accent);
+  font-weight: 600;
+  box-shadow: inset 20px 20px 39px #080a10,
+  inset -20px -20px 39px #1b263e;
+  font-size: 13px;
+}
+.uk-gradient-halo-hover button::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -10px;
+  top: -10px;
+  border-radius: 50%;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background: linear-gradient(35deg, rgb(47, 190, 238), rgb(218, 57, 143), rgb(139, 255, 23));
+  filter: blur(10px);
+}
+.uk-gradient-halo-hover button:is(:hover, :focus-visible)::after{
+  animation: uk-gradient-halo-hover-rotcirclegr 1s linear infinite;
+}
+@keyframes uk-gradient-halo-hover-rotcirclegr{
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.uk-gradient-halo-hover :is(button,input,a,textarea,select):focus-visible,.uk-gradient-halo-hover:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-gradient-halo-hover .ui-field-label,.uk-gradient-halo-hover .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-gradient-halo-hover .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-gradient-halo-hover *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-gradient-halo-hover *,.uk-gradient-halo-hover *::before,.uk-gradient-halo-hover *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

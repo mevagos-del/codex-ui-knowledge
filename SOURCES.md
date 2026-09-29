@@ -28,3 +28,13 @@ For every imported or adapted pattern:
    unclear.
 
 Licenses and source contents can change. Re-check them for each curation batch.
+
+## Completed imports
+
+### Uiverse Galaxy pilot
+
+- Upstream commit: [adbd2adde0a299a3956ea288fb444ec01891ca41](https://github.com/uiverse-io/galaxy/tree/adbd2adde0a299a3956ea288fb444ec01891ca41)
+- License verified: MIT, copyright (c) 2023 Uiverse.io
+- Scope: 50 adapted HTML/CSS patterns (10 each for buttons, cards, inputs, loaders, and hover effects)
+- Asset policy: no upstream images, fonts, logos, dependencies, or JavaScript imported
+- Per-pattern provenance: exact upstream file URL and creator credit in every pattern README

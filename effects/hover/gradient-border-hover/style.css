@@ -1,0 +1,42 @@
+/* Adapted from Uiverse Galaxy by Spacious74. MIT; see README.md. */
+.uk-gradient-border-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#03a9f4;--ui-duration:180ms}
+.uk-gradient-border-hover button{
+  font-size: 1.4em;
+  padding: 0.6em 0.8em;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #000000b4;
+}
+.uk-gradient-border-hover .container{
+  position: relative;
+  padding: 3px;
+  background: linear-gradient(90deg, var(--ui-accent), #f441a5);
+  border-radius: 0.9em;
+  transition: all 0.4s ease;
+}
+.uk-gradient-border-hover .container::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 0.9em;
+  z-index: -10;
+  filter: blur(0);
+  transition: filter 0.4s ease;
+}
+.uk-gradient-border-hover .container:is(:hover, :focus-visible)::before{
+  background: linear-gradient(90deg, var(--ui-accent), #f441a5);
+  filter: blur(1.2em);
+}
+.uk-gradient-border-hover .container:active::before{
+  filter: blur(0.2em);
+}
+
+.uk-gradient-border-hover :is(button,input,a,textarea,select):focus-visible,.uk-gradient-border-hover:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-gradient-border-hover .ui-field-label,.uk-gradient-border-hover .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-gradient-border-hover .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-gradient-border-hover *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-gradient-border-hover *,.uk-gradient-border-hover *::before,.uk-gradient-border-hover *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

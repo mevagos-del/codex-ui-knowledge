@@ -1,0 +1,26 @@
+/* Adapted from Uiverse Galaxy by barisdogansutcu. MIT; see README.md. */
+.uk-one-time-code-field{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-duration:180ms}
+.uk-one-time-code-field .password{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.uk-one-time-code-field .password input{
+  width: 30px;
+  height: 40px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px rgb(20, 181, 230);
+  font-size: 20px;
+  color: white;
+  outline: none;
+}
+
+.uk-one-time-code-field :is(button,input,a,textarea,select):focus-visible,.uk-one-time-code-field:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-one-time-code-field .ui-field-label,.uk-one-time-code-field .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-one-time-code-field .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-one-time-code-field *{box-sizing:border-box;max-inline-size:100%}
+.uk-one-time-code-field .password{flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){.uk-one-time-code-field *,.uk-one-time-code-field *::before,.uk-one-time-code-field *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

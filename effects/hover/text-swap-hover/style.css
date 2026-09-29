@@ -1,0 +1,47 @@
+/* Adapted from Uiverse Galaxy by Gaurav-WebDev. MIT; see README.md. */
+.uk-text-swap-hover{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#f8fafc;--ui-duration:180ms}
+.uk-text-swap-hover .button{
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid var(--ui-accent);
+  overflow: hidden;
+  border-radius: 30px;
+  color: var(--ui-accent);
+  transition: all 0.5s ease-in-out;
+}
+.uk-text-swap-hover .btn-txt{
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+.uk-text-swap-hover .type1::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+.uk-text-swap-hover .button:is(:hover, :focus-visible){
+  box-shadow: 1px 1px 200px var(--ui-accent);
+  color: #fff;
+  border: none;
+}
+.uk-text-swap-hover .type1:is(:hover, :focus-visible)::after{
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+.uk-text-swap-hover :is(button,input,a,textarea,select):focus-visible,.uk-text-swap-hover:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-text-swap-hover .ui-field-label,.uk-text-swap-hover .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-text-swap-hover .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-text-swap-hover *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-text-swap-hover *,.uk-text-swap-hover *::before,.uk-text-swap-hover *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

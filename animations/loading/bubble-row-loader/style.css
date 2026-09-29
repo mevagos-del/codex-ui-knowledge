@@ -1,0 +1,33 @@
+/* Adapted from Uiverse Galaxy by LeonKohli. MIT; see README.md. */
+.uk-bubble-row-loader{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#ff6b81;--ui-duration:180ms}
+.uk-bubble-row-loader .loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.uk-bubble-row-loader .bubble{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, var(--ui-accent), #ff9a44);
+  margin: 0 5px;
+  animation: uk-bubble-row-loader-bubbleAnimation 1.5s ease-in-out infinite;
+}
+@keyframes uk-bubble-row-loader-bubbleAnimation{
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.5;
+  }
+}
+
+.uk-bubble-row-loader :is(button,input,a,textarea,select):focus-visible,.uk-bubble-row-loader:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-bubble-row-loader .ui-field-label,.uk-bubble-row-loader .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-bubble-row-loader .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-bubble-row-loader *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-bubble-row-loader *,.uk-bubble-row-loader *::before,.uk-bubble-row-loader *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

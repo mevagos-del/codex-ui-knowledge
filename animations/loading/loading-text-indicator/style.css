@@ -1,0 +1,40 @@
+/* Adapted from Uiverse Galaxy by Shoh2008. MIT; see README.md. */
+.uk-loading-text-indicator{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#263238;--ui-duration:180ms}
+.uk-loading-text-indicator .loader{
+  font-size: 48px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #FFF;
+  letter-spacing: 2px;
+  position: relative;
+  box-sizing: border-box;
+}
+.uk-loading-text-indicator .loader::after{
+  content: 'Loading';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--ui-accent);
+  text-shadow: 0 0 2px #FFF, 0 0 1px #FFF, 0 0 1px #FFF;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: uk-loading-text-indicator-animloader 6s linear infinite;
+}
+@keyframes uk-loading-text-indicator-animloader{
+  0% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+.uk-loading-text-indicator :is(button,input,a,textarea,select):focus-visible,.uk-loading-text-indicator:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-loading-text-indicator .ui-field-label,.uk-loading-text-indicator .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-loading-text-indicator .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-loading-text-indicator *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-loading-text-indicator *,.uk-loading-text-indicator *::before,.uk-loading-text-indicator *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

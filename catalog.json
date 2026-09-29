@@ -1,5 +1,1506 @@
 {
   "$schema": "./catalog.schema.json",
   "version": 1,
-  "patterns": []
+  "patterns": [
+    {
+      "id": "purple-focus-button",
+      "name": "Purple Focus Button",
+      "path": "components/buttons/purple-focus-button/",
+      "categories": [
+        "components",
+        "buttons"
+      ],
+      "tags": [
+        "focus color",
+        "focus",
+        "background-color"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/hakemdamer222_funny-ape-73.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "focus",
+        "background-color"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "gradient-sweep-button",
+      "name": "Gradient Sweep Button",
+      "path": "components/buttons/gradient-sweep-button/",
+      "categories": [
+        "components",
+        "buttons"
+      ],
+      "tags": [
+        "gradient sweep",
+        "gradient",
+        "keyframes"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/deepak16375_ugly-crab-3.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "gradient",
+        "keyframes"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "soft-neumorphic-button",
+      "name": "Soft Neumorphic Button",
+      "path": "components/buttons/soft-neumorphic-button/",
+      "categories": [
+        "components",
+        "buttons"
+      ],
+      "tags": [
+        "neumorphic shadow",
+        "box-shadow",
+        "border-radius"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Praashoo7_brown-quail-45.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "box-shadow",
+        "border-radius"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "retro-press-button",
+      "name": "Retro Press Button",
+      "path": "components/buttons/retro-press-button/",
+      "categories": [
+        "components",
+        "buttons"
+      ],
+      "tags": [
+        "pressed offset",
+        "transform",
+        "box-shadow"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/barisdogansutcu_heavy-dragon-15.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "transform",
+        "box-shadow"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "jelly-response-button",
+      "name": "Jelly Response Button",
+      "path": "components/buttons/jelly-response-button/",
+      "categories": [
+        "components",
+        "buttons"
+      ],
+      "tags": [
+        "jelly response",
+        "transform",
+        "keyframes"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Shoh2008_hungry-treefrog-88.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "transform",
+        "keyframes"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "inset-label-button",
+      "name": "Inset Label Button",
+      "path": "components/buttons/inset-label-button/",
+      "categories": [
+        "components",
+        "buttons"
+      ],
+      "tags": [
+        "inset label",
+        "pseudo-elements",
+        "transition"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Codecite_fluffy-bear-28.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "pseudo-elements",
+        "transition"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "layered-border-button",
+      "name": "Layered Border Button",
+      "path": "components/buttons/layered-border-button/",
+      "categories": [
+        "components",
+        "buttons"
+      ],
+      "tags": [
+        "layered border",
+        "pseudo-elements",
+        "border"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Cornerstone-04_chatty-eel-89.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "pseudo-elements",
+        "border"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "green-active-button",
+      "name": "Green Active Button",
+      "path": "components/buttons/green-active-button/",
+      "categories": [
+        "components",
+        "buttons"
+      ],
+      "tags": [
+        "active state",
+        "active",
+        "box-shadow"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/cssbuttons-io_stale-rattlesnake-87.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "active",
+        "box-shadow"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "shadow-lift-button",
+      "name": "Shadow Lift Button",
+      "path": "components/buttons/shadow-lift-button/",
+      "categories": [
+        "components",
+        "buttons"
+      ],
+      "tags": [
+        "shadow lift",
+        "box-shadow",
+        "transition"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Shakil-Babu_moody-mule-8.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "box-shadow",
+        "transition"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "offset-frame-button",
+      "name": "Offset Frame Button",
+      "path": "components/buttons/offset-frame-button/",
+      "categories": [
+        "components",
+        "buttons"
+      ],
+      "tags": [
+        "offset frame",
+        "pseudo-elements",
+        "position"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/adamgiebl_big-moose-23.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "pseudo-elements",
+        "position"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "contrast-content-card",
+      "name": "Contrast Content Card",
+      "path": "components/cards/contrast-content-card/",
+      "categories": [
+        "components",
+        "cards"
+      ],
+      "tags": [
+        "contrast surface",
+        "box-shadow",
+        "border"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/JaydipPrajapati1910_strange-walrus-5.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "box-shadow",
+        "border"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "raised-material-card",
+      "name": "Raised Material Card",
+      "path": "components/cards/raised-material-card/",
+      "categories": [
+        "components",
+        "cards"
+      ],
+      "tags": [
+        "raised shadow",
+        "box-shadow",
+        "transition"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/SachinKumar666_spicy-tiger-75.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "box-shadow",
+        "transition"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "editorial-preview-card",
+      "name": "Editorial Preview Card",
+      "path": "components/cards/editorial-preview-card/",
+      "categories": [
+        "components",
+        "cards"
+      ],
+      "tags": [
+        "editorial hierarchy",
+        "spacing",
+        "typography"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/alexmaracinaru_purple-zebra-61.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "spacing",
+        "typography"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "perspective-shadow-card",
+      "name": "Perspective Shadow Card",
+      "path": "components/cards/perspective-shadow-card/",
+      "categories": [
+        "components",
+        "cards"
+      ],
+      "tags": [
+        "perspective shadow",
+        "transform",
+        "box-shadow"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/javierBarroso_rare-deer-29.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "transform",
+        "box-shadow"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "metric-summary-card",
+      "name": "Metric Summary Card",
+      "path": "components/cards/metric-summary-card/",
+      "categories": [
+        "components",
+        "cards"
+      ],
+      "tags": [
+        "metric hierarchy",
+        "flex",
+        "border"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/shadowmurphy_spicy-eel-22.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "flex",
+        "border"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "window-chrome-card",
+      "name": "Window Chrome Card",
+      "path": "components/cards/window-chrome-card/",
+      "categories": [
+        "components",
+        "cards"
+      ],
+      "tags": [
+        "window chrome",
+        "border-radius",
+        "flex"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/EmmaxPlay_curvy-stingray-36.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "border-radius",
+        "flex"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "paper-sheet-card",
+      "name": "Paper Sheet Card",
+      "path": "components/cards/paper-sheet-card/",
+      "categories": [
+        "components",
+        "cards"
+      ],
+      "tags": [
+        "paper surface",
+        "box-shadow",
+        "gradient"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/Yaya12085_ugly-earwig-69.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "box-shadow",
+        "gradient"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "stacked-panel-card",
+      "name": "Stacked Panel Card",
+      "path": "components/cards/stacked-panel-card/",
+      "categories": [
+        "components",
+        "cards"
+      ],
+      "tags": [
+        "stacked depth",
+        "position",
+        "box-shadow"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/Spacious74_black-dragon-31.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "position",
+        "box-shadow"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "article-contents-card",
+      "name": "Article Contents Card",
+      "path": "components/cards/article-contents-card/",
+      "categories": [
+        "components",
+        "cards"
+      ],
+      "tags": [
+        "active item",
+        "border",
+        "background-color"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/Javierrocadev_fast-panther-65.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "border",
+        "background-color"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "sliding-details-card",
+      "name": "Sliding Details Card",
+      "path": "components/cards/sliding-details-card/",
+      "categories": [
+        "components",
+        "cards"
+      ],
+      "tags": [
+        "details reveal",
+        "transition",
+        "overflow"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/imPradhyumn_nice-rattlesnake-46.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "conditional",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "transition",
+        "overflow"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "password-shadow-field",
+      "name": "Password Shadow Field",
+      "path": "components/inputs/password-shadow-field/",
+      "categories": [
+        "components",
+        "inputs"
+      ],
+      "tags": [
+        "shadow field",
+        "box-shadow",
+        "focus"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/andrew-demchenk0_polite-stingray-67.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "box-shadow",
+        "focus"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "outlined-username-field",
+      "name": "Outlined Username Field",
+      "path": "components/inputs/outlined-username-field/",
+      "categories": [
+        "components",
+        "inputs"
+      ],
+      "tags": [
+        "outlined field",
+        "border",
+        "focus"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/vinodjangid07_cuddly-deer-66.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "border",
+        "focus"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "inset-search-field",
+      "name": "Inset Search Field",
+      "path": "components/inputs/inset-search-field/",
+      "categories": [
+        "components",
+        "inputs"
+      ],
+      "tags": [
+        "inset field",
+        "box-shadow",
+        "focus"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/shadowmurphy_selfish-bulldog-79.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "box-shadow",
+        "focus"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "underline-focus-field",
+      "name": "Underline Focus Field",
+      "path": "components/inputs/underline-focus-field/",
+      "categories": [
+        "components",
+        "inputs"
+      ],
+      "tags": [
+        "focus underline",
+        "pseudo-elements",
+        "transform"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/SanthoshSJ-Dev_mean-wolverine-8.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "pseudo-elements",
+        "transform"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "floating-label-field",
+      "name": "Floating Label Field",
+      "path": "components/inputs/floating-label-field/",
+      "categories": [
+        "components",
+        "inputs"
+      ],
+      "tags": [
+        "floating label",
+        "focus",
+        "transform"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/alexruix_slippery-snail-18.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "focus",
+        "transform"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "soft-glow-field",
+      "name": "Soft Glow Field",
+      "path": "components/inputs/soft-glow-field/",
+      "categories": [
+        "components",
+        "inputs"
+      ],
+      "tags": [
+        "focus glow",
+        "box-shadow",
+        "transition"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/elijahgummer_nice-otter-15.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "box-shadow",
+        "transition"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "search-action-field",
+      "name": "Search Action Field",
+      "path": "components/inputs/search-action-field/",
+      "categories": [
+        "components",
+        "inputs"
+      ],
+      "tags": [
+        "integrated action",
+        "flex",
+        "focus"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/Bodyhc_afraid-eel-42.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "flex",
+        "focus"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "one-time-code-field",
+      "name": "One-Time Code Field",
+      "path": "components/inputs/one-time-code-field/",
+      "categories": [
+        "components",
+        "inputs"
+      ],
+      "tags": [
+        "segmented code",
+        "flex",
+        "border"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/barisdogansutcu_gentle-pig-32.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "conditional",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": false,
+      "techniques": [
+        "flex",
+        "border"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "range-accent-slider",
+      "name": "Range Accent Slider",
+      "path": "components/inputs/range-accent-slider/",
+      "categories": [
+        "components",
+        "inputs"
+      ],
+      "tags": [
+        "range control",
+        "appearance",
+        "gradient"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/PriyanshuGupta28_bright-swan-54.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "appearance",
+        "gradient"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "email-subscribe-field",
+      "name": "Email Subscribe Field",
+      "path": "components/inputs/email-subscribe-field/",
+      "categories": [
+        "components",
+        "inputs"
+      ],
+      "tags": [
+        "integrated submit",
+        "flex",
+        "focus"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/alexruix_evil-parrot-59.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "flex",
+        "focus"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "nested-color-loader",
+      "name": "Nested Color Loader",
+      "path": "animations/loading/nested-color-loader/",
+      "categories": [
+        "animations",
+        "loaders"
+      ],
+      "tags": [
+        "nested rings",
+        "border",
+        "keyframes"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/benjimich_shy-newt-25.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "border",
+        "keyframes"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "bounce-dot-loader",
+      "name": "Bounce Dot Loader",
+      "path": "animations/loading/bounce-dot-loader/",
+      "categories": [
+        "animations",
+        "loaders"
+      ],
+      "tags": [
+        "bounce",
+        "transform",
+        "keyframes"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/Rodrypaladin_evil-goat-39.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "transform",
+        "keyframes"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "dual-ring-loader",
+      "name": "Dual Ring Loader",
+      "path": "animations/loading/dual-ring-loader/",
+      "categories": [
+        "animations",
+        "loaders"
+      ],
+      "tags": [
+        "dual rings",
+        "border",
+        "keyframes"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/Victan78_serious-gecko-84.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "border",
+        "keyframes"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "segment-spinner",
+      "name": "Segment Spinner",
+      "path": "animations/loading/segment-spinner/",
+      "categories": [
+        "animations",
+        "loaders"
+      ],
+      "tags": [
+        "segments",
+        "border",
+        "keyframes"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/d4niz_bitter-seahorse-2.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "border",
+        "keyframes"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "progress-dots",
+      "name": "Progress Dots",
+      "path": "animations/loading/progress-dots/",
+      "categories": [
+        "animations",
+        "loaders"
+      ],
+      "tags": [
+        "sequential dots",
+        "opacity",
+        "keyframes"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/Praashoo7_green-goat-59.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "opacity",
+        "keyframes"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "gradient-orbit-loader",
+      "name": "Gradient Orbit Loader",
+      "path": "animations/loading/gradient-orbit-loader/",
+      "categories": [
+        "animations",
+        "loaders"
+      ],
+      "tags": [
+        "gradient orbit",
+        "gradient",
+        "transform"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/gharsh11032000_slimy-donkey-39.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "conditional",
+      "complexity": "low",
+      "performance": "medium",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "gradient",
+        "transform"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "location-pin-loader",
+      "name": "Location Pin Loader",
+      "path": "animations/loading/location-pin-loader/",
+      "categories": [
+        "animations",
+        "loaders"
+      ],
+      "tags": [
+        "pin bounce",
+        "transform",
+        "keyframes"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/JaydipPrajapati1910_bright-fox-47.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "transform",
+        "keyframes"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "moon-phase-loader",
+      "name": "Moon Phase Loader",
+      "path": "animations/loading/moon-phase-loader/",
+      "categories": [
+        "animations",
+        "loaders"
+      ],
+      "tags": [
+        "moon phase",
+        "box-shadow",
+        "keyframes"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/JkHuger_bad-parrot-46.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "box-shadow",
+        "keyframes"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "bubble-row-loader",
+      "name": "Bubble Row Loader",
+      "path": "animations/loading/bubble-row-loader/",
+      "categories": [
+        "animations",
+        "loaders"
+      ],
+      "tags": [
+        "bubble row",
+        "transform",
+        "keyframes"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/LeonKohli_ordinary-rat-31.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "transform",
+        "keyframes"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "loading-text-indicator",
+      "name": "Loading Text Indicator",
+      "path": "animations/loading/loading-text-indicator/",
+      "categories": [
+        "animations",
+        "loaders"
+      ],
+      "tags": [
+        "text indicator",
+        "opacity",
+        "keyframes"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/Shoh2008_ancient-lionfish-44.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "safe",
+      "reducedMotion": true,
+      "techniques": [
+        "opacity",
+        "keyframes"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "gradient-halo-hover",
+      "name": "Gradient Halo Hover",
+      "path": "effects/hover/gradient-halo-hover/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "gradient halo",
+        "pseudo-elements",
+        "transform"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/mrhyddenn_slimy-jellyfish-95.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "conditional",
+      "complexity": "low",
+      "performance": "medium",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "techniques": [
+        "pseudo-elements",
+        "transform"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "text-swap-hover",
+      "name": "Text Swap Hover",
+      "path": "effects/hover/text-swap-hover/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "text swap",
+        "pseudo-elements",
+        "transform"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Gaurav-WebDev_tall-mayfly-60.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "techniques": [
+        "pseudo-elements",
+        "transform"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "wave-fill-hover",
+      "name": "Wave Fill Hover",
+      "path": "effects/hover/wave-fill-hover/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "wave fill",
+        "pseudo-elements",
+        "transform"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Salahkarrar_thin-wombat-41.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "techniques": [
+        "pseudo-elements",
+        "transform"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "gradient-border-hover",
+      "name": "Gradient Border Hover",
+      "path": "effects/hover/gradient-border-hover/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "gradient border",
+        "gradient",
+        "transition"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Spacious74_horrible-horse-4.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "conditional",
+      "complexity": "low",
+      "performance": "medium",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "techniques": [
+        "gradient",
+        "transition"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "offset-layer-hover",
+      "name": "Offset Layer Hover",
+      "path": "effects/hover/offset-layer-hover/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "offset layer",
+        "transform",
+        "box-shadow"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Voxybuns_lucky-fireant-71.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "techniques": [
+        "transform",
+        "box-shadow"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "sliding-surface-hover",
+      "name": "Sliding Surface Hover",
+      "path": "effects/hover/sliding-surface-hover/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "sliding surface",
+        "pseudo-elements",
+        "transform"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Dashrath-Sharma_heavy-squid-49.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "techniques": [
+        "pseudo-elements",
+        "transform"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "orange-emphasis-hover",
+      "name": "Orange Emphasis Hover",
+      "path": "effects/hover/orange-emphasis-hover/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "color emphasis",
+        "transition",
+        "background-color"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Progee45_lucky-turkey-67.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "techniques": [
+        "transition",
+        "background-color"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "raised-outline-hover",
+      "name": "Raised Outline Hover",
+      "path": "effects/hover/raised-outline-hover/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "raised outline",
+        "box-shadow",
+        "transform"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Niranjan360_cowardly-robin-27.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "techniques": [
+        "box-shadow",
+        "transform"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "inset-depth-hover",
+      "name": "Inset Depth Hover",
+      "path": "effects/hover/inset-depth-hover/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "inset depth",
+        "box-shadow",
+        "transition"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/BHARGAVPATEL1244_great-catfish-18.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "techniques": [
+        "box-shadow",
+        "transition"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    },
+    {
+      "id": "press-depth-hover",
+      "name": "Press Depth Hover",
+      "path": "effects/hover/press-depth-hover/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "press depth",
+        "transform",
+        "box-shadow"
+      ],
+      "source": {
+        "name": "Uiverse Galaxy",
+        "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Bodyhc_itchy-dragonfly-35.html",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (Uiverse.io 2023)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "techniques": [
+        "transform",
+        "box-shadow"
+      ],
+      "browserNotes": "Modern browsers with prefers-reduced-motion support."
+    }
+  ]
 }

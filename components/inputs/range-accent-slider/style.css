@@ -1,0 +1,38 @@
+/* Adapted from Uiverse Galaxy by PriyanshuGupta28. MIT; see README.md. */
+.uk-range-accent-slider{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#4158D0;--ui-duration:180ms}
+.uk-range-accent-slider .slider{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--ui-accent);
+  background-image: linear-gradient(43deg, var(--ui-accent) 0%, #C850C0 46%, #FFCC70 100%);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.uk-range-accent-slider .slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4c00ff;
+  background-image: linear-gradient(160deg, #4900f5 0%, #80D0C7 100%);
+  cursor: pointer;
+}
+.uk-range-accent-slider .slider::-moz-range-thumb{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  cursor: pointer;
+}
+
+.uk-range-accent-slider :is(button,input,a,textarea,select):focus-visible,.uk-range-accent-slider:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-range-accent-slider .ui-field-label,.uk-range-accent-slider .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-range-accent-slider .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-range-accent-slider *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-range-accent-slider *,.uk-range-accent-slider *::before,.uk-range-accent-slider *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

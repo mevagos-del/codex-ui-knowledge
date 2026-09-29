@@ -1,0 +1,32 @@
+/* Adapted from Uiverse Galaxy by Shakil-Babu. MIT; see README.md. */
+.uk-shadow-lift-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#00BFA6;--ui-duration:180ms}
+.uk-shadow-lift-button .btn{
+ background-color: var(--ui-accent);
+ padding: 14px 40px;
+ color: #fff;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ cursor: pointer;
+ border-radius: 10px;
+ border: 2px dashed var(--ui-accent);
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+ transition: .4s;
+}
+.uk-shadow-lift-button .btn span:last-child{
+ display: none;
+}
+.uk-shadow-lift-button .btn:is(:hover, :focus-visible){
+ transition: .4s;
+ border: 2px dashed var(--ui-accent);
+ background-color: #fff;
+ color: var(--ui-accent);
+}
+.uk-shadow-lift-button .btn:active{
+ background-color: #87dbd0;
+}
+
+.uk-shadow-lift-button :is(button,input,a,textarea,select):focus-visible,.uk-shadow-lift-button:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-shadow-lift-button .ui-field-label,.uk-shadow-lift-button .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-shadow-lift-button .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-shadow-lift-button *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-shadow-lift-button *,.uk-shadow-lift-button *::before,.uk-shadow-lift-button *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

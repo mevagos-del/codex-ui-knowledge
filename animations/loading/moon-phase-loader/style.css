@@ -1,0 +1,36 @@
+/* Adapted from Uiverse Galaxy by JkHuger. MIT; see README.md. */
+.uk-moon-phase-loader{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#212121;--ui-duration:180ms}
+.uk-moon-phase-loader .moon,
+.uk-moon-phase-loader .shadow{
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(216, 216, 216);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.uk-moon-phase-loader .shadow{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background: var(--ui-accent);
+
+  transition: all .3s ease;
+  animation: uk-moon-phase-loader-move_4123 1.2s infinite alternate ease-in-out;
+  transform: translate3d(8px, -8px, 0);
+}
+@keyframes uk-moon-phase-loader-move_4123{
+  100% {
+    transform: translate3d(36px, -36px, 0);
+  }
+}
+
+.uk-moon-phase-loader :is(button,input,a,textarea,select):focus-visible,.uk-moon-phase-loader:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-moon-phase-loader .ui-field-label,.uk-moon-phase-loader .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-moon-phase-loader .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-moon-phase-loader *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-moon-phase-loader *,.uk-moon-phase-loader *::before,.uk-moon-phase-loader *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

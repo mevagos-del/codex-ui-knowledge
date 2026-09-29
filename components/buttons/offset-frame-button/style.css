@@ -1,0 +1,31 @@
+/* Adapted from Uiverse Galaxy by adamgiebl. MIT; see README.md. */
+.uk-offset-frame-button{box-sizing:border-box;max-inline-size:100%;inline-size:100%;--ui-accent:#2ecc71;--ui-duration:180ms}
+.uk-offset-frame-button button{
+ position: relative;
+ padding: 10px 40px;
+ margin: 0px 10px 10px 0px;
+ float: left;
+ border-radius: 3px;
+ font-size: 20px;
+ color: #FFF;
+ text-decoration: none;
+ background-color: var(--ui-accent);
+ border: none;
+ border-bottom: 5px solid #27ae60;
+ text-shadow: 0px -2px #27ae60;
+ -webkit-transition: all 0.1s;
+ transition: all 0.1s;
+}
+.uk-offset-frame-button button:is(:hover, :focus-visible),
+.uk-offset-frame-button button:active{
+ -webkit-transform: translate(0px,5px);
+ -ms-transform: translate(0px,5px);
+ transform: translate(0px,5px);
+ border-bottom: 1px solid var(--ui-accent);
+}
+
+.uk-offset-frame-button :is(button,input,a,textarea,select):focus-visible,.uk-offset-frame-button:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-offset-frame-button .ui-field-label,.uk-offset-frame-button .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-offset-frame-button .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-offset-frame-button *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-offset-frame-button *,.uk-offset-frame-button *::before,.uk-offset-frame-button *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
