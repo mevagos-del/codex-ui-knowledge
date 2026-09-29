@@ -1,0 +1,49 @@
+/* Adapted from Uiverse Galaxy by Salahkarrar. MIT; see README.md. */
+.uk-wave-fill-hover{box-sizing:border-box;max-inline-size:100%;--ui-accent:#eaf2f8;--ui-duration:180ms}
+.uk-wave-fill-hover .wave-button{
+  background-color: var(--ui-accent);
+  border: 2px solid #ddd;
+  color: #000;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.uk-wave-fill-hover .wave-button:before{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0px;
+  background-color: rebeccapurple;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+  transition: all 0.5s ease;
+}
+.uk-wave-fill-hover .wave-button:is(:hover, :focus-visible){
+  background-color: #ddd;
+  border-color: rebeccapurple;
+}
+.uk-wave-fill-hover .wave-button:is(:hover, :focus-visible):before{
+  height: 5%;
+  width: 100%;
+  animation: uk-wave-fill-hover-wave-animation 0.5s linear forwards;
+}
+@keyframes uk-wave-fill-hover-wave-animation{
+  to {
+    right: 100%;
+  }
+}
+.uk-wave-fill-hover .wave-button span{
+  position: relative;
+  z-index: 1;
+}
+
+.uk-wave-fill-hover :is(button,input,a,textarea,select):focus-visible,.uk-wave-fill-hover:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-wave-fill-hover .ui-field-label,.uk-wave-fill-hover .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-wave-fill-hover .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-wave-fill-hover *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-wave-fill-hover *,.uk-wave-fill-hover *::before,.uk-wave-fill-hover *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

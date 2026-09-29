@@ -1,0 +1,54 @@
+/* Adapted from Uiverse Galaxy by BHARGAVPATEL1244. MIT; see README.md. */
+.uk-inset-depth-hover{box-sizing:border-box;max-inline-size:100%;--ui-accent:#66ff66;--ui-duration:180ms}
+.uk-inset-depth-hover button{
+ outline: none;
+ cursor: pointer;
+ border: none;
+ padding: 0.9rem 2rem;
+ margin: 0;
+ font-family: inherit;
+ font-size: inherit;
+ position: relative;
+ display: inline-block;
+ letter-spacing: 0.05rem;
+ font-weight: 700;
+ font-size: 17px;
+ border-radius: 500px;
+ overflow: hidden;
+ background: var(--ui-accent);
+ color: ghostwhite;
+}
+.uk-inset-depth-hover button span{
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+}
+.uk-inset-depth-hover button:is(:hover, :focus-visible) span{
+ color: black;
+}
+.uk-inset-depth-hover button::before,
+.uk-inset-depth-hover button::after{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+}
+.uk-inset-depth-hover button::before{
+ content: "";
+ background: #000;
+ width: 120%;
+ left: -10%;
+ transform: skew(30deg);
+ transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+.uk-inset-depth-hover button:is(:hover, :focus-visible)::before{
+ transform: translate3d(100%, 0, 0);
+}
+
+.uk-inset-depth-hover :is(button,input,a,textarea,select):focus-visible,.uk-inset-depth-hover:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-inset-depth-hover .ui-field-label,.uk-inset-depth-hover .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-inset-depth-hover .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-inset-depth-hover *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-inset-depth-hover *,.uk-inset-depth-hover *::before,.uk-inset-depth-hover *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
