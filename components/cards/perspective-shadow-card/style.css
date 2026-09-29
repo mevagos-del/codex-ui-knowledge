@@ -1,0 +1,31 @@
+/* Adapted from Uiverse Galaxy by javierBarroso. MIT; see README.md. */
+.uk-perspective-shadow-card{box-sizing:border-box;max-inline-size:100%;--ui-duration:180ms}
+.uk-perspective-shadow-card .card{
+  width: 150px;
+  height: 200px;
+  background: #ffffff;
+  transition: box-shadow .3s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  transform: rotateX(30deg) rotateY(-10deg) rotateZ(30deg);
+  border-radius: 10px;
+}
+.uk-perspective-shadow-card .card:hover{
+  box-shadow: rgba(255,255,255,0.5) 5px 10px ,
+  rgba(255,255,255,0.4) 10px 20px ,
+  rgba(255,255,255,0.3) 15px 30px;
+}
+.uk-perspective-shadow-card .container{
+  transform-style: preserve-3d;
+  perspective: 250px;
+}
+
+.uk-perspective-shadow-card :is(button,input,a,textarea,select):focus-visible,.uk-perspective-shadow-card:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-perspective-shadow-card .ui-field-label,.uk-perspective-shadow-card .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-perspective-shadow-card .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-perspective-shadow-card *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-perspective-shadow-card *,.uk-perspective-shadow-card *::before,.uk-perspective-shadow-card *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

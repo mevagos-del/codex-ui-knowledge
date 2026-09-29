@@ -1,0 +1,43 @@
+/* Adapted from Uiverse Galaxy by Yaya12085. MIT; see README.md. */
+.uk-paper-sheet-card{box-sizing:border-box;max-inline-size:100%;--ui-duration:180ms}
+.uk-paper-sheet-card .papper{
+  position: relative;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  background: #ffffff;
+  background-image: linear-gradient(#ffffff 1.1rem, #ccc 1.2rem);
+  background-size: 100% 1.2rem;
+  border-radius: 10px;
+  cursor: move;
+}
+.uk-paper-sheet-card .papper::before,
+.uk-paper-sheet-card .papper::after{
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.uk-paper-sheet-card .papper::before{
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+.uk-paper-sheet-card .papper::after{
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+.uk-paper-sheet-card .papper:hover::before,
+.uk-paper-sheet-card .papper:hover::after{
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.uk-paper-sheet-card :is(button,input,a,textarea,select):focus-visible,.uk-paper-sheet-card:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-paper-sheet-card .ui-field-label,.uk-paper-sheet-card .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-paper-sheet-card .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-paper-sheet-card *{box-sizing:border-box;max-inline-size:100%}
+.uk-paper-sheet-card .papper{padding:1rem;cursor:default}
+@media (prefers-reduced-motion:reduce){.uk-paper-sheet-card *,.uk-paper-sheet-card *::before,.uk-paper-sheet-card *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

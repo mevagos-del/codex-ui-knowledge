@@ -1,0 +1,46 @@
+/* Adapted from Uiverse Galaxy by imPradhyumn. MIT; see README.md. */
+.uk-sliding-details-card{box-sizing:border-box;max-inline-size:100%;--ui-duration:180ms}
+.uk-sliding-details-card .card{
+  width: 190px;
+  height: 254px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  position: relative;
+}
+.uk-sliding-details-card .remove-when-use{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  color: black;
+  top: 85px;
+  font-weight: bold;
+}
+.uk-sliding-details-card .details > p{
+  font-size: .8em;
+  margin-top: .5em;
+}
+.uk-sliding-details-card .details > h2{
+  font-weight: bold;
+}
+.uk-sliding-details-card .details{
+  color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 0;
+  height: 2.6em;
+  transition: height .5s ease-in-out;
+  padding: 0.6em;
+  overflow: hidden;
+}
+.uk-sliding-details-card .card:hover > .details{
+  height: 6.7em;
+}
+.uk-sliding-details-card .card:focus > .details,
+.uk-sliding-details-card .card:focus-within > .details{height:6.7em}
+
+.uk-sliding-details-card :is(button,input,a,textarea,select):focus-visible,.uk-sliding-details-card:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-sliding-details-card .ui-field-label,.uk-sliding-details-card .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-sliding-details-card .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-sliding-details-card *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-sliding-details-card *,.uk-sliding-details-card *::before,.uk-sliding-details-card *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

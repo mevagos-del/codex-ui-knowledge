@@ -1,0 +1,41 @@
+/* Adapted from Uiverse Galaxy by EmmaxPlay. MIT; see README.md. */
+.uk-window-chrome-card{box-sizing:border-box;max-inline-size:100%;--ui-accent:#011522;--ui-duration:180ms}
+.uk-window-chrome-card .card{
+ width: 190px;
+ height: 254px;
+ margin: 0 auto;
+ background-color: var(--ui-accent);
+ border-radius: 8px;
+ z-index: 1;
+}
+.uk-window-chrome-card .tools{
+ display: flex;
+ align-items: center;
+ padding: 9px;
+}
+.uk-window-chrome-card .circle{
+ padding: 0 4px;
+}
+.uk-window-chrome-card .box{
+ display: inline-block;
+ align-items: center;
+ width: 10px;
+ height: 10px;
+ padding: 1px;
+ border-radius: 50%;
+}
+.uk-window-chrome-card .red{
+ background-color: #ff605c;
+}
+.uk-window-chrome-card .yellow{
+ background-color: #ffbd44;
+}
+.uk-window-chrome-card .green{
+ background-color: #00ca4e;
+}
+
+.uk-window-chrome-card :is(button,input,a,textarea,select):focus-visible,.uk-window-chrome-card:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-window-chrome-card .ui-field-label,.uk-window-chrome-card .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-window-chrome-card .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-window-chrome-card *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-window-chrome-card *,.uk-window-chrome-card *::before,.uk-window-chrome-card *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

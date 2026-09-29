@@ -1,0 +1,58 @@
+/* Adapted from Uiverse Galaxy by shadowmurphy. MIT; see README.md. */
+.uk-metric-summary-card{box-sizing:border-box;max-inline-size:100%;--ui-accent:#262626;--ui-duration:180ms}
+.uk-metric-summary-card .card{
+  width: 350px;
+  height: 150px;
+  background: var(--ui-accent);
+  border-radius: 10px;
+  border: 1px solid #3F3F40;
+}
+.uk-metric-summary-card a{
+  text-decoration: none;
+}
+.uk-metric-summary-card header,
+.uk-metric-summary-card footer,
+.uk-metric-summary-card main{
+  display: flex;
+  align-items: center;
+}
+.uk-metric-summary-card header{
+  justify-content: space-between;
+  margin: 20px;
+  color: #BDBFB7;
+}
+.uk-metric-summary-card header a{
+  font-size: 15px;
+  cursor: pointer;
+  color: #BDBFB7
+}
+.uk-metric-summary-card main{
+  justify-content: flex-start;
+  margin: 20px;
+}
+.uk-metric-summary-card main p{
+  color: white;
+  font-weight: 600;
+}
+.uk-metric-summary-card main a{
+  color: #BDBFB7;
+  font-weight: 100;
+}
+.uk-metric-summary-card footer{
+  margin: 20px;
+  font-size: 15px;
+  gap: 5px;
+}
+.uk-metric-summary-card footer a{
+  color: #2CAD3D;
+  font-weight: 600;
+}
+.uk-metric-summary-card footer p{
+  color: white;
+}
+
+.uk-metric-summary-card :is(button,input,a,textarea,select):focus-visible,.uk-metric-summary-card:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-metric-summary-card .ui-field-label,.uk-metric-summary-card .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-metric-summary-card .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-metric-summary-card *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-metric-summary-card *,.uk-metric-summary-card *::before,.uk-metric-summary-card *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
