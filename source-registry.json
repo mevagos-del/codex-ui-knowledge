@@ -27,18 +27,18 @@
       "repository": "https://github.com/argyleink/open-props",
       "ownerRepository": "argyleink/open-props",
       "license": {
-        "status": "unverified",
-        "name": null,
-        "url": null,
-        "localFile": null
+        "status": "verified",
+        "name": "MIT",
+        "url": "https://github.com/argyleink/open-props/blob/530682d04327f842f56bb1ec33cf84a3cadb3876/LICENSE",
+        "localFile": "licenses/open-props-MIT.md"
       },
       "provenance": {
         "strategy": "github-blob",
         "sourceUrlPattern": "^https://github\\.com/argyleink/open-props/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
         "revisionRequired": true
       },
-      "status": "planned",
-      "notes": "Approved for a future curated phase; license verification is still required before import."
+      "status": "active",
+      "notes": "License and six token-family source files verified at immutable commit 530682d04327f842f56bb1ec33cf84a3cadb3876."
     },
     {
       "id": "hover-css",
