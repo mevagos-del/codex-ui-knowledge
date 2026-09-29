@@ -1,0 +1,33 @@
+/* Adapted from Uiverse Galaxy by JaydipPrajapati1910. MIT; see README.md. */
+.uk-location-pin-loader{box-sizing:border-box;max-inline-size:100%;--ui-accent:#ff4747;--ui-duration:180ms}
+.uk-location-pin-loader .loader{
+  width: 44.8px;
+  height: 44.8px;
+  position: relative;
+  transform: rotate(45deg);
+}
+.uk-location-pin-loader .loader:before,
+.uk-location-pin-loader .loader:after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50% 50% 0 50%;
+  background: #0000;
+  background-image: radial-gradient(circle 11.2px at 50% 50%,#0000 94%, var(--ui-accent));
+}
+.uk-location-pin-loader .loader:after{
+  animation: uk-location-pin-loader-pulse-ytk0dhmd 1s infinite;
+  transform: perspective(336px) translateZ(0px);
+}
+@keyframes uk-location-pin-loader-pulse-ytk0dhmd{
+  to {
+    transform: perspective(336px) translateZ(168px);
+    opacity: 0;
+  }
+}
+
+.uk-location-pin-loader :is(button,input,a,textarea,select):focus-visible,.uk-location-pin-loader:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-location-pin-loader .ui-field-label,.uk-location-pin-loader .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-location-pin-loader .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-location-pin-loader *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-location-pin-loader *,.uk-location-pin-loader *::before,.uk-location-pin-loader *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

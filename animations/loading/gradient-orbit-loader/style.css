@@ -1,0 +1,37 @@
+/* Adapted from Uiverse Galaxy by gharsh11032000. MIT; see README.md. */
+.uk-gradient-orbit-loader{box-sizing:border-box;max-inline-size:100%;--ui-accent:#fc00ff;--ui-duration:180ms}
+.uk-gradient-orbit-loader .loader{
+  width: 5em;
+  height: 5em;
+  background: linear-gradient(-45deg, var(--ui-accent) 0%, #00dbde 100% );
+  animation: uk-gradient-orbit-loader-spin 3s infinite;
+}
+.uk-gradient-orbit-loader .loader::before{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, var(--ui-accent) 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+@keyframes uk-gradient-orbit-loader-spin{
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    transform: rotate(-360deg);
+    border-radius: 50%;
+  }
+
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+.uk-gradient-orbit-loader :is(button,input,a,textarea,select):focus-visible,.uk-gradient-orbit-loader:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-gradient-orbit-loader .ui-field-label,.uk-gradient-orbit-loader .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-gradient-orbit-loader .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-gradient-orbit-loader *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-gradient-orbit-loader *,.uk-gradient-orbit-loader *::before,.uk-gradient-orbit-loader *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

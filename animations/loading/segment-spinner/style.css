@@ -1,0 +1,38 @@
+/* Adapted from Uiverse Galaxy by d4niz. MIT; see README.md. */
+.uk-segment-spinner{box-sizing:border-box;max-inline-size:100%;--ui-accent:#008cff;--ui-duration:180ms}
+.uk-segment-spinner .loader{
+  width: 56px;
+  height: 56px;
+  display: grid;
+  border: 4.6px solid #0000;
+  border-radius: 100%;
+  border-color: var(--ui-accent) #0000;
+  animation: uk-segment-spinner-spinner-e04l1k 1.5s infinite linear;
+}
+.uk-segment-spinner .loader::before,
+.uk-segment-spinner .loader::after{
+  content: "";
+  grid-area: 1/1;
+  margin: 8px;
+  border: inherit;
+  border-radius: 50%;
+}
+.uk-segment-spinner .loader::before{
+  border-color: #048be6 #0000;
+  animation: inherit;
+  animation-duration: 0.1s;
+}
+.uk-segment-spinner .loader::after{
+  margin: 2.9px;
+}
+@keyframes uk-segment-spinner-spinner-e04l1k{
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.uk-segment-spinner :is(button,input,a,textarea,select):focus-visible,.uk-segment-spinner:focus-visible{outline:3px solid #2563eb!important;outline-offset:3px}
+.uk-segment-spinner .ui-field-label,.uk-segment-spinner .ui-status-label{display:block;margin-block:.5rem;color:#f8fafc;font:600 .9rem system-ui,sans-serif}
+.uk-segment-spinner .ui-code-group{border:0;padding:0;color:#f8fafc}
+.uk-segment-spinner *{box-sizing:border-box;max-inline-size:100%}
+@media (prefers-reduced-motion:reduce){.uk-segment-spinner *,.uk-segment-spinner *::before,.uk-segment-spinner *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
