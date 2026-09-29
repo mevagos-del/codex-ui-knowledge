@@ -1,6 +1,6 @@
 {
   "$schema": "./catalog.schema.json",
-  "version": 1,
+  "version": 2,
   "patterns": [
     {
       "id": "purple-focus-button",
@@ -16,8 +16,9 @@
         "background-color"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/hakemdamer222_funny-ape-73.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -46,8 +47,9 @@
         "keyframes"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/deepak16375_ugly-crab-3.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -76,8 +78,9 @@
         "border-radius"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Praashoo7_brown-quail-45.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -106,8 +109,9 @@
         "box-shadow"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/barisdogansutcu_heavy-dragon-15.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -136,8 +140,9 @@
         "keyframes"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Shoh2008_hungry-treefrog-88.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -166,8 +171,9 @@
         "transition"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Codecite_fluffy-bear-28.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -196,8 +202,9 @@
         "border"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Cornerstone-04_chatty-eel-89.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -226,8 +233,9 @@
         "box-shadow"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/cssbuttons-io_stale-rattlesnake-87.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -256,8 +264,9 @@
         "transition"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Shakil-Babu_moody-mule-8.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -286,8 +295,9 @@
         "position"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/adamgiebl_big-moose-23.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -316,8 +326,9 @@
         "border"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/JaydipPrajapati1910_strange-walrus-5.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -346,8 +357,9 @@
         "transition"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/SachinKumar666_spicy-tiger-75.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -376,8 +388,9 @@
         "typography"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/alexmaracinaru_purple-zebra-61.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -406,8 +419,9 @@
         "box-shadow"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/javierBarroso_rare-deer-29.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -436,8 +450,9 @@
         "border"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/shadowmurphy_spicy-eel-22.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -466,8 +481,9 @@
         "flex"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/EmmaxPlay_curvy-stingray-36.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -496,8 +512,9 @@
         "gradient"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/Yaya12085_ugly-earwig-69.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -526,8 +543,9 @@
         "box-shadow"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/Spacious74_black-dragon-31.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -556,8 +574,9 @@
         "background-color"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/Javierrocadev_fast-panther-65.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -586,8 +605,9 @@
         "overflow"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/imPradhyumn_nice-rattlesnake-46.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -616,8 +636,9 @@
         "focus"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/andrew-demchenk0_polite-stingray-67.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -646,8 +667,9 @@
         "focus"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/vinodjangid07_cuddly-deer-66.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -676,8 +698,9 @@
         "focus"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/shadowmurphy_selfish-bulldog-79.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -706,8 +729,9 @@
         "transform"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/SanthoshSJ-Dev_mean-wolverine-8.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -736,8 +760,9 @@
         "transform"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/alexruix_slippery-snail-18.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -766,8 +791,9 @@
         "transition"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/elijahgummer_nice-otter-15.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -796,8 +822,9 @@
         "focus"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/Bodyhc_afraid-eel-42.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -826,8 +853,9 @@
         "border"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/barisdogansutcu_gentle-pig-32.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -856,8 +884,9 @@
         "gradient"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/PriyanshuGupta28_bright-swan-54.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -886,8 +915,9 @@
         "focus"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Inputs/alexruix_evil-parrot-59.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -916,8 +946,9 @@
         "keyframes"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/benjimich_shy-newt-25.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -946,8 +977,9 @@
         "keyframes"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/Rodrypaladin_evil-goat-39.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -976,8 +1008,9 @@
         "keyframes"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/Victan78_serious-gecko-84.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1006,8 +1039,9 @@
         "keyframes"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/d4niz_bitter-seahorse-2.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1036,8 +1070,9 @@
         "keyframes"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/Praashoo7_green-goat-59.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1066,8 +1101,9 @@
         "transform"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/gharsh11032000_slimy-donkey-39.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1096,8 +1132,9 @@
         "keyframes"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/JaydipPrajapati1910_bright-fox-47.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1126,8 +1163,9 @@
         "keyframes"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/JkHuger_bad-parrot-46.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1156,8 +1194,9 @@
         "keyframes"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/LeonKohli_ordinary-rat-31.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1186,8 +1225,9 @@
         "keyframes"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/Shoh2008_ancient-lionfish-44.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1216,8 +1256,9 @@
         "transform"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/mrhyddenn_slimy-jellyfish-95.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1246,8 +1287,9 @@
         "transform"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Gaurav-WebDev_tall-mayfly-60.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1276,8 +1318,9 @@
         "transform"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Salahkarrar_thin-wombat-41.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1306,8 +1349,9 @@
         "transition"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Spacious74_horrible-horse-4.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1336,8 +1380,9 @@
         "box-shadow"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Voxybuns_lucky-fireant-71.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1366,8 +1411,9 @@
         "transform"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Dashrath-Sharma_heavy-squid-49.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1396,8 +1442,9 @@
         "background-color"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Progee45_lucky-turkey-67.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1426,8 +1473,9 @@
         "transform"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Niranjan360_cowardly-robin-27.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1456,8 +1504,9 @@
         "transition"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/BHARGAVPATEL1244_great-catfish-18.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",
@@ -1486,8 +1535,9 @@
         "box-shadow"
       ],
       "source": {
-        "name": "Uiverse Galaxy",
+        "id": "uiverse-galaxy",
         "url": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Bodyhc_itchy-dragonfly-35.html",
+        "revision": "adbd2adde0a299a3956ea288fb444ec01891ca41",
         "adaptation": "adapted"
       },
       "license": "MIT (Uiverse.io 2023)",

@@ -3,39 +3,66 @@
   "$id": "https://github.com/mevagos-del/codex-ui-knowledge/catalog.schema.json",
   "title": "Codex UI Knowledge catalog",
   "type": "object",
+  "additionalProperties": false,
   "required": ["version", "patterns"],
   "properties": {
-    "version": { "type": "integer", "minimum": 1 },
+    "$schema": { "type": "string" },
+    "version": { "type": "integer", "minimum": 2 },
     "patterns": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["id", "name", "path", "categories", "tags", "source", "license", "production", "performance", "mobile", "reducedMotion"],
-        "properties": {
-          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
-          "name": { "type": "string", "minLength": 1 },
-          "path": { "type": "string", "minLength": 1 },
-          "categories": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
-          "tags": { "type": "array", "items": { "type": "string" } },
-          "source": {
-            "type": "object",
-            "required": ["name", "url", "adaptation"],
-            "properties": {
-              "name": { "type": "string" },
-              "url": { "type": "string", "format": "uri" },
-              "adaptation": { "enum": ["copied", "adapted", "reimplemented"] }
-            }
-          },
-          "license": { "type": "string", "minLength": 1 },
-          "production": { "enum": ["recommended", "conditional", "experimental"] },
-          "complexity": { "enum": ["low", "medium", "high"] },
-          "performance": { "enum": ["excellent", "good", "medium", "expensive"] },
-          "mobile": { "enum": ["safe", "fallback", "avoid"] },
-          "reducedMotion": { "type": "boolean" },
-          "techniques": { "type": "array", "items": { "type": "string" } },
-          "browserNotes": { "type": "string" }
-        }
+      "items": { "$ref": "#/$defs/pattern" }
+    }
+  },
+  "$defs": {
+    "pattern": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "name", "path", "categories", "tags", "source", "license",
+        "production", "complexity", "performance", "mobile", "reducedMotion",
+        "techniques", "browserNotes"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "path": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+/$"
+        },
+        "categories": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "url", "adaptation"],
+          "properties": {
+            "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+            "url": { "type": "string", "format": "uri" },
+            "revision": { "type": "string", "minLength": 1 },
+            "adaptation": { "enum": ["copied", "adapted", "reimplemented"] }
+          }
+        },
+        "license": { "type": "string", "minLength": 1 },
+        "production": { "enum": ["recommended", "conditional", "experimental"] },
+        "complexity": { "enum": ["low", "medium", "high"] },
+        "performance": { "enum": ["excellent", "good", "medium", "expensive"] },
+        "mobile": { "enum": ["safe", "fallback", "avoid"] },
+        "reducedMotion": { "type": "boolean" },
+        "techniques": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "browserNotes": { "type": "string" }
       }
     }
   }
