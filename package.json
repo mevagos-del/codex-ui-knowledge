@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "node --test scripts/*.test.mjs && npm run validate",
-    "validate": "node scripts/validate-catalog.mjs"
+    "validate": "node scripts/validate-catalog.mjs",
+    "generate:index": "node scripts/generate-search-index.mjs",
+    "recommend": "node scripts/recommend.mjs"
   },
   "license": "MIT",
   "devDependencies": {
