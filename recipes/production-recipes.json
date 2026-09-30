@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "clean-dashboard-card",
+      "name": "Clean dashboard card",
+      "useCase": "metric-card",
+      "packages": [
+        { "id": "metric-summary-card", "role": "component", "required": true },
+        { "id": "sizes-spacing", "role": "spacing guidance", "required": false },
+        { "id": "radii", "role": "shape guidance", "required": false },
+        { "id": "shadows", "role": "elevation guidance", "required": false }
+      ],
+      "includes": [],
+      "guidance": ["Map tokens to existing semantic project roles.", "Keep hover feedback secondary to the metric content."],
+      "rejectWhen": ["The card repeats information already visible in the surrounding table.", "Elevation competes with a dense dashboard background."]
+    },
+    {
+      "id": "primary-action-button",
+      "name": "Primary action button",
+      "useCase": "primary-action",
+      "packages": [
+        { "id": "purple-focus-button", "role": "accessible baseline", "required": true },
+        { "id": "shadow-lift-button", "role": "optional depth variant", "required": false },
+        { "id": "easings", "role": "timing guidance", "required": false }
+      ],
+      "includes": [],
+      "guidance": ["Preserve a native button and visible focus state.", "Use one primary action treatment per decision area."],
+      "rejectWhen": ["The action is secondary or destructive but the treatment implies primary progression.", "Feedback depends on hover alone."]
+    },
+    {
+      "id": "knowledge-base-content-page",
+      "name": "Knowledge-base content page",
+      "useCase": "content-backdrop",
+      "packages": [
+        { "id": "article-contents-card", "role": "content navigation", "required": false },
+        { "id": "typography-scale", "role": "type hierarchy guidance", "required": false },
+        { "id": "sizes-spacing", "role": "reading rhythm guidance", "required": false },
+        { "id": "warm-beige-surface", "role": "low-intensity section surface", "required": false }
+      ],
+      "includes": [],
+      "guidance": ["Keep long text on a solid reading surface.", "Use decoration outside the primary body-copy column."],
+      "rejectWhen": ["A pattern sits directly behind long body copy.", "Motion runs without communicating navigation or state."]
+    },
+    {
+      "id": "hero-section",
+      "name": "Hero section",
+      "useCase": "hero",
+      "packages": [
+        { "id": "dark-radial-glow", "role": "background", "required": false },
+        { "id": "contrast-content-card", "role": "contrast surface", "required": false },
+        { "id": "fade-in", "role": "optional one-shot entrance", "required": false },
+        { "id": "sizes-spacing", "role": "responsive spacing guidance", "required": false }
+      ],
+      "includes": [],
+      "guidance": ["Keep the primary message readable without motion.", "Remove or simplify decoration at narrow widths when it competes with content."],
+      "rejectWhen": ["Several entrance and attention effects run together.", "The background controls text contrast unpredictably."]
+    },
+    {
+      "id": "loading-state",
+      "name": "Loading state",
+      "useCase": "loading-feedback",
+      "packages": [
+        { "id": "progress-dots", "role": "bounded progress indication", "required": false },
+        { "id": "loading-text-indicator", "role": "text-first fallback", "required": true },
+        { "id": "easings", "role": "timing guidance", "required": false }
+      ],
+      "includes": [],
+      "guidance": ["Provide status text and retain it when motion is reduced.", "Use a static or skeleton state when progress animation adds no information."],
+      "rejectWhen": ["Loading is expected to complete immediately.", "A looping loader is used as permanent decoration."]
+    },
+    {
+      "id": "form-field",
+      "name": "Form field",
+      "useCase": "form-control",
+      "packages": [
+        { "id": "outlined-username-field", "role": "field baseline", "required": false },
+        { "id": "underline-focus-field", "role": "compact alternative", "required": false },
+        { "id": "head-shake-feedback", "role": "optional validation motion", "required": false },
+        { "id": "sizes-spacing", "role": "touch and spacing guidance", "required": false }
+      ],
+      "includes": [],
+      "guidance": ["Keep a persistent accessible label and visible focus.", "Pair validation motion with text and programmatic state."],
+      "rejectWhen": ["Placeholder text is the only label.", "Motion is the only validation signal."]
+    },
+    {
+      "id": "metric-card",
+      "name": "Metric card",
+      "useCase": "metric-card",
+      "packages": [
+        { "id": "metric-summary-card", "role": "component", "required": true },
+        { "id": "shadows", "role": "elevation guidance", "required": false },
+        { "id": "radii", "role": "shape guidance", "required": false },
+        { "id": "pulse-emphasis", "role": "optional exceptional-state cue", "required": false }
+      ],
+      "includes": [],
+      "guidance": ["Make the value and label readable without interaction.", "Reserve attention motion for meaningful changes."],
+      "rejectWhen": ["Pulse repeats continuously.", "The card uses high decoration in a data-heavy grid."]
+    },
+    {
+      "id": "empty-state",
+      "name": "Empty state",
+      "useCase": "empty-state",
+      "packages": [
+        { "id": "grid-dot-field", "role": "decorative structure", "required": false },
+        { "id": "contrast-content-card", "role": "readable content surface", "required": false },
+        { "id": "fade-in", "role": "optional first-render entrance", "required": false }
+      ],
+      "includes": [],
+      "guidance": ["Explain the empty condition and provide the next action.", "Keep decoration behind a bounded content surface."],
+      "rejectWhen": ["Decoration overwhelms the recovery action.", "Animation loops while the state remains empty."]
+    },
+    {
+      "id": "validation-feedback",
+      "name": "Validation feedback",
+      "useCase": "validation-feedback",
+      "packages": [
+        { "id": "outlined-username-field", "role": "field baseline", "required": false },
+        { "id": "head-shake-feedback", "role": "error cue", "required": false },
+        { "id": "pulse-emphasis", "role": "non-error attention alternative", "required": false }
+      ],
+      "includes": [],
+      "guidance": ["Use text, state, and focus placement as the primary feedback.", "Play at most one short motion cue per validation event."],
+      "rejectWhen": ["Motion replaces an error message.", "Feedback repeats automatically."]
+    },
+    {
+      "id": "responsive-media-card",
+      "name": "Responsive media card",
+      "useCase": "content-card",
+      "packages": [
+        { "id": "editorial-preview-card", "role": "component", "required": true },
+        { "id": "aspect-ratios", "role": "media sizing guidance", "required": false },
+        { "id": "radii", "role": "shape guidance", "required": false },
+        { "id": "fade-in", "role": "optional lazy-content entrance", "required": false }
+      ],
+      "includes": [],
+      "guidance": ["Reserve media space before loading to prevent layout shift.", "Keep title and action available without hover."],
+      "rejectWhen": ["The media ratio forces important content below the viewport.", "Entrance motion repeats during ordinary scrolling."]
+    }
+  ]
+}

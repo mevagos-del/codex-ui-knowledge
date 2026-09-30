@@ -20,7 +20,8 @@
       "required": [
         "id", "name", "path", "categories", "tags", "package", "source", "license",
         "production", "complexity", "performance", "mobile", "reducedMotion",
-        "techniques", "browserNotes"
+        "techniques", "browserNotes", "useCases", "visualIntensity",
+        "contentDensity", "interactionPriority", "adaptability", "risk"
       ],
       "properties": {
         "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
@@ -83,6 +84,26 @@
           "uniqueItems": true
         },
         "browserNotes": { "type": "string" },
+        "useCases": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "visualIntensity": { "enum": ["low", "medium", "high"] },
+        "contentDensity": { "enum": ["low", "medium", "high"] },
+        "interactionPriority": { "enum": ["primary", "secondary", "decorative", "none"] },
+        "adaptability": { "enum": ["high", "medium", "low"] },
+        "risk": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["accessibility", "performance", "compatibility"],
+          "properties": {
+            "accessibility": { "enum": ["low", "medium", "high"] },
+            "performance": { "enum": ["low", "medium", "high"] },
+            "compatibility": { "enum": ["low", "medium", "high"] }
+          }
+        },
         "motion": {
           "type": "object",
           "additionalProperties": false,

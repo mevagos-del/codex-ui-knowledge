@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "tokens-with-components",
+      "combines": ["tokens", "components"],
+      "guidance": "Map selected values to semantic project tokens; do not replace an existing project token system wholesale.",
+      "rejectWhen": ["project design tokens already express the required role and migration has no measured benefit"]
+    },
+    {
+      "id": "components-with-motion",
+      "combines": ["components", "animations"],
+      "guidance": "Use motion to explain state change, hierarchy, or direction and retain a complete non-motion state.",
+      "rejectWhen": ["motion is decorative only", "the component already contains a competing movement"]
+    },
+    {
+      "id": "backgrounds-with-content",
+      "combines": ["backgrounds", "components"],
+      "guidance": "Put dense or variable text on a solid or translucent content surface and keep the background decorative.",
+      "rejectWhen": ["high-intensity decoration sits directly behind body copy"]
+    },
+    {
+      "id": "backgrounds-with-overlays",
+      "combines": ["backgrounds", "overlays"],
+      "guidance": "Use one primary decorative layer and simplify or remove masks on narrow or constrained devices.",
+      "rejectWhen": ["multiple medium-cost full-surface compositing effects are stacked"]
+    },
+    {
+      "id": "shadows-with-backgrounds",
+      "combines": ["elevation", "backgrounds"],
+      "guidance": "Reduce shadow spread and layer count when the host surface already has visible texture or glow.",
+      "rejectWhen": ["heavy shadows compete with a dense surface"]
+    },
+    {
+      "id": "multiple-motion-effects",
+      "combines": ["entrance", "attention", "hover-feedback"],
+      "guidance": "Choose one motion role per interaction moment and share duration and easing tokens.",
+      "rejectWhen": ["entrance, pulse, and hover movement run on the same element without a functional reason"]
+    },
+    {
+      "id": "mobile-simplification",
+      "combines": ["mobile", "backgrounds", "animations"],
+      "guidance": "Reduce movement, blur, pattern density, and decorative layers on narrow screens while preserving content and state.",
+      "rejectWhen": ["mobile metadata is avoid", "a fallback is required but not implemented"]
+    }
+  ]
+}

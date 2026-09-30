@@ -18,6 +18,13 @@
         "sourceUrlPattern": "^https://github\\.com/uiverse-io/galaxy/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
         "revisionRequired": true
       },
+      "usage": {
+        "personal": true,
+        "openSource": true,
+        "commercial": true,
+        "reference": "https://github.com/uiverse-io/galaxy/blob/adbd2adde0a299a3956ea288fb444ec01891ca41/LICENSE",
+        "notes": "MIT terms permit personal, open-source, and commercial use subject to the license conditions."
+      },
       "status": "active",
       "notes": "Verified for the 50-pattern pilot at an immutable commit."
     },
@@ -36,6 +43,13 @@
         "strategy": "github-blob",
         "sourceUrlPattern": "^https://github\\.com/argyleink/open-props/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
         "revisionRequired": true
+      },
+      "usage": {
+        "personal": true,
+        "openSource": true,
+        "commercial": true,
+        "reference": "https://github.com/argyleink/open-props/blob/530682d04327f842f56bb1ec33cf84a3cadb3876/LICENSE",
+        "notes": "MIT terms permit personal, open-source, and commercial use subject to the license conditions."
       },
       "status": "active",
       "notes": "License and six token-family source files verified at immutable commit 530682d04327f842f56bb1ec33cf84a3cadb3876."
@@ -56,6 +70,13 @@
         "sourceUrlPattern": "^https://github\\.com/IanLunn/Hover/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
         "revisionRequired": true
       },
+      "usage": {
+        "personal": true,
+        "openSource": true,
+        "commercial": "conditional",
+        "reference": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/license.txt",
+        "notes": "The verified text grants MIT use for personal and open-source projects; commercial use is subject to the source's separate terms and must be reviewed."
+      },
       "status": "active",
       "notes": "Open-source terms and selected SCSS files verified at immutable commit eb8629df13850d78bbcccd4fed68d231aec0c535."
     },
@@ -75,6 +96,13 @@
         "sourceUrlPattern": "^https://github\\.com/animate-css/animate.css/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
         "revisionRequired": true
       },
+      "usage": {
+        "personal": "conditional",
+        "openSource": "conditional",
+        "commercial": "conditional",
+        "reference": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/LICENSE",
+        "notes": "All uses remain conditional on the verified Hippocratic License 2.1 terms and require project-specific review."
+      },
       "status": "active",
       "notes": "Hippocratic License 2.1 and selected CSS files verified at immutable commit 3f8ab233dbbd9d2fe577528d2296382954be3d1a."
     },
@@ -93,6 +121,13 @@
         "strategy": "github-blob",
         "sourceUrlPattern": "^https://github\\.com/megh-bari/pattern-craft/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)#(?<selector>L[0-9]+(?:-L[0-9]+)?)$",
         "revisionRequired": true
+      },
+      "usage": {
+        "personal": true,
+        "openSource": true,
+        "commercial": true,
+        "reference": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+        "notes": "MIT terms permit personal, open-source, and commercial use subject to the license conditions."
       },
       "status": "active",
       "notes": "MIT license and selected pattern definitions verified at immutable commit 1550af7903f50b4f19a1b44786f27ca01f3ef6ab."

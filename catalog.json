@@ -1,6 +1,6 @@
 {
   "$schema": "./catalog.schema.json",
-  "version": 2,
+  "version": 3,
   "patterns": [
     {
       "id": "purple-focus-button",
@@ -36,6 +36,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-purple-focus-button"
+      },
+      "useCases": [
+        "primary-action",
+        "secondary-action"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -72,6 +85,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-gradient-sweep-button"
+      },
+      "useCases": [
+        "primary-action",
+        "secondary-action"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -108,6 +134,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-soft-neumorphic-button"
+      },
+      "useCases": [
+        "primary-action",
+        "secondary-action"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -144,6 +183,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-retro-press-button"
+      },
+      "useCases": [
+        "primary-action",
+        "secondary-action"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -180,6 +232,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-jelly-response-button"
+      },
+      "useCases": [
+        "primary-action",
+        "secondary-action"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -216,6 +281,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-inset-label-button"
+      },
+      "useCases": [
+        "primary-action",
+        "secondary-action"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -252,6 +330,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-layered-border-button"
+      },
+      "useCases": [
+        "primary-action",
+        "secondary-action"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -288,6 +379,20 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-green-active-button"
+      },
+      "useCases": [
+        "primary-action",
+        "secondary-action",
+        "status-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -324,6 +429,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-shadow-lift-button"
+      },
+      "useCases": [
+        "primary-action",
+        "secondary-action"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -360,6 +478,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-offset-frame-button"
+      },
+      "useCases": [
+        "primary-action",
+        "secondary-action"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -396,6 +527,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-contrast-content-card"
+      },
+      "useCases": [
+        "content-card"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "medium",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -432,6 +575,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-raised-material-card"
+      },
+      "useCases": [
+        "content-card"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "medium",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -468,6 +623,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-editorial-preview-card"
+      },
+      "useCases": [
+        "content-card"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "medium",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -504,6 +671,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-perspective-shadow-card"
+      },
+      "useCases": [
+        "content-card"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "medium",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -540,6 +719,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-metric-summary-card"
+      },
+      "useCases": [
+        "compact-card",
+        "metric-card"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -576,6 +768,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-window-chrome-card"
+      },
+      "useCases": [
+        "compact-card"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -612,6 +816,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-paper-sheet-card"
+      },
+      "useCases": [
+        "content-card"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "medium",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -648,6 +864,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-stacked-panel-card"
+      },
+      "useCases": [
+        "content-card"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "medium",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -684,6 +912,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-article-contents-card"
+      },
+      "useCases": [
+        "compact-card"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -720,6 +960,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-sliding-details-card"
+      },
+      "useCases": [
+        "content-card"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "medium",
+      "interactionPriority": "none",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -756,6 +1008,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-password-shadow-field"
+      },
+      "useCases": [
+        "form-control"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -792,6 +1056,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-outlined-username-field"
+      },
+      "useCases": [
+        "form-control"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -828,6 +1104,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-inset-search-field"
+      },
+      "useCases": [
+        "form-control"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -864,6 +1152,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-underline-focus-field"
+      },
+      "useCases": [
+        "form-control"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -900,6 +1200,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-floating-label-field"
+      },
+      "useCases": [
+        "form-control"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -936,6 +1248,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-soft-glow-field"
+      },
+      "useCases": [
+        "form-control"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -972,6 +1296,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-search-action-field"
+      },
+      "useCases": [
+        "form-control"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1008,6 +1344,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-one-time-code-field"
+      },
+      "useCases": [
+        "form-control",
+        "validation-feedback"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1044,6 +1393,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-range-accent-slider"
+      },
+      "useCases": [
+        "form-control"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1080,6 +1441,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-email-subscribe-field"
+      },
+      "useCases": [
+        "form-control"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "primary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1116,6 +1489,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-nested-color-loader"
+      },
+      "useCases": [
+        "loading-feedback",
+        "status-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1152,6 +1538,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-bounce-dot-loader"
+      },
+      "useCases": [
+        "loading-feedback",
+        "status-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1188,6 +1587,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-dual-ring-loader"
+      },
+      "useCases": [
+        "loading-feedback",
+        "status-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1224,6 +1636,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-segment-spinner"
+      },
+      "useCases": [
+        "loading-feedback",
+        "status-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1260,6 +1685,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-progress-dots"
+      },
+      "useCases": [
+        "loading-feedback",
+        "status-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1296,6 +1734,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-gradient-orbit-loader"
+      },
+      "useCases": [
+        "loading-feedback",
+        "status-feedback"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "medium",
+        "compatibility": "low"
       }
     },
     {
@@ -1332,6 +1783,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-location-pin-loader"
+      },
+      "useCases": [
+        "loading-feedback",
+        "status-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1368,6 +1832,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-moon-phase-loader"
+      },
+      "useCases": [
+        "loading-feedback",
+        "status-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1404,6 +1881,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-bubble-row-loader"
+      },
+      "useCases": [
+        "loading-feedback",
+        "status-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1440,6 +1930,19 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-loading-text-indicator"
+      },
+      "useCases": [
+        "loading-feedback",
+        "status-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "low"
       }
     },
     {
@@ -1476,6 +1979,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-gradient-halo-hover"
+      },
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "medium",
+        "compatibility": "medium"
       }
     },
     {
@@ -1512,6 +2027,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-text-swap-hover"
+      },
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
       }
     },
     {
@@ -1548,6 +2075,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-wave-fill-hover"
+      },
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
       }
     },
     {
@@ -1584,6 +2123,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-gradient-border-hover"
+      },
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "medium",
+        "compatibility": "medium"
       }
     },
     {
@@ -1620,6 +2171,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-offset-layer-hover"
+      },
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
       }
     },
     {
@@ -1656,6 +2219,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-sliding-surface-hover"
+      },
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
       }
     },
     {
@@ -1692,6 +2267,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-orange-emphasis-hover"
+      },
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
       }
     },
     {
@@ -1728,6 +2315,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-raised-outline-hover"
+      },
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
       }
     },
     {
@@ -1764,6 +2363,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-inset-depth-hover"
+      },
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
       }
     },
     {
@@ -1800,6 +2411,18 @@
         "type": "pattern",
         "stylesheet": "style.css",
         "scope": ".uk-press-depth-hover"
+      },
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
       }
     },
     {
@@ -1839,7 +2462,19 @@
         "cubic-bezier",
         "linear easing"
       ],
-      "browserNotes": "Cubic Bézier values work broadly. The `linear()` spring token requires browsers with CSS linear easing support; use a cubic Bézier fallback where older browsers matter."
+      "browserNotes": "Cubic Bézier values work broadly. The `linear()` spring token requires browsers with CSS linear easing support; use a cubic Bézier fallback where older browsers matter.",
+      "useCases": [
+        "motion-system"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "shadows",
@@ -1877,7 +2512,19 @@
         "box-shadow",
         "hsl alpha"
       ],
-      "browserNotes": "Uses broadly supported custom properties, `calc()`, and HSL alpha syntax. Very old browsers may need precomputed shadow values."
+      "browserNotes": "Uses broadly supported custom properties, `calc()`, and HSL alpha syntax. Very old browsers may need precomputed shadow values.",
+      "useCases": [
+        "elevation-system"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "radii",
@@ -1915,7 +2562,19 @@
         "border-radius",
         "shape scale"
       ],
-      "browserNotes": "Conventional and percentage border-radius values are broadly supported. Irregular slash syntax is also widely supported in modern browsers."
+      "browserNotes": "Conventional and percentage border-radius values are broadly supported. Irregular slash syntax is also widely supported in modern browsers.",
+      "useCases": [
+        "shape-system"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "sizes-spacing",
@@ -1953,7 +2612,19 @@
         "rem scale",
         "clamp"
       ],
-      "browserNotes": "Fixed values work broadly. Fluid tokens require CSS `clamp()`, supported in current evergreen browsers."
+      "browserNotes": "Fixed values work broadly. Fluid tokens require CSS `clamp()`, supported in current evergreen browsers.",
+      "useCases": [
+        "spacing-system"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "typography-scale",
@@ -1991,7 +2662,19 @@
         "type scale",
         "clamp"
       ],
-      "browserNotes": "Fixed rem and unitless values work broadly. Fluid sizes require CSS `clamp()` in current evergreen browsers."
+      "browserNotes": "Fixed rem and unitless values work broadly. Fluid sizes require CSS `clamp()` in current evergreen browsers.",
+      "useCases": [
+        "typography-system"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "aspect-ratios",
@@ -2029,7 +2712,19 @@
         "aspect-ratio",
         "responsive media"
       ],
-      "browserNotes": "Native `aspect-ratio` is supported in current evergreen browsers. Older browsers may need a padding-based fallback."
+      "browserNotes": "Native `aspect-ratio` is supported in current evergreen browsers. Older browsers may need a padding-based fallback.",
+      "useCases": [
+        "media-system"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "high",
+      "interactionPriority": "none",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "float-feedback",
@@ -2070,7 +2765,19 @@
         "transition",
         "focus-visible"
       ],
-      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support.",
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "sink-feedback",
@@ -2111,7 +2818,19 @@
         "transition",
         "focus-visible"
       ],
-      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support.",
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "center-underline-reveal",
@@ -2152,7 +2871,19 @@
         "transition",
         "focus-visible"
       ],
-      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support.",
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "contracting-outline",
@@ -2193,7 +2924,19 @@
         "transition",
         "focus-visible"
       ],
-      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support.",
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "radial-surface-reveal",
@@ -2234,7 +2977,19 @@
         "transition",
         "focus-visible"
       ],
-      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support.",
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "icon-forward-cue",
@@ -2275,7 +3030,20 @@
         "transition",
         "focus-visible"
       ],
-      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support.",
+      "useCases": [
+        "hover-feedback",
+        "directional-cue"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "shrink-feedback",
@@ -2316,7 +3084,19 @@
         "transition",
         "focus-visible"
       ],
-      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support.",
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "pulse-shrink-feedback",
@@ -2357,7 +3137,20 @@
         "animation",
         "focus-visible"
       ],
-      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support.",
+      "useCases": [
+        "hover-feedback",
+        "attention"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "forward-slide-cue",
@@ -2398,7 +3191,20 @@
         "transition",
         "focus-visible"
       ],
-      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support.",
+      "useCases": [
+        "hover-feedback",
+        "directional-cue"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "inset-shadow-feedback",
@@ -2439,7 +3245,19 @@
         "transition",
         "focus-visible"
       ],
-      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support.",
+      "useCases": [
+        "hover-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "horizontal-shutter-reveal",
@@ -2480,7 +3298,20 @@
         "transition",
         "focus-visible"
       ],
-      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support.",
+      "useCases": [
+        "hover-feedback",
+        "directional-cue"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "top-callout-motion",
@@ -2521,7 +3352,20 @@
         "transition",
         "focus-visible"
       ],
-      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support.",
+      "useCases": [
+        "hover-feedback",
+        "directional-cue"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "medium",
+      "interactionPriority": "secondary",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "fade-in",
@@ -2562,7 +3406,19 @@
         "opacity",
         "transform"
       ],
-      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support.",
+      "useCases": [
+        "entrance"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "slide-in-up",
@@ -2604,7 +3460,19 @@
         "transform",
         "opacity"
       ],
-      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support.",
+      "useCases": [
+        "entrance"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "zoom-in",
@@ -2646,7 +3514,19 @@
         "transform",
         "opacity"
       ],
-      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support.",
+      "useCases": [
+        "entrance"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "bounce-in",
@@ -2688,7 +3568,19 @@
         "transform",
         "opacity"
       ],
-      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support.",
+      "useCases": [
+        "entrance"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "high",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "fade-out",
@@ -2729,7 +3621,19 @@
         "opacity",
         "transform"
       ],
-      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support.",
+      "useCases": [
+        "exit"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "slide-out-down",
@@ -2771,7 +3675,19 @@
         "transform",
         "opacity"
       ],
-      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support.",
+      "useCases": [
+        "exit"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "zoom-out",
@@ -2813,7 +3729,19 @@
         "transform",
         "opacity"
       ],
-      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support.",
+      "useCases": [
+        "exit"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "pulse-emphasis",
@@ -2855,7 +3783,20 @@
         "transform",
         "opacity"
       ],
-      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support.",
+      "useCases": [
+        "attention",
+        "status-feedback"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "low",
+      "interactionPriority": "secondary",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "medium",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "head-shake-feedback",
@@ -2897,7 +3838,20 @@
         "transform",
         "opacity"
       ],
-      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support.",
+      "useCases": [
+        "attention",
+        "validation-feedback"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "low",
+      "interactionPriority": "secondary",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "high",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "heartbeat-emphasis",
@@ -2939,7 +3893,19 @@
         "transform",
         "opacity"
       ],
-      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support.",
+      "useCases": [
+        "attention"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "low",
+      "interactionPriority": "secondary",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "high",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "flip-in-transition",
@@ -2981,7 +3947,19 @@
         "transform",
         "opacity"
       ],
-      "browserNotes": "Requires CSS 3D transforms; test backface rendering in target browsers."
+      "browserNotes": "Requires CSS 3D transforms; test backface rendering in target browsers.",
+      "useCases": [
+        "state-change"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "high",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "flip-out-transition",
@@ -3023,7 +4001,19 @@
         "transform",
         "opacity"
       ],
-      "browserNotes": "Requires CSS 3D transforms; test backface rendering in target browsers."
+      "browserNotes": "Requires CSS 3D transforms; test backface rendering in target browsers.",
+      "useCases": [
+        "state-change"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "high",
+        "performance": "low",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "grid-glow",
@@ -3060,7 +4050,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "dashboard-shell",
+        "empty-state",
+        "content-backdrop"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "medium",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "diagonal-cross-grid",
@@ -3097,7 +4101,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "dashboard-shell",
+        "empty-state",
+        "content-backdrop"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "medium",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "dashed-grid",
@@ -3134,7 +4152,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "CSS mask-image with -webkit-mask-image fallback; solid surface fallback remains."
+      "browserNotes": "CSS mask-image with -webkit-mask-image fallback; solid surface fallback remains.",
+      "useCases": [
+        "dashboard-shell",
+        "empty-state",
+        "content-backdrop"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "low",
+        "performance": "medium",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "concentric-square-field",
@@ -3171,7 +4203,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "dashboard-shell",
+        "empty-state",
+        "content-backdrop"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "circuit-board-field",
@@ -3208,7 +4254,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "dashboard-shell",
+        "empty-state",
+        "content-backdrop"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "grid-dot-field",
@@ -3245,7 +4305,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "dashboard-shell",
+        "empty-state",
+        "content-backdrop"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "medium",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "dark-radial-glow",
@@ -3282,7 +4356,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "hero",
+        "section",
+        "feature-band"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "soft-morning-mist",
@@ -3319,7 +4407,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "hero",
+        "section",
+        "feature-band"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "low",
+        "performance": "medium",
+        "compatibility": "low"
+      }
     },
     {
       "id": "center-spotlight",
@@ -3356,7 +4458,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "hero",
+        "section",
+        "feature-band"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "aurora-edge-glow",
@@ -3393,7 +4509,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "hero",
+        "section",
+        "feature-band"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "cosmic-nebula",
@@ -3430,7 +4560,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "hero",
+        "section",
+        "feature-band"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "low",
+        "performance": "medium",
+        "compatibility": "low"
+      }
     },
     {
       "id": "ambient-hero",
@@ -3467,7 +4611,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "hero",
+        "section",
+        "feature-band"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "low",
+        "performance": "medium",
+        "compatibility": "low"
+      }
     },
     {
       "id": "warm-beige-surface",
@@ -3504,7 +4662,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "hero",
+        "section",
+        "feature-band"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "medium",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "midnight-aurora-surface",
@@ -3541,7 +4713,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "hero",
+        "section",
+        "feature-band"
+      ],
+      "visualIntensity": "high",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "dark-horizon-surface",
@@ -3578,7 +4764,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "hero",
+        "section",
+        "feature-band"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "beach-horizon-surface",
@@ -3615,7 +4815,21 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "Modern browsers with CSS gradient and custom-property support."
+      "browserNotes": "Modern browsers with CSS gradient and custom-property support.",
+      "useCases": [
+        "hero",
+        "section",
+        "feature-band"
+      ],
+      "visualIntensity": "low",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "high",
+      "risk": {
+        "accessibility": "low",
+        "performance": "low",
+        "compatibility": "low"
+      }
     },
     {
       "id": "top-grid-fade",
@@ -3652,7 +4866,20 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "CSS mask-image with -webkit-mask-image fallback; solid surface fallback remains."
+      "browserNotes": "CSS mask-image with -webkit-mask-image fallback; solid surface fallback remains.",
+      "useCases": [
+        "decorative-overlay",
+        "section"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "low",
+        "performance": "medium",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "side-dot-fade",
@@ -3689,7 +4916,20 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "CSS mask-image with -webkit-mask-image fallback; solid surface fallback remains."
+      "browserNotes": "CSS mask-image with -webkit-mask-image fallback; solid surface fallback remains.",
+      "useCases": [
+        "decorative-overlay",
+        "section"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "low",
+        "performance": "medium",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "center-grid-mask",
@@ -3726,7 +4966,20 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "CSS mask-image with -webkit-mask-image fallback; solid surface fallback remains."
+      "browserNotes": "CSS mask-image with -webkit-mask-image fallback; solid surface fallback remains.",
+      "useCases": [
+        "decorative-overlay",
+        "section"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "low",
+        "performance": "medium",
+        "compatibility": "medium"
+      }
     },
     {
       "id": "half-grid-mask",
@@ -3763,7 +5016,20 @@
         "pseudo-element",
         "custom properties"
       ],
-      "browserNotes": "CSS mask-image with -webkit-mask-image fallback; solid surface fallback remains."
+      "browserNotes": "CSS mask-image with -webkit-mask-image fallback; solid surface fallback remains.",
+      "useCases": [
+        "decorative-overlay",
+        "section"
+      ],
+      "visualIntensity": "medium",
+      "contentDensity": "low",
+      "interactionPriority": "decorative",
+      "adaptability": "medium",
+      "risk": {
+        "accessibility": "low",
+        "performance": "medium",
+        "compatibility": "medium"
+      }
     }
   ]
 }

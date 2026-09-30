@@ -16,6 +16,14 @@ import {
   sourceDefinitions,
   validatePatternProvenance,
 } from "./validation-core.mjs";
+import {
+  findSearchIndexDrift,
+  validateCompositionRules,
+  validateDecisionMetadata,
+  validateRecipes,
+  validateSelectionRules,
+  validateTaxonomy,
+} from "./intelligence-core.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const read = (file) => fs.readFileSync(file, "utf8");
@@ -23,6 +31,11 @@ const catalog = JSON.parse(read(path.join(root, "catalog.json")));
 const schema = JSON.parse(read(path.join(root, "catalog.schema.json")));
 const registry = JSON.parse(read(path.join(root, "source-registry.json")));
 const registrySchema = JSON.parse(read(path.join(root, "source-registry.schema.json")));
+const taxonomy = JSON.parse(read(path.join(root, "intelligence/taxonomy.json")));
+const selectionRules = JSON.parse(read(path.join(root, "intelligence/selection-rules.json")));
+const compositionRules = JSON.parse(read(path.join(root, "intelligence/composition-rules.json")));
+const searchIndex = JSON.parse(read(path.join(root, "intelligence/search-index.json")));
+const recipes = JSON.parse(read(path.join(root, "recipes/production-recipes.json")));
 const definitions = sourceDefinitions(registry);
 const errors = [];
 const warnings = [];
@@ -303,6 +316,13 @@ function validateSchema(data, dataSchema, label) {
 validateSchema(catalog, schema, "catalog.json");
 validateSchema(registry, registrySchema, "source-registry.json");
 
+for (const issue of validateTaxonomy(taxonomy)) errors.push(`intelligence/taxonomy.json: ${issue}`);
+for (const issue of validateSelectionRules(selectionRules, taxonomy)) errors.push(`intelligence/selection-rules.json: ${issue}`);
+for (const issue of validateCompositionRules(compositionRules, taxonomy)) errors.push(`intelligence/composition-rules.json: ${issue}`);
+for (const issue of findSearchIndexDrift(catalog, registry, searchIndex)) errors.push(`intelligence/search-index.json: ${issue}`);
+const catalogIds = new Set((catalog.patterns ?? []).map((item) => item.id));
+for (const issue of validateRecipes(recipes, catalogIds)) errors.push(`recipes/production-recipes.json: ${issue}`);
+
 const registryIds = new Set();
 const registryRepositories = new Set();
 for (const source of registry.sources ?? []) {
@@ -348,6 +368,7 @@ for (const issue of findCatalogDuplicates(catalog.patterns ?? [], definitions)) 
 warnings.push(...findCatalogWarnings(catalog.patterns ?? []));
 
 for (const item of catalog.patterns ?? []) {
+  for (const issue of validateDecisionMetadata(item, taxonomy)) errors.push(`catalog.json: ${issue}`);
   const source = definitions.get(item.source?.id);
   sourceCounts.set(item.source?.id, (sourceCounts.get(item.source?.id) ?? 0) + 1);
   const category = item.categories?.[1] ?? item.categories?.[0] ?? "uncategorized";

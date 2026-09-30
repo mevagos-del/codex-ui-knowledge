@@ -26,7 +26,7 @@
     "source": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "name", "repository", "ownerRepository", "license", "provenance", "status", "notes"],
+      "required": ["id", "name", "repository", "ownerRepository", "license", "provenance", "usage", "status", "notes"],
       "properties": {
         "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
         "name": { "type": "string", "minLength": 1 },
@@ -51,6 +51,18 @@
             "strategy": { "type": "string", "minLength": 1 },
             "sourceUrlPattern": { "type": "string", "minLength": 1 },
             "revisionRequired": { "type": "boolean" }
+          }
+        },
+        "usage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["personal", "openSource", "commercial", "reference", "notes"],
+          "properties": {
+            "personal": { "enum": [true, false, "conditional"] },
+            "openSource": { "enum": [true, false, "conditional"] },
+            "commercial": { "enum": [true, false, "conditional"] },
+            "reference": { "type": "string", "format": "uri" },
+            "notes": { "type": "string", "minLength": 1 }
           }
         },
         "status": { "enum": ["active", "planned", "retired"] },

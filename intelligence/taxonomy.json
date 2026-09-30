@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "useCases": [
+    "primary-action",
+    "secondary-action",
+    "form-control",
+    "compact-card",
+    "content-card",
+    "metric-card",
+    "loading-feedback",
+    "status-feedback",
+    "entrance",
+    "exit",
+    "attention",
+    "validation-feedback",
+    "hover-feedback",
+    "directional-cue",
+    "state-change",
+    "hero",
+    "section",
+    "dashboard-shell",
+    "feature-band",
+    "empty-state",
+    "content-backdrop",
+    "decorative-overlay",
+    "spacing-system",
+    "typography-system",
+    "elevation-system",
+    "shape-system",
+    "motion-system",
+    "media-system"
+  ],
+  "dimensions": {
+    "visualIntensity": ["low", "medium", "high"],
+    "contentDensity": ["low", "medium", "high"],
+    "interactionPriority": ["primary", "secondary", "decorative", "none"],
+    "adaptability": ["high", "medium", "low"],
+    "risk": ["low", "medium", "high"],
+    "usage": [true, false, "conditional"]
+  },
+  "definitions": {
+    "contentDensity": "The highest host-interface density where the pattern normally remains suitable.",
+    "visualIntensity": "The amount of visual attention the pattern draws in its default technique.",
+    "adaptability": "How easily the technique maps to project components and design tokens without retaining its source aesthetic."
+  }
+}

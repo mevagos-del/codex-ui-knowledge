@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "priorityOrder": [
+    "project-local-component",
+    "project-local-design-system",
+    "knowledge-base-pattern",
+    "adapt-knowledge-base-pattern",
+    "new-implementation"
+  ],
+  "hardRejections": [
+    {
+      "id": "experimental-without-opt-in",
+      "field": "production",
+      "operator": "equals",
+      "value": "experimental",
+      "requestOverride": "allowExperimental",
+      "reason": "experimental packages require explicit opt-in"
+    },
+    {
+      "id": "mobile-avoid-without-opt-in",
+      "field": "mobile",
+      "operator": "equals",
+      "value": "avoid",
+      "requestOverride": "allowMobileAvoid",
+      "reason": "mobile-avoid packages require explicit opt-in"
+    },
+    {
+      "id": "expensive-without-opt-in",
+      "field": "performance",
+      "operator": "equals",
+      "value": "expensive",
+      "requestOverride": "allowExpensive",
+      "reason": "expensive packages require an explicit performance justification"
+    },
+    {
+      "id": "high-accessibility-risk",
+      "field": "risk.accessibility",
+      "operator": "equals",
+      "value": "high",
+      "requestOverride": "allowHighAccessibilityRisk",
+      "reason": "high accessibility risk requires explicit review"
+    },
+    {
+      "id": "missing-reduced-motion",
+      "conditions": [
+        { "field": "motion", "operator": "exists" },
+        { "field": "reducedMotion", "operator": "equals", "value": false }
+      ],
+      "requestOverride": "allowMissingReducedMotion",
+      "reason": "motion-capable packages need a reduced-motion path"
+    },
+    {
+      "id": "continuous-motion-without-justification",
+      "field": "motion.continuous",
+      "operator": "equals",
+      "value": true,
+      "requestOverride": "allowContinuousMotion",
+      "reason": "continuous motion requires a functional reason"
+    },
+    {
+      "id": "dense-content-backdrop",
+      "conditions": [
+        { "field": "useCases", "operator": "includes", "value": "content-backdrop" },
+        { "field": "visualIntensity", "operator": "equals", "value": "high" }
+      ],
+      "requestOverride": "allowDenseContentBackdrop",
+      "reason": "high-intensity backgrounds are unsuitable behind readable body content"
+    },
+    {
+      "id": "compatibility-sensitive-overlay",
+      "conditions": [
+        { "field": "categories", "operator": "includes", "value": "overlays" },
+        { "field": "risk.compatibility", "operator": "equals", "value": "medium" }
+      ],
+      "requestOverride": "allowCompatibilitySensitiveOverlay",
+      "reason": "mask-based overlays require a documented compatibility fallback"
+    }
+  ],
+  "ranking": {
+    "useCaseMatch": 40,
+    "production": { "recommended": 18, "conditional": 8, "experimental": 0 },
+    "mobile": { "safe": 14, "fallback": 5, "avoid": -20 },
+    "complexity": { "low": 10, "medium": 5, "high": 0 },
+    "performance": { "excellent": 12, "good": 9, "medium": 3, "expensive": -10 },
+    "adaptability": { "high": 12, "medium": 6, "low": 0 },
+    "visualIntensity": { "low": 6, "medium": 3, "high": 0 },
+    "risk": { "low": 4, "medium": 0, "high": -12 },
+    "usage": { "true": 8, "conditional": 1 }
+  },
+  "performanceOrder": ["excellent", "good", "medium", "expensive"],
+  "riskOrder": ["low", "medium", "high"],
+  "mobileOrder": ["safe", "fallback", "avoid"]
+}
