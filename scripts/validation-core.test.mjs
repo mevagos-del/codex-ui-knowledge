@@ -4,6 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import {
+  analyzeMotionCss,
   findCatalogDuplicates,
   findCorruptNativeFunction,
   isBrokenLocalReference,
@@ -38,6 +39,8 @@ const pattern = (overrides = {}) => ({
   ...overrides,
 });
 const definitions = sourceDefinitions({ sources: [activeSource] });
+const repositoryRoot = path.resolve(import.meta.dirname, "..");
+const repositoryCatalog = JSON.parse(fs.readFileSync(path.join(repositoryRoot, "catalog.json"), "utf8"));
 
 test("rejects a scoped native CSS function", () => {
   assert.equal(
@@ -127,4 +130,43 @@ test("detects broken local references", () => {
   } finally {
     fs.rmSync(directory, { recursive: true, force: true });
   }
+});
+
+test("motion validation rejects unscoped keyframes", () => {
+  const css = ".uk-example{animation-name:uk-example-enter}@keyframes enter{to{opacity:1}}@media (prefers-reduced-motion:reduce){.uk-example{animation:none}}";
+  assert.match(analyzeMotionCss(css, ".uk-example").join("\n"), /unscoped keyframe enter/);
+});
+
+test("motion validation rejects missing reduced-motion handling", () => {
+  const css = ".uk-example{animation-name:uk-example-enter}@keyframes uk-example-enter{to{opacity:1}}";
+  assert.match(analyzeMotionCss(css, ".uk-example").join("\n"), /missing reduced-motion query/);
+});
+
+test("motion validation rejects broken animation references", () => {
+  const css = ".uk-example{animation-name:uk-example-missing}@media (prefers-reduced-motion:reduce){.uk-example{animation:none}}";
+  assert.match(analyzeMotionCss(css, ".uk-example").join("\n"), /missing keyframes uk-example-missing/);
+});
+
+test("motion validation requires explicit metadata for infinite motion", () => {
+  const css = ".uk-example{animation:uk-example-pulse 1s infinite}@keyframes uk-example-pulse{to{opacity:.5}}@media (prefers-reduced-motion:reduce){.uk-example{animation:none}}";
+  assert.match(analyzeMotionCss(css, ".uk-example", { continuous: false }).join("\n"), /motion\.continuous: true/);
+  assert.doesNotMatch(analyzeMotionCss(css, ".uk-example", { continuous: true }).join("\n"), /infinite/);
+});
+
+test("motion documentation adds intent and duration guidance", () => {
+  const requirements = packageRequirements({ ...pattern(), motion: { continuous: false, trigger: "enter" } });
+  assert.ok(requirements.requiredHeadings.includes("## Motion intent"));
+  assert.ok(requirements.requiredHeadings.includes("## Duration guidance"));
+});
+
+test("existing Uiverse pattern packages remain compatible", () => {
+  const item = repositoryCatalog.patterns.find((entry) => entry.source.id === "uiverse-galaxy");
+  assert.deepEqual(packageRequirements(item).requiredFiles, ["README.md", "demo.html", "style.css"]);
+  assert.equal(item.motion, undefined);
+});
+
+test("existing Open Props token packages remain compatible", () => {
+  const item = repositoryCatalog.patterns.find((entry) => entry.source.id === "open-props");
+  assert.deepEqual(packageRequirements(item).requiredFiles, ["README.md", "demo.html", "tokens.css"]);
+  assert.equal(packageRequirements(item).requireResponsiveWrapper, false);
 });

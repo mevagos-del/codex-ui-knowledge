@@ -5,6 +5,7 @@ import addFormats from "ajv-formats";
 import * as csstree from "css-tree";
 import { parse as parseHtml } from "parse5";
 import {
+  analyzeMotionCss,
   findCatalogDuplicates,
   findCatalogWarnings,
   findCorruptNativeFunction,
@@ -189,6 +190,10 @@ function validateStylesheet(file, item, requirements) {
   }
   const ast = parsed.ast;
   if (!ast) return;
+
+  for (const issue of analyzeMotionCss(source, item.package.scope, item.motion)) {
+    fail(file, issue);
+  }
 
   const corrupt = findCorruptNativeFunction(source);
   if (corrupt) fail(file, `native CSS function was accidentally scoped: ${corrupt}`);

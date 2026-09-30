@@ -37,6 +37,13 @@ const patternHeadings = [
   "## Accessibility", "## Reduced motion", "## Customization", "## Notes",
 ];
 
+const motionHeadings = [
+  "## Category", "## Source", "## License", "## Purpose", "## Recommended use",
+  "## Avoid / use with caution", "## Motion intent", "## Techniques",
+  "## Duration guidance", "## Performance", "## Mobile", "## Accessibility",
+  "## Reduced motion", "## Customization", "## Notes",
+];
+
 const tokenHeadings = [
   "## Category", "## Source", "## License", "## Purpose", "## Recommended use",
   "## Avoid / use with caution", "## Token groups", "## Adaptation guidance",
@@ -50,9 +57,57 @@ export function packageRequirements(item) {
   return {
     stylesheet,
     requiredFiles: ["README.md", "demo.html", stylesheet],
-    requiredHeadings: type === "tokens" ? tokenHeadings : patternHeadings,
+    requiredHeadings: type === "tokens" ? tokenHeadings : item.motion ? motionHeadings : patternHeadings,
     requireResponsiveWrapper: type === "pattern",
   };
+}
+
+function scopeName(scope) {
+  return scope?.replace(/^:where\(\.|^\./, "").replace(/\)$/, "") ?? "";
+}
+
+export function analyzeMotionCss(source, scope, motion = null) {
+  const issues = [];
+  const parsed = parseCssSource(source);
+  if (!parsed.ast) return issues;
+  const prefix = scopeName(scope);
+  const keyframes = new Set();
+  const references = [];
+  let hasReducedMotion = false;
+
+  csstree.walk(parsed.ast, {
+    enter(node) {
+      if (node.type === "Atrule" && /keyframes$/i.test(node.name)) {
+        const name = csstree.generate(node.prelude).trim();
+        keyframes.add(name);
+        if (!name.startsWith(`${prefix}-`)) issues.push(`unscoped keyframe ${name}`);
+      }
+      if (node.type === "Atrule" && node.name.toLowerCase() === "media" &&
+          /prefers-reduced-motion\s*:\s*reduce/i.test(csstree.generate(node.prelude))) {
+        hasReducedMotion = true;
+      }
+      if (node.type !== "Declaration") return;
+      const value = csstree.generate(node.value).trim();
+      if (node.property === "animation-name") {
+        for (const name of value.split(",").map((part) => part.trim()).filter((name) => name && name !== "none")) references.push(name);
+      } else if (node.property === "animation") {
+        for (const name of value.match(new RegExp(`\\b${prefix}-[A-Za-z0-9_-]+\\b`, "g")) ?? []) references.push(name);
+      }
+      if (/^animation(?:-iteration-count)?$/.test(node.property) && /\binfinite\b/i.test(value) &&
+          motion && motion.continuous !== true) {
+        issues.push("infinite animation requires motion.continuous: true");
+      }
+    },
+  });
+
+  for (const name of references) {
+    if (!name.startsWith(`${prefix}-`)) issues.push(`unscoped animation reference ${name}`);
+    else if (!keyframes.has(name)) issues.push(`animation references missing keyframes ${name}`);
+  }
+  if ((keyframes.size || references.length || /\btransition(?:-[a-z-]+)?\s*:/.test(source)) && !hasReducedMotion) {
+    issues.push("missing reduced-motion query");
+  }
+  return [...new Set(issues)];
 }
 
 export function sourceDefinitions(registry) {
