@@ -27,7 +27,7 @@ source ID. See [SOURCES.md](SOURCES.md) for the human-readable overview.
 | `open-props` | [Open Props](https://github.com/argyleink/open-props) | Active | Design tokens and CSS primitives |
 | `hover-css` | [Hover.css](https://github.com/IanLunn/Hover) | Active | Hover effects and microinteractions |
 | `animate-css` | [Animate.css](https://github.com/animate-css/animate.css) | Active | Entrance, exit, attention, and state animations |
-| `pattern-craft` | [Pattern Craft](https://github.com/megh-bari/pattern-craft) | Planned | Backgrounds and decorative surfaces |
+| `pattern-craft` | [Pattern Craft](https://github.com/megh-bari/pattern-craft) | Active | Backgrounds and decorative surfaces |
 
 Planned sources are approved for future investigation but cannot supply catalog
 entries until their license is verified and their registry status becomes active.
@@ -94,9 +94,10 @@ knowledge base.
 
 ## Current status
 
-The repository contains 80 packages: 50 framework-neutral Uiverse Galaxy
-patterns, six Open Props token families, 12 Hover.css microinteractions, and 12
-Animate.css motion patterns.
+The repository contains 100 packages: 50 framework-neutral Uiverse Galaxy
+patterns, six Open Props token families, 12 Hover.css microinteractions, 12
+Animate.css motion patterns, and 20 Pattern Craft backgrounds and decorative
+surfaces.
 
 ## Validation
 

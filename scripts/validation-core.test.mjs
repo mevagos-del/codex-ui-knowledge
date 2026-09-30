@@ -4,6 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import {
+  analyzePackageCss,
   analyzeMotionCss,
   findCatalogDuplicates,
   findCorruptNativeFunction,
@@ -169,4 +170,32 @@ test("existing Open Props token packages remain compatible", () => {
   const item = repositoryCatalog.patterns.find((entry) => entry.source.id === "open-props");
   assert.deepEqual(packageRequirements(item).requiredFiles, ["README.md", "demo.html", "tokens.css"]);
   assert.equal(packageRequirements(item).requireResponsiveWrapper, false);
+});
+
+test("self-contained package validation rejects CSS imports", () => {
+  assert.match(analyzePackageCss('@import url("https://example.com/theme.css");').join("\n"), /imports are not allowed/);
+});
+
+test("self-contained package validation rejects remote assets", () => {
+  assert.match(analyzePackageCss('.example{background:url("https://example.com/noise.png")}').join("\n"), /remote CSS assets/);
+});
+
+test("static package validation rejects animation", () => {
+  assert.match(analyzePackageCss('.example{animation:pulse 1s}', { staticOnly: true }).join("\n"), /contains animation/);
+  assert.equal(analyzePackageCss('.example{animation:none}', { staticOnly: true }).length, 0);
+});
+
+test("provenance selectors distinguish entries in one upstream file", () => {
+  const source = {
+    ...activeSource,
+    provenance: {
+      sourceUrlPattern: "^https://github\\.com/example/repo/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)#(?<selector>L[0-9]+(?:-L[0-9]+)?)$",
+      revisionRequired: true,
+    },
+  };
+  const entries = [
+    pattern({ source: { ...pattern().source, url: `https://github.com/example/repo/blob/${revision}/patterns.ts#L1-L10` } }),
+    pattern({ id: "other", path: "components/other/", source: { ...pattern().source, url: `https://github.com/example/repo/blob/${revision}/patterns.ts#L12-L20` } }),
+  ];
+  assert.equal(findCatalogDuplicates(entries, sourceDefinitions({ sources: [source] })).length, 0);
 });

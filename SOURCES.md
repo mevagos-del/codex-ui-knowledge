@@ -16,7 +16,7 @@ requirements, and source status. Its shape is governed by
 | `open-props` | Open Props | https://github.com/argyleink/open-props | Active | MIT verified |
 | `hover-css` | Hover.css | https://github.com/IanLunn/Hover | Active | MIT personal/open source terms verified |
 | `animate-css` | Animate.css | https://github.com/animate-css/animate.css | Active | Hippocratic License 2.1 verified |
-| `pattern-craft` | Pattern Craft | https://github.com/megh-bari/pattern-craft | Planned | Unverified |
+| `pattern-craft` | Pattern Craft | https://github.com/megh-bari/pattern-craft | Active | MIT verified |
 
 Planned means the project is approved for a future verification and curation
 phase. It does not authorize an import. The validator rejects catalog entries
@@ -83,6 +83,29 @@ already teach a directional surface fill. `Grow` was excluded because scaling
 is already common across existing buttons; the smaller `Shrink` pattern adds a
 different compact-state cue. Loader-like continuous effects such as `Bob`,
 `Hang`, and `Buzz` were excluded because this phase favors event-driven motion.
+
+### Backgrounds and decorative surfaces
+
+- Upstream commit: [1550af7903f50b4f19a1b44786f27ca01f3ef6ab](https://github.com/megh-bari/pattern-craft/tree/1550af7903f50b4f19a1b44786f27ca01f3ef6ab)
+- License verified: MIT, copyright (c) 2025 Megh Bari
+- Registry ID: `pattern-craft`
+- Local license: [licenses/pattern-craft-MIT.md](licenses/pattern-craft-MIT.md)
+- Scope: exactly 20 static packages: six structural backgrounds, five gradient surfaces, five decorative section surfaces, and four utility overlays
+- Normalization: the upstream React, Next.js, and Tailwind wrappers were removed; each technique is expressed as scoped, framework-neutral HTML/CSS with a responsive demo and documented customization variables
+- Asset policy: no images, fonts, icons, scripts, runtime dependencies, remote resources, or animated variants were imported
+- Provenance: each package links to a distinct immutable line fragment in `src/data/patterns.ts`; the registry validates both the commit and line selector
+
+#### Duplicate and rejection review
+
+The selection omits directional twins and color-only variants when they teach
+the same construction. Left, right, top, and bottom masks were reduced to one
+representative per useful composition; blue, purple, cyan, and similar glow
+variants were reduced to distinct light and dark techniques. `Soft Warm Pastel`
+was excluded because its layered ambient gradients closely repeat `Warm Beige`.
+Heavy-density and novelty patterns were excluded when they reduced content
+clarity without adding a reusable technique. `Aurora Waves` was rejected because
+its upstream implementation uses a continuous animation, while this batch is
+strictly static.
 
 ## Adding another source
 

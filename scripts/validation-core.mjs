@@ -44,6 +44,12 @@ const motionHeadings = [
   "## Reduced motion", "## Customization", "## Notes",
 ];
 
+const backgroundHeadings = [
+  "## Category", "## Source", "## License", "## Purpose", "## Recommended use",
+  "## Avoid / use with caution", "## Techniques", "## Contrast guidance",
+  "## Performance", "## Mobile", "## Customization", "## Browser notes", "## Notes",
+];
+
 const tokenHeadings = [
   "## Category", "## Source", "## License", "## Purpose", "## Recommended use",
   "## Avoid / use with caution", "## Token groups", "## Adaptation guidance",
@@ -57,9 +63,31 @@ export function packageRequirements(item) {
   return {
     stylesheet,
     requiredFiles: ["README.md", "demo.html", stylesheet],
-    requiredHeadings: type === "tokens" ? tokenHeadings : item.motion ? motionHeadings : patternHeadings,
+    requiredHeadings: type === "tokens" ? tokenHeadings
+      : item.motion ? motionHeadings
+        : item.categories?.[0] === "backgrounds" ? backgroundHeadings
+          : patternHeadings,
     requireResponsiveWrapper: type === "pattern",
   };
+}
+
+export function analyzePackageCss(source, { staticOnly = false } = {}) {
+  const issues = [];
+  const parsed = parseCssSource(source);
+  if (!parsed.ast) return issues;
+  csstree.walk(parsed.ast, {
+    enter(node) {
+      if (node.type === "Atrule" && node.name.toLowerCase() === "import") {
+        issues.push("stylesheet imports are not allowed in self-contained packages");
+      }
+      if (staticOnly && node.type === "Declaration" && /^animation(?:-|$)/.test(node.property)) {
+        const value = csstree.generate(node.value).trim();
+        if (value !== "none") issues.push("static package contains animation");
+      }
+    },
+  });
+  if (/url\(\s*(['"]?)https?:\/\//i.test(source)) issues.push("remote CSS assets are not allowed");
+  return [...new Set(issues)];
 }
 
 function scopeName(scope) {
@@ -181,7 +209,10 @@ export function findCatalogDuplicates(patterns, definitions) {
     check("url", item.source?.url, item);
     const source = definitions.get(item.source?.id);
     const match = source ? matchSourceUrl(source, item.source.url) : null;
-    if (match?.groups?.path) check("upstream", `${source.id}:${match.groups.path}`, item);
+    if (match?.groups?.path) {
+      const selector = match.groups.selector ? `#${match.groups.selector}` : "";
+      check("upstream", `${source.id}:${match.groups.path}${selector}`, item);
+    }
   }
   return issues;
 }
