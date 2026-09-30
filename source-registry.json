@@ -84,18 +84,18 @@
       "repository": "https://github.com/megh-bari/pattern-craft",
       "ownerRepository": "megh-bari/pattern-craft",
       "license": {
-        "status": "unverified",
-        "name": null,
-        "url": null,
-        "localFile": null
+        "status": "verified",
+        "name": "MIT",
+        "url": "https://github.com/megh-bari/pattern-craft/blob/1550af7903f50b4f19a1b44786f27ca01f3ef6ab/LICENSE",
+        "localFile": "licenses/pattern-craft-MIT.md"
       },
       "provenance": {
         "strategy": "github-blob",
-        "sourceUrlPattern": "^https://github\\.com/megh-bari/pattern-craft/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
+        "sourceUrlPattern": "^https://github\\.com/megh-bari/pattern-craft/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)#(?<selector>L[0-9]+(?:-L[0-9]+)?)$",
         "revisionRequired": true
       },
-      "status": "planned",
-      "notes": "Approved for a future curated phase; license verification is still required before import."
+      "status": "active",
+      "notes": "MIT license and selected pattern definitions verified at immutable commit 1550af7903f50b4f19a1b44786f27ca01f3ef6ab."
     }
   ]
 }
