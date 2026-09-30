@@ -14,8 +14,8 @@ requirements, and source status. Its shape is governed by
 | --- | --- | --- | --- | --- |
 | `uiverse-galaxy` | Uiverse Galaxy | https://github.com/uiverse-io/galaxy | Active | MIT verified |
 | `open-props` | Open Props | https://github.com/argyleink/open-props | Active | MIT verified |
-| `hover-css` | Hover.css | https://github.com/IanLunn/Hover | Planned | Unverified |
-| `animate-css` | Animate.css | https://github.com/animate-css/animate.css | Planned | Unverified |
+| `hover-css` | Hover.css | https://github.com/IanLunn/Hover | Active | MIT personal/open source terms verified |
+| `animate-css` | Animate.css | https://github.com/animate-css/animate.css | Active | Hippocratic License 2.1 verified |
 | `pattern-craft` | Pattern Craft | https://github.com/megh-bari/pattern-craft | Planned | Unverified |
 
 Planned means the project is approved for a future verification and curation
@@ -61,6 +61,28 @@ for the complete sequence.
 - Scope: six curated CSS token families: easings, shadows, radii, sizes and spacing, typography scale, and aspect ratios
 - Exclusions: colors, gradients, resets, components, JavaScript, assets, fonts, themes, animations, and unrelated utilities
 - Normalization: upstream variable names and values are retained while `:where(html)` is replaced with a package-local `:where(.op-*)` scope
+
+### Motion and microinteractions
+
+- Hover.css commit: [eb8629df13850d78bbcccd4fed68d231aec0c535](https://github.com/IanLunn/Hover/tree/eb8629df13850d78bbcccd4fed68d231aec0c535)
+- Hover.css license: upstream personal/open source terms identify MIT and add open-source-use conditions; the exact immutable notice is preserved locally
+- Animate.css commit: [3f8ab233dbbd9d2fe577528d2296382954be3d1a](https://github.com/animate-css/animate.css/tree/3f8ab233dbbd9d2fe577528d2296382954be3d1a)
+- Animate.css license: Hippocratic License 2.1, verified from both `LICENSE` and `package.json`
+- Scope: 12 interaction patterns and 12 one-shot animation patterns
+- Normalization: local selectors and keyframes, semantic controls, focus parity, shorter production durations, Open Props-compatible easing fallbacks, and reduced-motion handling
+- Asset policy: no upstream images, fonts, JavaScript, global utility classes, or bundled stylesheets imported
+
+#### Duplicate review
+
+The Hover.css selection excludes `Float Shadow`, `Grow Shadow`, and `Shadow`
+because the existing Uiverse button and hover packages already cover raised
+shadow feedback. `Push` was excluded because existing press controls already
+combine displacement with depth feedback. `Sweep To Right` and `Bounce To
+Right` were excluded because `wave-fill-hover` and `sliding-surface-hover`
+already teach a directional surface fill. `Grow` was excluded because scaling
+is already common across existing buttons; the smaller `Shrink` pattern adds a
+different compact-state cue. Loader-like continuous effects such as `Bob`,
+`Hang`, and `Buzz` were excluded because this phase favors event-driven motion.
 
 ## Adding another source
 

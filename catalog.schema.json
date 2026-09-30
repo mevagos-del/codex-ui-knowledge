@@ -82,7 +82,16 @@
           "items": { "type": "string", "minLength": 1 },
           "uniqueItems": true
         },
-        "browserNotes": { "type": "string" }
+        "browserNotes": { "type": "string" },
+        "motion": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["continuous", "trigger"],
+          "properties": {
+            "continuous": { "type": "boolean" },
+            "trigger": { "enum": ["interaction", "enter", "exit", "attention", "transition"] }
+          }
+        }
       }
     }
   }
