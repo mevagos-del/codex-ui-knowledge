@@ -2030,6 +2030,1000 @@
         "responsive media"
       ],
       "browserNotes": "Native `aspect-ratio` is supported in current evergreen browsers. Older browsers may need a padding-based fallback."
+    },
+    {
+      "id": "float-feedback",
+      "name": "Float Feedback",
+      "path": "effects/hover/float-feedback/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "lift feedback",
+        "transform",
+        "microinteraction"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-float-feedback"
+      },
+      "source": {
+        "id": "hover-css",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/scss/effects/2d-transitions/_float.scss",
+        "revision": "eb8629df13850d78bbcccd4fed68d231aec0c535",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (personal/open source terms)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "interaction"
+      },
+      "techniques": [
+        "transform",
+        "transition",
+        "focus-visible"
+      ],
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+    },
+    {
+      "id": "sink-feedback",
+      "name": "Sink Feedback",
+      "path": "effects/hover/sink-feedback/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "press feedback",
+        "transform",
+        "microinteraction"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-sink-feedback"
+      },
+      "source": {
+        "id": "hover-css",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/scss/effects/2d-transitions/_sink.scss",
+        "revision": "eb8629df13850d78bbcccd4fed68d231aec0c535",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (personal/open source terms)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "interaction"
+      },
+      "techniques": [
+        "transform",
+        "transition",
+        "focus-visible"
+      ],
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+    },
+    {
+      "id": "center-underline-reveal",
+      "name": "Center Underline Reveal",
+      "path": "effects/hover/center-underline-reveal/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "navigation emphasis",
+        "underline",
+        "microinteraction"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-center-underline-reveal"
+      },
+      "source": {
+        "id": "hover-css",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/scss/effects/border-transitions/_underline-from-center.scss",
+        "revision": "eb8629df13850d78bbcccd4fed68d231aec0c535",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (personal/open source terms)",
+      "production": "recommended",
+      "complexity": "medium",
+      "performance": "good",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "interaction"
+      },
+      "techniques": [
+        "pseudo-elements",
+        "transition",
+        "focus-visible"
+      ],
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+    },
+    {
+      "id": "contracting-outline",
+      "name": "Contracting Outline",
+      "path": "effects/hover/contracting-outline/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "boundary feedback",
+        "outline",
+        "microinteraction"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-contracting-outline"
+      },
+      "source": {
+        "id": "hover-css",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/scss/effects/border-transitions/_outline-in.scss",
+        "revision": "eb8629df13850d78bbcccd4fed68d231aec0c535",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (personal/open source terms)",
+      "production": "recommended",
+      "complexity": "medium",
+      "performance": "good",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "interaction"
+      },
+      "techniques": [
+        "pseudo-elements",
+        "transition",
+        "focus-visible"
+      ],
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+    },
+    {
+      "id": "radial-surface-reveal",
+      "name": "Radial Surface Reveal",
+      "path": "effects/hover/radial-surface-reveal/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "surface emphasis",
+        "radial",
+        "microinteraction"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-radial-surface-reveal"
+      },
+      "source": {
+        "id": "hover-css",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/scss/effects/background-transitions/_radial-out.scss",
+        "revision": "eb8629df13850d78bbcccd4fed68d231aec0c535",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (personal/open source terms)",
+      "production": "recommended",
+      "complexity": "medium",
+      "performance": "good",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "interaction"
+      },
+      "techniques": [
+        "pseudo-elements",
+        "transition",
+        "focus-visible"
+      ],
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+    },
+    {
+      "id": "icon-forward-cue",
+      "name": "Icon Forward Cue",
+      "path": "effects/hover/icon-forward-cue/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "directional cue",
+        "icon",
+        "microinteraction"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-icon-forward-cue"
+      },
+      "source": {
+        "id": "hover-css",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/scss/effects/icons/_icon-forward.scss",
+        "revision": "eb8629df13850d78bbcccd4fed68d231aec0c535",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (personal/open source terms)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "interaction"
+      },
+      "techniques": [
+        "transform",
+        "transition",
+        "focus-visible"
+      ],
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+    },
+    {
+      "id": "shrink-feedback",
+      "name": "Shrink Feedback",
+      "path": "effects/hover/shrink-feedback/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "compact feedback",
+        "transform",
+        "microinteraction"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-shrink-feedback"
+      },
+      "source": {
+        "id": "hover-css",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/scss/effects/2d-transitions/_shrink.scss",
+        "revision": "eb8629df13850d78bbcccd4fed68d231aec0c535",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (personal/open source terms)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "interaction"
+      },
+      "techniques": [
+        "transform",
+        "transition",
+        "focus-visible"
+      ],
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+    },
+    {
+      "id": "pulse-shrink-feedback",
+      "name": "Pulse Shrink Feedback",
+      "path": "effects/hover/pulse-shrink-feedback/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "brief emphasis",
+        "keyframes",
+        "microinteraction"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-pulse-shrink-feedback"
+      },
+      "source": {
+        "id": "hover-css",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/scss/effects/2d-transitions/_pulse-shrink.scss",
+        "revision": "eb8629df13850d78bbcccd4fed68d231aec0c535",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (personal/open source terms)",
+      "production": "conditional",
+      "complexity": "medium",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "attention"
+      },
+      "techniques": [
+        "keyframes",
+        "animation",
+        "focus-visible"
+      ],
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+    },
+    {
+      "id": "forward-slide-cue",
+      "name": "Forward Slide Cue",
+      "path": "effects/hover/forward-slide-cue/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "directional feedback",
+        "transform",
+        "microinteraction"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-forward-slide-cue"
+      },
+      "source": {
+        "id": "hover-css",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/scss/effects/2d-transitions/_forward.scss",
+        "revision": "eb8629df13850d78bbcccd4fed68d231aec0c535",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (personal/open source terms)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "interaction"
+      },
+      "techniques": [
+        "transform",
+        "transition",
+        "focus-visible"
+      ],
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+    },
+    {
+      "id": "inset-shadow-feedback",
+      "name": "Inset Shadow Feedback",
+      "path": "effects/hover/inset-shadow-feedback/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "depth feedback",
+        "box-shadow",
+        "microinteraction"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-inset-shadow-feedback"
+      },
+      "source": {
+        "id": "hover-css",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/scss/effects/shadow-and-glow-transitions/_box-shadow-inset.scss",
+        "revision": "eb8629df13850d78bbcccd4fed68d231aec0c535",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (personal/open source terms)",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "good",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "interaction"
+      },
+      "techniques": [
+        "box-shadow",
+        "transition",
+        "focus-visible"
+      ],
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+    },
+    {
+      "id": "horizontal-shutter-reveal",
+      "name": "Horizontal Shutter Reveal",
+      "path": "effects/hover/horizontal-shutter-reveal/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "state reveal",
+        "surface",
+        "microinteraction"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-horizontal-shutter-reveal"
+      },
+      "source": {
+        "id": "hover-css",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/scss/effects/background-transitions/_shutter-out-horizontal.scss",
+        "revision": "eb8629df13850d78bbcccd4fed68d231aec0c535",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (personal/open source terms)",
+      "production": "conditional",
+      "complexity": "medium",
+      "performance": "good",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "interaction"
+      },
+      "techniques": [
+        "pseudo-elements",
+        "transition",
+        "focus-visible"
+      ],
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+    },
+    {
+      "id": "top-callout-motion",
+      "name": "Top Callout Motion",
+      "path": "effects/hover/top-callout-motion/",
+      "categories": [
+        "effects",
+        "hover"
+      ],
+      "tags": [
+        "context cue",
+        "callout",
+        "microinteraction"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-top-callout-motion"
+      },
+      "source": {
+        "id": "hover-css",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/scss/effects/speech-bubbles/_bubble-float-top.scss",
+        "revision": "eb8629df13850d78bbcccd4fed68d231aec0c535",
+        "adaptation": "adapted"
+      },
+      "license": "MIT (personal/open source terms)",
+      "production": "conditional",
+      "complexity": "medium",
+      "performance": "good",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "interaction"
+      },
+      "techniques": [
+        "pseudo-elements",
+        "transition",
+        "focus-visible"
+      ],
+      "browserNotes": "Modern browsers with focus-visible and prefers-reduced-motion support."
+    },
+    {
+      "id": "fade-in",
+      "name": "Fade In",
+      "path": "animations/entrance/fade-in/",
+      "categories": [
+        "animations",
+        "entrance"
+      ],
+      "tags": [
+        "entrance",
+        "opacity",
+        "one-shot"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-fade-in"
+      },
+      "source": {
+        "id": "animate-css",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/source/fading_entrances/fadeIn.css",
+        "revision": "3f8ab233dbbd9d2fe577528d2296382954be3d1a",
+        "adaptation": "adapted"
+      },
+      "license": "Hippocratic License 2.1",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "enter"
+      },
+      "techniques": [
+        "keyframes",
+        "opacity",
+        "transform"
+      ],
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+    },
+    {
+      "id": "slide-in-up",
+      "name": "Slide In Up",
+      "path": "animations/entrance/slide-in-up/",
+      "categories": [
+        "animations",
+        "entrance"
+      ],
+      "tags": [
+        "entrance",
+        "slide-in",
+        "one-shot"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-slide-in-up"
+      },
+      "source": {
+        "id": "animate-css",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/source/sliding_entrances/slideInUp.css",
+        "revision": "3f8ab233dbbd9d2fe577528d2296382954be3d1a",
+        "adaptation": "adapted"
+      },
+      "license": "Hippocratic License 2.1",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "enter"
+      },
+      "techniques": [
+        "keyframes",
+        "slide-in",
+        "transform",
+        "opacity"
+      ],
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+    },
+    {
+      "id": "zoom-in",
+      "name": "Zoom In",
+      "path": "animations/entrance/zoom-in/",
+      "categories": [
+        "animations",
+        "entrance"
+      ],
+      "tags": [
+        "entrance",
+        "zoom-in",
+        "one-shot"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-zoom-in"
+      },
+      "source": {
+        "id": "animate-css",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/source/zooming_entrances/zoomIn.css",
+        "revision": "3f8ab233dbbd9d2fe577528d2296382954be3d1a",
+        "adaptation": "adapted"
+      },
+      "license": "Hippocratic License 2.1",
+      "production": "conditional",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "enter"
+      },
+      "techniques": [
+        "keyframes",
+        "zoom-in",
+        "transform",
+        "opacity"
+      ],
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+    },
+    {
+      "id": "bounce-in",
+      "name": "Bounce In",
+      "path": "animations/entrance/bounce-in/",
+      "categories": [
+        "animations",
+        "entrance"
+      ],
+      "tags": [
+        "entrance",
+        "bounce-in",
+        "one-shot"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-bounce-in"
+      },
+      "source": {
+        "id": "animate-css",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/source/bouncing_entrances/bounceIn.css",
+        "revision": "3f8ab233dbbd9d2fe577528d2296382954be3d1a",
+        "adaptation": "adapted"
+      },
+      "license": "Hippocratic License 2.1",
+      "production": "conditional",
+      "complexity": "medium",
+      "performance": "good",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "enter"
+      },
+      "techniques": [
+        "keyframes",
+        "bounce-in",
+        "transform",
+        "opacity"
+      ],
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+    },
+    {
+      "id": "fade-out",
+      "name": "Fade Out",
+      "path": "animations/exit/fade-out/",
+      "categories": [
+        "animations",
+        "exit"
+      ],
+      "tags": [
+        "exit",
+        "opacity",
+        "one-shot"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-fade-out"
+      },
+      "source": {
+        "id": "animate-css",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/source/fading_exits/fadeOut.css",
+        "revision": "3f8ab233dbbd9d2fe577528d2296382954be3d1a",
+        "adaptation": "adapted"
+      },
+      "license": "Hippocratic License 2.1",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "exit"
+      },
+      "techniques": [
+        "keyframes",
+        "opacity",
+        "transform"
+      ],
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+    },
+    {
+      "id": "slide-out-down",
+      "name": "Slide Out Down",
+      "path": "animations/exit/slide-out-down/",
+      "categories": [
+        "animations",
+        "exit"
+      ],
+      "tags": [
+        "exit",
+        "slide-out",
+        "one-shot"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-slide-out-down"
+      },
+      "source": {
+        "id": "animate-css",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/source/sliding_exits/slideOutDown.css",
+        "revision": "3f8ab233dbbd9d2fe577528d2296382954be3d1a",
+        "adaptation": "adapted"
+      },
+      "license": "Hippocratic License 2.1",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "exit"
+      },
+      "techniques": [
+        "keyframes",
+        "slide-out",
+        "transform",
+        "opacity"
+      ],
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+    },
+    {
+      "id": "zoom-out",
+      "name": "Zoom Out",
+      "path": "animations/exit/zoom-out/",
+      "categories": [
+        "animations",
+        "exit"
+      ],
+      "tags": [
+        "exit",
+        "zoom-out",
+        "one-shot"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-zoom-out"
+      },
+      "source": {
+        "id": "animate-css",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/source/zooming_exits/zoomOut.css",
+        "revision": "3f8ab233dbbd9d2fe577528d2296382954be3d1a",
+        "adaptation": "adapted"
+      },
+      "license": "Hippocratic License 2.1",
+      "production": "conditional",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "exit"
+      },
+      "techniques": [
+        "keyframes",
+        "zoom-out",
+        "transform",
+        "opacity"
+      ],
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+    },
+    {
+      "id": "pulse-emphasis",
+      "name": "Pulse Emphasis",
+      "path": "animations/attention/pulse-emphasis/",
+      "categories": [
+        "animations",
+        "attention"
+      ],
+      "tags": [
+        "emphasis",
+        "pulse",
+        "one-shot"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-pulse-emphasis"
+      },
+      "source": {
+        "id": "animate-css",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/source/attention_seekers/pulse.css",
+        "revision": "3f8ab233dbbd9d2fe577528d2296382954be3d1a",
+        "adaptation": "adapted"
+      },
+      "license": "Hippocratic License 2.1",
+      "production": "recommended",
+      "complexity": "low",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "attention"
+      },
+      "techniques": [
+        "keyframes",
+        "pulse",
+        "transform",
+        "opacity"
+      ],
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+    },
+    {
+      "id": "head-shake-feedback",
+      "name": "Head Shake Feedback",
+      "path": "animations/attention/head-shake-feedback/",
+      "categories": [
+        "animations",
+        "attention"
+      ],
+      "tags": [
+        "emphasis",
+        "head-shake",
+        "one-shot"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-head-shake-feedback"
+      },
+      "source": {
+        "id": "animate-css",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/source/attention_seekers/headShake.css",
+        "revision": "3f8ab233dbbd9d2fe577528d2296382954be3d1a",
+        "adaptation": "adapted"
+      },
+      "license": "Hippocratic License 2.1",
+      "production": "conditional",
+      "complexity": "medium",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "attention"
+      },
+      "techniques": [
+        "keyframes",
+        "head-shake",
+        "transform",
+        "opacity"
+      ],
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+    },
+    {
+      "id": "heartbeat-emphasis",
+      "name": "Heartbeat Emphasis",
+      "path": "animations/attention/heartbeat-emphasis/",
+      "categories": [
+        "animations",
+        "attention"
+      ],
+      "tags": [
+        "emphasis",
+        "heartbeat",
+        "one-shot"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-heartbeat-emphasis"
+      },
+      "source": {
+        "id": "animate-css",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/source/attention_seekers/heartBeat.css",
+        "revision": "3f8ab233dbbd9d2fe577528d2296382954be3d1a",
+        "adaptation": "adapted"
+      },
+      "license": "Hippocratic License 2.1",
+      "production": "conditional",
+      "complexity": "medium",
+      "performance": "excellent",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "attention"
+      },
+      "techniques": [
+        "keyframes",
+        "heartbeat",
+        "transform",
+        "opacity"
+      ],
+      "browserNotes": "Modern browsers with CSS animations and prefers-reduced-motion support."
+    },
+    {
+      "id": "flip-in-transition",
+      "name": "Flip In Transition",
+      "path": "animations/transitions/flip-in-transition/",
+      "categories": [
+        "animations",
+        "transitions"
+      ],
+      "tags": [
+        "state transition",
+        "flip-in",
+        "one-shot"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-flip-in-transition"
+      },
+      "source": {
+        "id": "animate-css",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/source/flippers/flipInX.css",
+        "revision": "3f8ab233dbbd9d2fe577528d2296382954be3d1a",
+        "adaptation": "adapted"
+      },
+      "license": "Hippocratic License 2.1",
+      "production": "conditional",
+      "complexity": "medium",
+      "performance": "good",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "transition"
+      },
+      "techniques": [
+        "keyframes",
+        "flip-in",
+        "transform",
+        "opacity"
+      ],
+      "browserNotes": "Requires CSS 3D transforms; test backface rendering in target browsers."
+    },
+    {
+      "id": "flip-out-transition",
+      "name": "Flip Out Transition",
+      "path": "animations/transitions/flip-out-transition/",
+      "categories": [
+        "animations",
+        "transitions"
+      ],
+      "tags": [
+        "state transition",
+        "flip-out",
+        "one-shot"
+      ],
+      "package": {
+        "type": "pattern",
+        "stylesheet": "style.css",
+        "scope": ".uk-flip-out-transition"
+      },
+      "source": {
+        "id": "animate-css",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/source/flippers/flipOutX.css",
+        "revision": "3f8ab233dbbd9d2fe577528d2296382954be3d1a",
+        "adaptation": "adapted"
+      },
+      "license": "Hippocratic License 2.1",
+      "production": "conditional",
+      "complexity": "medium",
+      "performance": "good",
+      "mobile": "fallback",
+      "reducedMotion": true,
+      "motion": {
+        "continuous": false,
+        "trigger": "transition"
+      },
+      "techniques": [
+        "keyframes",
+        "flip-out",
+        "transform",
+        "opacity"
+      ],
+      "browserNotes": "Requires CSS 3D transforms; test backface rendering in target browsers."
     }
   ]
 }

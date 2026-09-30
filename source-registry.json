@@ -46,18 +46,18 @@
       "repository": "https://github.com/IanLunn/Hover",
       "ownerRepository": "IanLunn/Hover",
       "license": {
-        "status": "unverified",
-        "name": null,
-        "url": null,
-        "localFile": null
+        "status": "verified",
+        "name": "MIT (personal/open source terms)",
+        "url": "https://github.com/IanLunn/Hover/blob/eb8629df13850d78bbcccd4fed68d231aec0c535/license.txt",
+        "localFile": "licenses/hover-css-MIT-personal-open-source.md"
       },
       "provenance": {
         "strategy": "github-blob",
         "sourceUrlPattern": "^https://github\\.com/IanLunn/Hover/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
         "revisionRequired": true
       },
-      "status": "planned",
-      "notes": "Approved for a future curated phase; license verification is still required before import."
+      "status": "active",
+      "notes": "Open-source terms and selected SCSS files verified at immutable commit eb8629df13850d78bbcccd4fed68d231aec0c535."
     },
     {
       "id": "animate-css",
@@ -65,18 +65,18 @@
       "repository": "https://github.com/animate-css/animate.css",
       "ownerRepository": "animate-css/animate.css",
       "license": {
-        "status": "unverified",
-        "name": null,
-        "url": null,
-        "localFile": null
+        "status": "verified",
+        "name": "Hippocratic License 2.1",
+        "url": "https://github.com/animate-css/animate.css/blob/3f8ab233dbbd9d2fe577528d2296382954be3d1a/LICENSE",
+        "localFile": "licenses/animate-css-Hippocratic-2.1.md"
       },
       "provenance": {
         "strategy": "github-blob",
         "sourceUrlPattern": "^https://github\\.com/animate-css/animate.css/blob/(?<revision>[0-9a-f]{40})/(?<path>[^?#]+)$",
         "revisionRequired": true
       },
-      "status": "planned",
-      "notes": "Approved for a future curated phase; license verification is still required before import."
+      "status": "active",
+      "notes": "Hippocratic License 2.1 and selected CSS files verified at immutable commit 3f8ab233dbbd9d2fe577528d2296382954be3d1a."
     },
     {
       "id": "pattern-craft",
