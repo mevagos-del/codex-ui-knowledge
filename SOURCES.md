@@ -7,7 +7,8 @@ does not automatically grant permission to copy every asset or code sample.
 
 [`source-registry.json`](source-registry.json) is authoritative for stable source
 IDs, repository ownership, license verification, provenance URL rules, revision
-requirements, and source status. Its shape is governed by
+requirements, source status, and conservative personal/open-source/commercial
+usage suitability. Its shape is governed by
 [`source-registry.schema.json`](source-registry.schema.json).
 
 | Source ID | Source | Repository | Status | License status |
@@ -39,6 +40,10 @@ For every imported or adapted pattern:
 Licenses and source contents can change. Re-check them for each curation batch.
 Follow [the source registration and import protocol](guidelines/import-protocol.md)
 for the complete sequence.
+
+Suitability values do not replace the verified license text. A `conditional`
+value requires review of the registry's linked immutable license document for
+the target project and use.
 
 ## Completed imports
 

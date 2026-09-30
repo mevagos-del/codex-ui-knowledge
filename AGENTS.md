@@ -6,20 +6,31 @@ These instructions apply to the entire repository. This repository is a curated
 reference library, not a deployable application and not a bulk mirror of external
 repositories.
 
+The library is a reference system, not a visual theme. Never copy arbitrary
+upstream colors or aesthetics into a project.
+
 ## Core workflow
 
 Before implementing or modifying UI:
 
-1. Identify the UI problem, target device, interaction model, and constraints.
-2. Search `catalog.json` and this repository for an existing pattern.
-3. Inspect the pattern documentation and example before using its code.
-4. Select the simplest pattern that satisfies the requirement.
-5. Adapt it to the target project's existing design system and components.
-6. Verify mobile behavior, accessibility, reduced motion, and performance.
-7. Create a new pattern only when no suitable reusable pattern exists.
+1. Inspect the target project's existing implementation and local components.
+2. Inspect its design system, tokens, interaction rules, and constraints.
+3. Query the knowledge layer with `npm run recommend -- --use-case <use-case>`.
+4. Shortlist packages and inspect their documentation and examples.
+5. Reject options that fail production, accessibility, mobile, performance,
+   compatibility, or license suitability requirements.
+6. Adapt the selected technique to the project's components and design tokens.
+7. Verify keyboard use, reduced motion, responsive behavior, and performance.
+8. Create a new implementation only when no suitable reusable technique exists.
 
 Never copy a visual effect blindly. Project-specific instructions, components,
 and design tokens always override this generic library.
+
+Use `intelligence/taxonomy.json` for controlled use cases,
+`intelligence/selection-rules.json` for deterministic filtering and ranking,
+`intelligence/composition-rules.json` before combining techniques, and
+`intelligence/search-index.json` for the generated searchable view. Treat any
+`conditional` usage result as requiring review of its linked verified terms.
 
 ## Curation rules
 

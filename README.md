@@ -51,6 +51,8 @@ codex-ui-knowledge/
 ├── tokens/
 ├── layouts/
 ├── recipes/
+├── intelligence/
+├── integrations/
 └── guidelines/
 ```
 
@@ -63,6 +65,8 @@ codex-ui-knowledge/
 | `tokens/` | Framework-neutral design primitives and token guidance |
 | `layouts/` | Responsive page and component layout patterns |
 | `recipes/` | Composed solutions that combine several patterns |
+| `intelligence/` | Controlled taxonomy, selection and composition rules, and generated search index |
+| `integrations/` | Template instructions for projects that consume this reference system |
 | `guidelines/` | Selection, accessibility, performance, and architecture rules |
 | `licenses/` | Verified upstream license texts and notices |
 
@@ -82,15 +86,21 @@ submit a validated import pull request.
 ## How Codex should use this repository
 
 1. Define the UI problem and constraints.
-2. Search `catalog.json` and the relevant directory.
-3. Inspect the candidate's documentation and example.
-4. Choose the simplest suitable production-ready pattern.
-5. Adapt it to the target project's existing components and design tokens.
-6. Verify keyboard use, reduced motion, responsive behavior, and performance.
-7. Add a new pattern only when no suitable reusable option exists.
+2. Inspect project-local components and design tokens before consulting shared knowledge.
+3. Run `npm run recommend -- --use-case <use-case>` with relevant constraints.
+4. Inspect the shortlisted candidates and their rejection risks.
+5. Choose the simplest suitable production-ready package.
+6. Adapt it to the target project's existing components and design tokens.
+7. Verify keyboard use, reduced motion, responsive behavior, and performance.
+8. Add a new pattern only when no suitable reusable option exists.
 
 Project-specific `AGENTS.md` files and design systems override this generic
 knowledge base.
+
+The intelligence layer is documented in [intelligence/README.md](intelligence/README.md).
+It provides a finite use-case taxonomy, explicit hard rejections, documented
+ranking weights, composition rules, ten recipes, and a generated 100-entry
+search index. This repository is a reference system, not a visual theme.
 
 ## Current status
 
@@ -106,6 +116,7 @@ Install the locked development dependencies and validate the complete catalog:
 ```sh
 npm ci
 npm test
+npm run recommend -- --use-case primary-action --mobile safe
 ```
 
 The validator uses Ajv and `ajv-formats` for the registry and catalog schemas,
@@ -115,3 +126,11 @@ upstream files, required package files, scoped selectors and keyframes, native
 functions and references, responsive demo shells, reduced motion, labels,
 keyboard focus styles, landmarks, and loader announcements. Successful output
 reports dynamic totals by source and category.
+
+`npm run validate` also checks decision metadata, taxonomy and rule references,
+license suitability values, recipe references and cycles, and generated search
+index drift. Regenerate the index after catalog or source suitability changes:
+
+```sh
+npm run generate:index
+```
