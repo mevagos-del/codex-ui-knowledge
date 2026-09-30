@@ -13,7 +13,7 @@ requirements, and source status. Its shape is governed by
 | Source ID | Source | Repository | Status | License status |
 | --- | --- | --- | --- | --- |
 | `uiverse-galaxy` | Uiverse Galaxy | https://github.com/uiverse-io/galaxy | Active | MIT verified |
-| `open-props` | Open Props | https://github.com/argyleink/open-props | Planned | Unverified |
+| `open-props` | Open Props | https://github.com/argyleink/open-props | Active | MIT verified |
 | `hover-css` | Hover.css | https://github.com/IanLunn/Hover | Planned | Unverified |
 | `animate-css` | Animate.css | https://github.com/animate-css/animate.css | Planned | Unverified |
 | `pattern-craft` | Pattern Craft | https://github.com/megh-bari/pattern-craft | Planned | Unverified |
@@ -51,6 +51,16 @@ for the complete sequence.
 - Scope: 50 adapted HTML/CSS patterns (10 each for buttons, cards, inputs, loaders, and hover effects)
 - Asset policy: no upstream images, fonts, logos, dependencies, or JavaScript imported
 - Per-pattern provenance: exact upstream file URL and creator credit in every pattern README
+
+### Open Props token foundation
+
+- Upstream commit: [530682d04327f842f56bb1ec33cf84a3cadb3876](https://github.com/argyleink/open-props/tree/530682d04327f842f56bb1ec33cf84a3cadb3876)
+- License verified: MIT, copyright (c) 2021 Adam Argyle
+- Registry ID: `open-props`
+- Local license: [licenses/open-props-MIT.md](licenses/open-props-MIT.md)
+- Scope: six curated CSS token families: easings, shadows, radii, sizes and spacing, typography scale, and aspect ratios
+- Exclusions: colors, gradients, resets, components, JavaScript, assets, fonts, themes, animations, and unrelated utilities
+- Normalization: upstream variable names and values are retained while `:where(html)` is replaced with a package-local `:where(.op-*)` scope
 
 ## Adding another source
 

@@ -31,6 +31,30 @@ export function parseCssSource(source) {
   return { ast, errors };
 }
 
+const patternHeadings = [
+  "## Category", "## Source", "## License", "## Purpose", "## Recommended use",
+  "## Avoid / use with caution", "## Techniques", "## Performance", "## Mobile",
+  "## Accessibility", "## Reduced motion", "## Customization", "## Notes",
+];
+
+const tokenHeadings = [
+  "## Category", "## Source", "## License", "## Purpose", "## Recommended use",
+  "## Avoid / use with caution", "## Token groups", "## Adaptation guidance",
+  "## Performance", "## Accessibility", "## Browser notes", "## Notes",
+];
+
+export function packageRequirements(item) {
+  const type = item.package?.type;
+  const stylesheet = item.package?.stylesheet;
+  if (!type || !stylesheet) return null;
+  return {
+    stylesheet,
+    requiredFiles: ["README.md", "demo.html", stylesheet],
+    requiredHeadings: type === "tokens" ? tokenHeadings : patternHeadings,
+    requireResponsiveWrapper: type === "pattern",
+  };
+}
+
 export function sourceDefinitions(registry) {
   return new Map((registry.sources ?? []).map((source) => [source.id, source]));
 }

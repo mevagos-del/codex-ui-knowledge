@@ -18,7 +18,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "id", "name", "path", "categories", "tags", "source", "license",
+        "id", "name", "path", "categories", "tags", "package", "source", "license",
         "production", "complexity", "performance", "mobile", "reducedMotion",
         "techniques", "browserNotes"
       ],
@@ -39,6 +39,26 @@
           "type": "array",
           "items": { "type": "string", "minLength": 1 },
           "uniqueItems": true
+        },
+        "package": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "stylesheet", "scope"],
+          "properties": {
+            "type": { "enum": ["pattern", "tokens"] },
+            "stylesheet": { "enum": ["style.css", "tokens.css"] },
+            "scope": { "type": "string", "pattern": "^(?:\\.[a-z][a-z0-9-]*|:where\\(\\.[a-z][a-z0-9-]*\\))$" }
+          },
+          "allOf": [
+            {
+              "if": { "properties": { "type": { "const": "pattern" } } },
+              "then": { "properties": { "stylesheet": { "const": "style.css" } } }
+            },
+            {
+              "if": { "properties": { "type": { "const": "tokens" } } },
+              "then": { "properties": { "stylesheet": { "const": "tokens.css" } } }
+            }
+          ]
         },
         "source": {
           "type": "object",

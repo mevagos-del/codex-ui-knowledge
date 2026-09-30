@@ -1,0 +1,16 @@
+/* Curated from Open Props props.borders.css at 530682d04327f842f56bb1ec33cf84a3cadb3876. MIT. */
+:where(.op-radii) {
+  --radius-1: 2px;
+  --radius-2: 5px;
+  --radius-3: 1rem;
+  --radius-4: 2rem;
+  --radius-5: 4rem;
+  --radius-6: 8rem;
+  --radius-round: 1e5px;
+  --radius-drawn-1: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  --radius-drawn-2: 125px 10px 20px 185px / 25px 205px 205px 25px;
+  --radius-drawn-3: 15px 255px 15px 225px / 225px 15px 255px 15px;
+  --radius-blob-1: 30% 70% 70% 30% / 53% 30% 70% 47%;
+  --radius-blob-2: 53% 47% 34% 66% / 63% 46% 54% 37%;
+  --radius-blob-3: 37% 63% 56% 44% / 49% 56% 44% 51%;
+}
